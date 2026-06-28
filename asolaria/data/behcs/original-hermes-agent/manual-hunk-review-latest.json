@@ -1,0 +1,946 @@
+{
+  "id": "original-hermes-manual-hunk-review.v1",
+  "generatedAt": "2026-04-25T01:10:17.950Z",
+  "status": "MANUAL_HUNK_REVIEW_READY",
+  "pass": true,
+  "reviewPaths": [
+    "TASKS.md",
+    "routes/workerRouter.js",
+    "routes/hooks.js",
+    "src/connectors/hooksConnector.js",
+    "server.js"
+  ],
+  "files": [
+    {
+      "path": "TASKS.md",
+      "command": "git diff --unified=0 -- TASKS.md",
+      "status": "pass",
+      "exitCode": 0,
+      "error": "warning: in the working copy of 'TASKS.md', LF will be replaced by CRLF the next time Git touches it\n",
+      "hunkCount": 4,
+      "decisions": {
+        "manual_split_required": 1,
+        "defer_or_stage_separate_lane": 3
+      },
+      "hunks": [
+        {
+          "index": 1,
+          "header": "@@ -4,0 +5,170 @@",
+          "range": {
+            "oldStart": 4,
+            "oldCount": 0,
+            "newStart": 5,
+            "newCount": 170
+          },
+          "addedLines": 170,
+          "removedLines": 0,
+          "preview": [
+            "+- [x] Original Hermes manual hunk review map (2026-04-25): added `tools/original-hermes-manual-hunk-review.js` to classify the mixed dirty files that must not be whole-file staged. The tool parses `git diff --unified=0`",
+            "+",
+            "+- [x] Original Hermes orchestrated 10B route/server smoke and hook hardening review (2026-04-25): added `tools/original-hermes-route-server-smoke.js` as a compact `10,000,000,000` logical-agent route coverage smoke that",
+            "+",
+            "+- [x] Repo-level skills validation repair (2026-04-25): after the Original Hermes partial-commit gate passed, ran `npm run skills:validate` as a broader repo preflight and found three unrelated skill metadata blockers. ",
+            "+"
+          ],
+          "lane": "mixed_task_log",
+          "decision": "manual_split_required",
+          "stage": "stage only Original Hermes task-log lines for the Original Hermes commit; keep skills/deep-wave entries separate",
+          "risk": "large prepended mixed task-log hunk"
+        },
+        {
+          "index": 2,
+          "header": "@@ -41,0 +212 @@",
+          "range": {
+            "oldStart": 41,
+            "oldCount": 0,
+            "newStart": 212,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+  - Update 2026-04-14 16:50 -03:00: Sentinel reloaded the Sentinel bootstrap anchors, Brown-Hilbert continuity files, and the current live controller surfaces before refreshing `reports/sector-drift-watch-latest.md`. Dr"
+          ],
+          "lane": "non_original_hermes_task_log",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "do not include in Original Hermes partial commit",
+          "risk": "separate task-log lane"
+        },
+        {
+          "index": 3,
+          "header": "@@ -93,0 +265 @@",
+          "range": {
+            "oldStart": 93,
+            "oldCount": 0,
+            "newStart": 265,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+  - Update 2026-04-16 00:13 -03:00: the fresh external colony scan at `C:\\Users\\acer\\OneDrive\\Desktop\\LIRIS.txt` sharpens the contradiction again instead of resolving it. It preserves the direct Ethernet peer at `192.16"
+          ],
+          "lane": "deep_wave_task_log",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "do not include in Original Hermes partial commit",
+          "risk": "separate task-log lane"
+        },
+        {
+          "index": 4,
+          "header": "@@ -861,0 +1034,29 @@",
+          "range": {
+            "oldStart": 861,
+            "oldCount": 0,
+            "newStart": 1034,
+            "newCount": 29
+          },
+          "addedLines": 29,
+          "removedLines": 0,
+          "preview": [
+            "+- 2026-04-15 13:21:42 -03:00: Deep Wave SECOND cascade orchestration tranche emitted on `C:` only after the crash-locus packet was preserved to memory and indexed mistakes. Added task lattice `IX-1001..IX-1008` under `d",
+            "+- 2026-04-15 14:45:29 -03:00: Desktop archaeology + Falcon / BEHCS / OS-under-Windows packet sealed on `C:` at `reports/desktop-archaeology-behcs-os-index-20260415-144529.md` (`latest`: `reports/desktop-archaeology-behc",
+            "+- 2026-04-15 14:50:49 -03:00: Chief-director / Falcon USB delta appended on `C:` at `reports/chief-director-falcon-usb-delta-20260415-145049.md` and folded into `reports/desktop-archaeology-behcs-os-index-latest.md`. Pr",
+            "+- 2026-04-15 14:54:39 -03:00: Mirror / multilane Falcon bridge delta appended on `C:` at `reports/mirror-multilane-falcon-bridge-delta-20260415-145439.md` and folded into `reports/desktop-archaeology-behcs-os-index-late",
+            "+- [x] Falcon phone white-room intake + replication map (2026-04-15 15:07 -03:00): copied the newer Falcon payload off-device into `quarantine/falcon-phone-white-room-20260415-150246`, preserved separate `private-termux`",
+            "+- [x] Falcon C-side replication tranche + Windows codex repair (2026-04-15 15:15 -03:00): landed the first real replication slice from the phone payload onto `C:` and sealed it at `reports/falcon-c-side-replication-tran"
+          ],
+          "lane": "deep_wave_task_log",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "do not include in Original Hermes partial commit",
+          "risk": "separate task-log lane"
+        }
+      ],
+      "interactiveCommand": "git add -p -- 'TASKS.md'"
+    },
+    {
+      "path": "routes/workerRouter.js",
+      "command": "git diff --unified=0 -- routes/workerRouter.js",
+      "status": "pass",
+      "exitCode": 0,
+      "error": "warning: in the working copy of 'routes/workerRouter.js', LF will be replaced by CRLF the next time Git touches it\n",
+      "hunkCount": 3,
+      "decisions": {
+        "defer_or_stage_separate_lane": 1,
+        "stage_original_hermes": 1,
+        "manual_split_required": 1
+      },
+      "hunks": [
+        {
+          "index": 1,
+          "header": "@@ -10 +10 @@ const {",
+          "range": {
+            "oldStart": 10,
+            "oldCount": 1,
+            "newStart": 10,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 1,
+          "preview": [
+            "+  recommendWorker, dispatchWorkerTask, getWorkerRouterSelfBuildPosture",
+            "-  recommendWorker, dispatchWorkerTask"
+          ],
+          "lane": "worker_router_self_build",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "do not include in Original Hermes partial commit",
+          "risk": "non-Original-Hermes endpoint"
+        },
+        {
+          "index": 2,
+          "header": "@@ -11,0 +12,15 @@ const {",
+          "range": {
+            "oldStart": 11,
+            "oldCount": 0,
+            "newStart": 12,
+            "newCount": 15
+          },
+          "addedLines": 15,
+          "removedLines": 0,
+          "preview": [
+            "+const {",
+            "+  buildOriginalHermesTransportRouterSnapshot",
+            "+} = require(\"../src/behcs/originalHermesTransportRouter\");",
+            "+const {",
+            "+  buildOriginalHermesLearningLoopSnapshot",
+            "+} = require(\"../src/behcs/originalHermesLearningLoop\");"
+          ],
+          "lane": "original_hermes_worker_router",
+          "decision": "stage_original_hermes",
+          "stage": "include in Original Hermes route/API lane",
+          "risk": "low"
+        },
+        {
+          "index": 3,
+          "header": "@@ -18,0 +34,57 @@ router.get(\"/status\", (_req, res) => {",
+          "range": {
+            "oldStart": 18,
+            "oldCount": 0,
+            "newStart": 34,
+            "newCount": 57
+          },
+          "addedLines": 57,
+          "removedLines": 0,
+          "preview": [
+            "+router.get(\"/self-build\", (_req, res) => {",
+            "+  try {",
+            "+    return res.json({ ok: true, selfBuild: getWorkerRouterSelfBuildPosture() });",
+            "+  } catch (error) { return respondError(res, error, inferHttpStatusForError(error, 500)); }",
+            "+});",
+            "+"
+          ],
+          "lane": "mixed_worker_router",
+          "decision": "manual_split_required",
+          "stage": "stage Original Hermes imports; defer self-build import unless companion self-build files are staged",
+          "risk": "mixed import hunk"
+        }
+      ],
+      "interactiveCommand": "git add -p -- 'routes/workerRouter.js'"
+    },
+    {
+      "path": "routes/hooks.js",
+      "command": "git diff --unified=0 -- routes/hooks.js",
+      "status": "pass",
+      "exitCode": 0,
+      "error": "warning: in the working copy of 'routes/hooks.js', LF will be replaced by CRLF the next time Git touches it\n",
+      "hunkCount": 4,
+      "decisions": {
+        "defer_or_stage_separate_lane": 3,
+        "stage_original_hermes": 1
+      },
+      "hunks": [
+        {
+          "index": 1,
+          "header": "@@ -15,0 +16 @@ const {",
+          "range": {
+            "oldStart": 15,
+            "oldCount": 0,
+            "newStart": 16,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+  getRouteHookStats,"
+          ],
+          "lane": "route_hook_telemetry",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "keep out of Original Hermes partial commit unless route-hook telemetry lane is intentional",
+          "risk": "separate feature lane"
+        },
+        {
+          "index": 2,
+          "header": "@@ -67 +68,2 @@ router.post(\"/guard\", (req, res) => {",
+          "range": {
+            "oldStart": 67,
+            "oldCount": 1,
+            "newStart": 68,
+            "newCount": 2
+          },
+          "addedLines": 2,
+          "removedLines": 1,
+          "preview": [
+            "+      body.tool_input || {},",
+            "+      body",
+            "-      body.tool_input || {}"
+          ],
+          "lane": "original_hermes_guard_context",
+          "decision": "stage_original_hermes",
+          "stage": "include because plugin-gate needs full guard context",
+          "risk": "low"
+        },
+        {
+          "index": 3,
+          "header": "@@ -112,0 +115 @@ router.get(\"/events\", (req, res) => {",
+          "range": {
+            "oldStart": 112,
+            "oldCount": 0,
+            "newStart": 115,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+      atlasLaneId: req.query?.atlasLaneId,"
+          ],
+          "lane": "route_hook_telemetry",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "keep out of Original Hermes partial commit unless route-hook telemetry lane is intentional",
+          "risk": "separate feature lane"
+        },
+        {
+          "index": 4,
+          "header": "@@ -121,0 +125,37 @@ router.get(\"/events\", (req, res) => {",
+          "range": {
+            "oldStart": 121,
+            "oldCount": 0,
+            "newStart": 125,
+            "newCount": 37
+          },
+          "addedLines": 37,
+          "removedLines": 0,
+          "preview": [
+            "+router.get(\"/route-hooks\", (req, res) => {",
+            "+  try {",
+            "+    const events = queryHookEvents({",
+            "+      eventType: \"RouteHook\",",
+            "+      route: String(req.query?.route || \"\").trim() || undefined,",
+            "+      routeStage: String(req.query?.routeStage || \"\").trim() || undefined,"
+          ],
+          "lane": "route_hook_telemetry",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "keep out of Original Hermes partial commit unless route-hook telemetry lane is intentional",
+          "risk": "separate feature lane"
+        }
+      ],
+      "interactiveCommand": "git add -p -- 'routes/hooks.js'"
+    },
+    {
+      "path": "src/connectors/hooksConnector.js",
+      "command": "git diff --unified=0 -- src/connectors/hooksConnector.js",
+      "status": "pass",
+      "exitCode": 0,
+      "error": "warning: in the working copy of 'src/connectors/hooksConnector.js', LF will be replaced by CRLF the next time Git touches it\n",
+      "hunkCount": 9,
+      "decisions": {
+        "defer_or_stage_separate_lane": 4,
+        "stage_original_hermes": 5
+      },
+      "hunks": [
+        {
+          "index": 1,
+          "header": "@@ -1 +1 @@",
+          "range": {
+            "oldStart": 1,
+            "oldCount": 1,
+            "newStart": 1,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 1,
+          "preview": [
+            "+const { appendHookEvent, queryHookEvents, getRouteHookStats, getHookEventStats, getSessionSummary } = require(\"../hookEventStore\");",
+            "-const { appendHookEvent, queryHookEvents, getHookEventStats, getSessionSummary } = require(\"../hookEventStore\");"
+          ],
+          "lane": "route_hook_telemetry",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "keep out of Original Hermes partial commit unless route-hook telemetry lane is intentional",
+          "risk": "separate feature lane"
+        },
+        {
+          "index": 2,
+          "header": "@@ -3,0 +4,4 @@ const { upsertSession, getSession, listActiveSessions, addPromptToSession, incre",
+          "range": {
+            "oldStart": 3,
+            "oldCount": 0,
+            "newStart": 4,
+            "newCount": 4
+          },
+          "addedLines": 4,
+          "removedLines": 0,
+          "preview": [
+            "+const {",
+            "+  buildPluginHookGate,",
+            "+  evaluatePluginHook",
+            "+} = require(\"../behcs/originalHermesAgentContracts\");"
+          ],
+          "lane": "original_hermes_plugin_gate",
+          "decision": "stage_original_hermes",
+          "stage": "include in Original Hermes plugin-hook GAC gate",
+          "risk": "low"
+        },
+        {
+          "index": 3,
+          "header": "@@ -56 +60,102 @@ function isEnvFileAccess(toolName, toolInput = {}) {",
+          "range": {
+            "oldStart": 56,
+            "oldCount": 1,
+            "newStart": 60,
+            "newCount": 102
+          },
+          "addedLines": 102,
+          "removedLines": 1,
+          "preview": [
+            "+function normalizeList(value) {",
+            "+  if (!value) return [];",
+            "+  if (Array.isArray(value)) return value.map((item) => String(item || \"\").trim()).filter(Boolean);",
+            "+  return String(value || \"\")",
+            "+    .split(/[,\\s]+/)",
+            "+    .map((item) => item.trim())",
+            "-function getGuardVerdict(toolName, toolInput = {}) {"
+          ],
+          "lane": "original_hermes_plugin_gate",
+          "decision": "stage_original_hermes",
+          "stage": "include in Original Hermes plugin-hook GAC gate",
+          "risk": "low"
+        },
+        {
+          "index": 4,
+          "header": "@@ -68,0 +174,3 @@ function getGuardVerdict(toolName, toolInput = {}) {",
+          "range": {
+            "oldStart": 68,
+            "oldCount": 0,
+            "newStart": 174,
+            "newCount": 3
+          },
+          "addedLines": 3,
+          "removedLines": 0,
+          "preview": [
+            "+  if (shouldApplyOriginalHermesPluginGate(toolName, toolInput, context)) {",
+            "+    return getOriginalHermesPluginHookGateVerdict(toolName, toolInput, context);",
+            "+  }"
+          ],
+          "lane": "original_hermes_plugin_gate",
+          "decision": "stage_original_hermes",
+          "stage": "include in Original Hermes plugin-hook GAC gate",
+          "risk": "low"
+        },
+        {
+          "index": 5,
+          "header": "@@ -118,0 +227 @@ function getHookDashboard() {",
+          "range": {
+            "oldStart": 118,
+            "oldCount": 0,
+            "newStart": 227,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+  const routeHooks = getRouteHookStats({ limit: 200 });"
+          ],
+          "lane": "route_hook_telemetry",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "keep out of Original Hermes partial commit unless route-hook telemetry lane is intentional",
+          "risk": "separate feature lane"
+        },
+        {
+          "index": 6,
+          "header": "@@ -124,0 +234 @@ function getHookDashboard() {",
+          "range": {
+            "oldStart": 124,
+            "oldCount": 0,
+            "newStart": 234,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+    routeHooks,"
+          ],
+          "lane": "route_hook_telemetry",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "keep out of Original Hermes partial commit unless route-hook telemetry lane is intentional",
+          "risk": "separate feature lane"
+        },
+        {
+          "index": 7,
+          "header": "@@ -186,3 +296,7 @@ function manifest() {",
+          "range": {
+            "oldStart": 186,
+            "oldCount": 3,
+            "newStart": 296,
+            "newCount": 7
+          },
+          "addedLines": 7,
+          "removedLines": 3,
+          "preview": [
+            "+    sideEffects: [\"appends to hook-events.ndjson\", \"creates transcript backup files\", \"blocks dangerous tool calls\", \"denies unregistered Hermes-style plugin hooks\"],",
+            "+    failureModes: [\"event_store_write_failed\", \"transcript_backup_failed\", \"plugin_hook_gate_denied\"],",
+            "+    emittedEvents: [\"hook.event_ingested\", \"hook.guard_blocked\", \"hook.session_started\", \"hook.session_ended\"],",
+            "+    originalHermesPluginGate: {",
+            "+      contractId: buildPluginHookGate().contractId,",
+            "+      defaultDecision: \"deny_runtime_hook_until_registered_and_gac_approved\"",
+            "-    sideEffects: [\"appends to hook-events.ndjson\", \"creates transcript backup files\", \"blocks dangerous tool calls\"],",
+            "-    failureModes: [\"event_store_write_failed\", \"transcript_backup_failed\"],",
+            "-    emittedEvents: [\"hook.event_ingested\", \"hook.guard_blocked\", \"hook.session_started\", \"hook.session_ended\"]"
+          ],
+          "lane": "original_hermes_plugin_gate",
+          "decision": "stage_original_hermes",
+          "stage": "include in Original Hermes plugin-hook GAC gate",
+          "risk": "low"
+        },
+        {
+          "index": 8,
+          "header": "@@ -193,0 +308 @@ module.exports = {",
+          "range": {
+            "oldStart": 193,
+            "oldCount": 0,
+            "newStart": 308,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+  getOriginalHermesPluginHookGateVerdict,"
+          ],
+          "lane": "original_hermes_plugin_gate",
+          "decision": "stage_original_hermes",
+          "stage": "include in Original Hermes plugin-hook GAC gate",
+          "risk": "low"
+        },
+        {
+          "index": 9,
+          "header": "@@ -198,0 +314 @@ module.exports = {",
+          "range": {
+            "oldStart": 198,
+            "oldCount": 0,
+            "newStart": 314,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+  getRouteHookStats,"
+          ],
+          "lane": "route_hook_telemetry",
+          "decision": "defer_or_stage_separate_lane",
+          "stage": "keep out of Original Hermes partial commit unless route-hook telemetry lane is intentional",
+          "risk": "separate feature lane"
+        }
+      ],
+      "interactiveCommand": "git add -p -- 'src/connectors/hooksConnector.js'"
+    },
+    {
+      "path": "server.js",
+      "command": "git diff --unified=0 -- server.js",
+      "status": "pass",
+      "exitCode": 0,
+      "error": "warning: in the working copy of 'server.js', LF will be replaced by CRLF the next time Git touches it\n",
+      "hunkCount": 19,
+      "decisions": {
+        "defer": 18,
+        "stage_separate_hardening_lane": 1
+      },
+      "hunks": [
+        {
+          "index": 1,
+          "header": "@@ -44,0 +45 @@ const { runBrainTask } = require(\"./src/brainOrchestrator\");",
+          "range": {
+            "oldStart": 44,
+            "oldCount": 0,
+            "newStart": 45,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+const { getCacheStatus } = require(\"./src/agentCacheSharing\");"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 2,
+          "header": "@@ -137,0 +139,3 @@ const {",
+          "range": {
+            "oldStart": 137,
+            "oldCount": 0,
+            "newStart": 139,
+            "newCount": 3
+          },
+          "addedLines": 3,
+          "removedLines": 0,
+          "preview": [
+            "+const {",
+            "+  getKimiCodeStatus",
+            "+} = lazyConnector(\"./src/connectors/kimiCodeConnector\");"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 3,
+          "header": "@@ -1866 +1870,4 @@ function defaultExternalProviderFallbackOrder(primaryProvider = \"\") {",
+          "range": {
+            "oldStart": 1866,
+            "oldCount": 1,
+            "newStart": 1870,
+            "newCount": 4
+          },
+          "addedLines": 4,
+          "removedLines": 1,
+          "preview": [
+            "+    return [\"kimi\", \"antigravity\", \"gemini\", \"cursor\"];",
+            "+  }",
+            "+  if (provider === \"kimi\") {",
+            "+    return [\"gemini\", \"cursor\", \"antigravity\", \"anthropic\"];",
+            "-    return [\"antigravity\", \"gemini\", \"cursor\"];"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 4,
+          "header": "@@ -1869 +1876 @@ function defaultExternalProviderFallbackOrder(primaryProvider = \"\") {",
+          "range": {
+            "oldStart": 1869,
+            "oldCount": 1,
+            "newStart": 1876,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 1,
+          "preview": [
+            "+    return [\"kimi\", \"antigravity\", \"gemini\", \"anthropic\"];",
+            "-    return [\"antigravity\", \"gemini\", \"anthropic\"];"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 5,
+          "header": "@@ -1872 +1879 @@ function defaultExternalProviderFallbackOrder(primaryProvider = \"\") {",
+          "range": {
+            "oldStart": 1872,
+            "oldCount": 1,
+            "newStart": 1879,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 1,
+          "preview": [
+            "+    return [\"kimi\", \"antigravity\", \"cursor\", \"anthropic\"];",
+            "-    return [\"antigravity\", \"cursor\", \"anthropic\"];"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 6,
+          "header": "@@ -1875 +1882 @@ function defaultExternalProviderFallbackOrder(primaryProvider = \"\") {",
+          "range": {
+            "oldStart": 1875,
+            "oldCount": 1,
+            "newStart": 1882,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 1,
+          "preview": [
+            "+    return [\"kimi\", \"cursor\", \"gemini\", \"anthropic\"];",
+            "-    return [\"cursor\", \"gemini\", \"anthropic\"];"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 7,
+          "header": "@@ -1877 +1884 @@ function defaultExternalProviderFallbackOrder(primaryProvider = \"\") {",
+          "range": {
+            "oldStart": 1877,
+            "oldCount": 1,
+            "newStart": 1884,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 1,
+          "preview": [
+            "+  return [\"kimi\", \"antigravity\", \"cursor\", \"gemini\", \"anthropic\"];",
+            "-  return [\"antigravity\", \"cursor\", \"gemini\", \"anthropic\"];"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 8,
+          "header": "@@ -3014,2 +3021,2 @@ const settings = {",
+          "range": {
+            "oldStart": 3014,
+            "oldCount": 2,
+            "newStart": 3021,
+            "newCount": 2
+          },
+          "addedLines": 2,
+          "removedLines": 2,
+          "preview": [
+            "+    process.env.ASOLARIA_BRAIN_FALLBACK_ORDER || \"anthropic,gemini-api,vertex,openclaw,gemini-cli,kimi,cursor,antigravity\",",
+            "+    [\"anthropic\", \"gemini-api\", \"vertex\", \"openclaw\", \"gemini-cli\", \"kimi\", \"cursor\", \"antigravity\"]",
+            "-    process.env.ASOLARIA_BRAIN_FALLBACK_ORDER || \"anthropic,gemini-api,vertex,openclaw,gemini-cli,cursor,antigravity\",",
+            "-    [\"anthropic\", \"gemini-api\", \"vertex\", \"openclaw\", \"gemini-cli\", \"cursor\", \"antigravity\"]"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 9,
+          "header": "@@ -6740,0 +6748,10 @@ const MODEL_ALIAS_TABLE = Object.freeze({",
+          "range": {
+            "oldStart": 6740,
+            "oldCount": 0,
+            "newStart": 6748,
+            "newCount": 10
+          },
+          "addedLines": 10,
+          "removedLines": 0,
+          "preview": [
+            "+  kimi: Object.freeze({",
+            "+    \"k2.6\": \"kimi-k2.6\",",
+            "+    k26: \"kimi-k2.6\",",
+            "+    \"kimi-k2.6\": \"kimi-k2.6\",",
+            "+    \"kimi-2.6\": \"kimi-k2.6\",",
+            "+    \"k2.5\": \"kimi-k2.5\","
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 10,
+          "header": "@@ -6760,0 +6778 @@ const MODEL_ALIAS_HINTS = Object.freeze({",
+          "range": {
+            "oldStart": 6760,
+            "oldCount": 0,
+            "newStart": 6778,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+  kimi: Object.freeze([\"kimi-k2.6\", \"k2.6\", \"kimi-k2.5\", \"k2.5\"]),"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 11,
+          "header": "@@ -6887,0 +6906,3 @@ function looksLikeVersionedModelId(providerName, rawToken) {",
+          "range": {
+            "oldStart": 6887,
+            "oldCount": 0,
+            "newStart": 6906,
+            "newCount": 3
+          },
+          "addedLines": 3,
+          "removedLines": 0,
+          "preview": [
+            "+  if (providerName === \"kimi\") {",
+            "+    return /^kimi[-a-z0-9.]+$/.test(key);",
+            "+  }"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 12,
+          "header": "@@ -22987,0 +23009 @@ async function runRoutedIntent(message) {",
+          "range": {
+            "oldStart": 22987,
+            "oldCount": 0,
+            "newStart": 23009,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+    || routed.action === \"kimi_status\""
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 13,
+          "header": "@@ -22995 +23017,3 @@ async function runRoutedIntent(message) {",
+          "range": {
+            "oldStart": 22995,
+            "oldCount": 1,
+            "newStart": 23017,
+            "newCount": 3
+          },
+          "addedLines": 3,
+          "removedLines": 1,
+          "preview": [
+            "+          : routed.action.startsWith(\"kimi\")",
+            "+            ? \"kimi\"",
+            "+            : \"gemini\";",
+            "-          : \"gemini\";"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 14,
+          "header": "@@ -23026,0 +23051,17 @@ async function runRoutedIntent(message) {",
+          "range": {
+            "oldStart": 23026,
+            "oldCount": 0,
+            "newStart": 23051,
+            "newCount": 17
+          },
+          "addedLines": 17,
+          "removedLines": 0,
+          "preview": [
+            "+    if (providerId === \"kimi\") {",
+            "+      const apiStatus = providerStatusById(providerId);",
+            "+      const cliStatus = await getKimiCodeStatus({",
+            "+        timeoutMs: 3000",
+            "+      });",
+            "+      return {"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 15,
+          "header": "@@ -23061,0 +23103 @@ async function runRoutedIntent(message) {",
+          "range": {
+            "oldStart": 23061,
+            "oldCount": 0,
+            "newStart": 23103,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 0,
+          "preview": [
+            "+    || routed.action === \"kimi_ask\""
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 16,
+          "header": "@@ -23069 +23111,3 @@ async function runRoutedIntent(message) {",
+          "range": {
+            "oldStart": 23069,
+            "oldCount": 1,
+            "newStart": 23111,
+            "newCount": 3
+          },
+          "addedLines": 3,
+          "removedLines": 1,
+          "preview": [
+            "+          : routed.action.startsWith(\"kimi\")",
+            "+            ? \"kimi\"",
+            "+            : \"gemini\";",
+            "-          : \"gemini\";"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 17,
+          "header": "@@ -23470,0 +23515,20 @@ app.get(\"/api/sovereignty/status\", (_req, res) => {",
+          "range": {
+            "oldStart": 23470,
+            "oldCount": 0,
+            "newStart": 23515,
+            "newCount": 20
+          },
+          "addedLines": 20,
+          "removedLines": 0,
+          "preview": [
+            "+app.get(\"/api/cache/status\", (req, res) => {",
+            "+  const payload = getCacheStatus();",
+            "+  if (isLoopbackRequest(req)) {",
+            "+    return res.json({",
+            "+      ok: true,",
+            "+      scope: \"loopback\","
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        },
+        {
+          "index": 18,
+          "header": "@@ -23845 +23909 @@ function handleCompanyPrimarySigninReveal(req, res, source) {",
+          "range": {
+            "oldStart": 23845,
+            "oldCount": 1,
+            "newStart": 23909,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 1,
+          "preview": [
+            "+app.use(\"/api/hooks\", requireLoopbackOnly, require(\"./routes/hooks\"));",
+            "-app.use(\"/api/hooks\", require(\"./routes/hooks\"));"
+          ],
+          "lane": "hook_loopback_hardening",
+          "decision": "stage_separate_hardening_lane",
+          "stage": "include in a hook-hardening commit, not the Original Hermes core commit",
+          "risk": "low"
+        },
+        {
+          "index": 19,
+          "header": "@@ -23849 +23913 @@ app.use(\"/api/hooks\", require(\"./routes/hooks\"));",
+          "range": {
+            "oldStart": 23849,
+            "oldCount": 1,
+            "newStart": 23913,
+            "newCount": 1
+          },
+          "addedLines": 1,
+          "removedLines": 1,
+          "preview": [
+            "+try { app.use(\"/api/ix\", require(\"./routes/ixExec\")); } catch(e) { console.error(\"[SAFETY] ixExec route skipped:\", e.message); }",
+            "-app.use(\"/api/ix\", require(\"./routes/ixExec\"));"
+          ],
+          "lane": "unrelated_server_changes",
+          "decision": "defer",
+          "stage": "do not stage for Original Hermes",
+          "risk": "unrelated provider/cache/ix server edits"
+        }
+      ],
+      "interactiveCommand": "git add -p -- 'server.js'"
+    }
+  ],
+  "summary": {
+    "filesReviewed": 5,
+    "totalHunks": 39,
+    "stageOriginalHermes": 7,
+    "stageSeparateHardening": 1,
+    "manualSplitRequired": 2,
+    "deferOrSeparate": 29,
+    "unknownManualReview": 0
+  },
+  "commands": {
+    "interactive": [
+      "git add -p -- 'TASKS.md'",
+      "git add -p -- 'routes/workerRouter.js'",
+      "git add -p -- 'routes/hooks.js'",
+      "git add -p -- 'src/connectors/hooksConnector.js'",
+      "git add -p -- 'server.js'"
+    ],
+    "noStagePerformed": true
+  },
+  "honesty": {
+    "staged": false,
+    "committed": false,
+    "pushed": false,
+    "network": false,
+    "readSecretValues": false,
+    "editedShadowFiles": false
+  },
+  "digest": "e1b3e3c73a5b9cdd85fa9cd8a5cd61c782c5a1855cbd559c554a7445fe1d8ef1"
+}

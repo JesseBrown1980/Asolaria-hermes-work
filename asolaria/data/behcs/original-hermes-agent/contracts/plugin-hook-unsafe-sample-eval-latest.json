@@ -1,0 +1,20 @@
+{
+  "ok": false,
+  "contractId": "original-hermes-agent-contracts.v1.plugin-hook-gac-gate",
+  "decision": "DENY_HOOK",
+  "errors": [
+    "missing_manifest_digest",
+    "secret_access_request",
+    "unbounded_shell",
+    "network_without_connector_policy",
+    "shadow_file_write",
+    "missing_rollback_surface"
+  ],
+  "audit": {
+    "pluginId": "sample_untrusted_hermes_hook",
+    "phase": "pre_tool_call",
+    "manifestDigest": "",
+    "rollbackSurface": ""
+  },
+  "digest": "9f49f7bbc78998f0df0da3d654bb3ad34377b7cac552dae1a762d16f6fec6cbc"
+}

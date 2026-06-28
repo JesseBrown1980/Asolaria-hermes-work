@@ -1,0 +1,270 @@
+{
+  "ok": true,
+  "generatedAt": "2026-04-25T02:54:24.431Z",
+  "executed": true,
+  "snapshot": {
+    "id": "original-hermes-agent-security-backport-runtime.v1",
+    "generatedAt": "2026-04-25T02:54:24.431Z",
+    "status": "SECURITY_BACKPORT_QUEUE_READY_PATCHES_BLOCKED",
+    "manifest": {
+      "contractId": "original-hermes-agent-contracts.v1.security-backport",
+      "generatedAt": "2026-04-25T02:54:24.431Z",
+      "source": {
+        "upstream": "NousResearch/hermes-agent",
+        "capsule": "release_v011_security_hardening",
+        "sourceDigest": ""
+      },
+      "backports": [
+        {
+          "id": "api_auth_enforcement",
+          "target": "src/gateway/toolAuthority.js",
+          "gate": "loopback_or_authenticated_authority"
+        },
+        {
+          "id": "path_traversal_checkpoint_guard",
+          "target": "tools/c-drive-junction-migrator.js",
+          "gate": "resolved_path_stays_under_allowed_root"
+        },
+        {
+          "id": "sandbox_write_shell_injection_guard",
+          "target": "services/sandbox-manager",
+          "gate": "shell_false_or_argv_only"
+        },
+        {
+          "id": "ssrf_redirect_guard",
+          "target": "src/riskEngine.js",
+          "gate": "block_private_ip_redirects_for_remote_fetch"
+        },
+        {
+          "id": "webhook_signature_validation",
+          "target": "routes/hooks.js",
+          "gate": "per_connector_signature_or_fail_closed"
+        },
+        {
+          "id": "oauth_lifecycle_and_no_secret_import",
+          "target": "src/connectors/*",
+          "gate": "existing_vault_only_explicit_operator_approval"
+        }
+      ],
+      "executionDefault": "queued_no_patch_until_targeted_tests",
+      "digest": "349a3c78447c01096f11387661c510d1a2a965cc0817085f8d2880659509971c"
+    },
+    "backports": [
+      {
+        "generatedAt": "2026-04-25T02:54:24.431Z",
+        "id": "api_auth_enforcement",
+        "target": {
+          "exists": true,
+          "kind": "file",
+          "path": "src/gateway/toolAuthority.js",
+          "bytes": 22716,
+          "modifiedAt": "2026-03-08T20:13:42.658Z"
+        },
+        "gate": "loopback_or_authenticated_authority",
+        "smoke": "node --check src/gateway/toolAuthority.js",
+        "state": "queued_target_present_patch_blocked",
+        "activation": {
+          "appliesPatch": false,
+          "importsSecrets": false,
+          "touchesShadowFiles": false,
+          "requiredNextGates": [
+            "targeted_test",
+            "gac_approval",
+            "operator_review",
+            "rollback_plan"
+          ]
+        },
+        "digest": "46593c97db211e537235896599a29fa1563d444b5e592e09014d22923f256ade"
+      },
+      {
+        "generatedAt": "2026-04-25T02:54:24.431Z",
+        "id": "path_traversal_checkpoint_guard",
+        "target": {
+          "exists": true,
+          "kind": "file",
+          "path": "tools/c-drive-junction-migrator.js",
+          "bytes": 9686,
+          "modifiedAt": "2026-04-25T01:29:37.290Z"
+        },
+        "gate": "resolved_path_stays_under_allowed_root",
+        "smoke": "node --check tools/c-drive-junction-migrator.js",
+        "state": "queued_target_present_patch_blocked",
+        "activation": {
+          "appliesPatch": false,
+          "importsSecrets": false,
+          "touchesShadowFiles": false,
+          "requiredNextGates": [
+            "targeted_test",
+            "gac_approval",
+            "operator_review",
+            "rollback_plan"
+          ]
+        },
+        "digest": "2fb6ac278fb73a720b1d5bb0468f64f5c7d3088a2e1688289826ff3995355b98"
+      },
+      {
+        "generatedAt": "2026-04-25T02:54:24.431Z",
+        "id": "sandbox_write_shell_injection_guard",
+        "target": {
+          "exists": true,
+          "kind": "directory",
+          "path": "services/sandbox-manager",
+          "bytes": 0,
+          "modifiedAt": "2026-02-18T22:10:47.860Z"
+        },
+        "gate": "shell_false_or_argv_only",
+        "smoke": "node --check services/sandbox-manager/server.js",
+        "state": "queued_target_present_patch_blocked",
+        "activation": {
+          "appliesPatch": false,
+          "importsSecrets": false,
+          "touchesShadowFiles": false,
+          "requiredNextGates": [
+            "targeted_test",
+            "gac_approval",
+            "operator_review",
+            "rollback_plan"
+          ]
+        },
+        "digest": "5d0d6394a5dda63fd950ef407af0914f8f7e06231e443b5a3beed0021c7bd3dd"
+      },
+      {
+        "generatedAt": "2026-04-25T02:54:24.431Z",
+        "id": "ssrf_redirect_guard",
+        "target": {
+          "exists": true,
+          "kind": "file",
+          "path": "src/riskEngine.js",
+          "bytes": 6501,
+          "modifiedAt": "2026-03-05T04:23:17.499Z"
+        },
+        "gate": "block_private_ip_redirects_for_remote_fetch",
+        "smoke": "node --check src/riskEngine.js",
+        "state": "queued_target_present_patch_blocked",
+        "activation": {
+          "appliesPatch": false,
+          "importsSecrets": false,
+          "touchesShadowFiles": false,
+          "requiredNextGates": [
+            "targeted_test",
+            "gac_approval",
+            "operator_review",
+            "rollback_plan"
+          ]
+        },
+        "digest": "38c082e3c4a8c3b31e2d2d20e6e3a20a0da50c60f6b227127a2fdefd6005fa7e"
+      },
+      {
+        "generatedAt": "2026-04-25T02:54:24.431Z",
+        "id": "webhook_signature_validation",
+        "target": {
+          "exists": true,
+          "kind": "file",
+          "path": "routes/hooks.js",
+          "bytes": 4596,
+          "modifiedAt": "2026-04-24T23:49:21.160Z"
+        },
+        "gate": "per_connector_signature_or_fail_closed",
+        "smoke": "node --check routes/hooks.js",
+        "state": "queued_target_present_patch_blocked",
+        "activation": {
+          "appliesPatch": false,
+          "importsSecrets": false,
+          "touchesShadowFiles": false,
+          "requiredNextGates": [
+            "targeted_test",
+            "gac_approval",
+            "operator_review",
+            "rollback_plan"
+          ]
+        },
+        "digest": "86c34f6b6b68dfc0f2b2193d1061ee401cadee95bc9f639e7451be28d1b40ea4"
+      },
+      {
+        "generatedAt": "2026-04-25T02:54:24.431Z",
+        "id": "oauth_lifecycle_and_no_secret_import",
+        "target": {
+          "exists": true,
+          "kind": "directory",
+          "path": "src/connectors",
+          "bytes": 0,
+          "modifiedAt": "2026-04-24T12:05:40.406Z"
+        },
+        "gate": "existing_vault_only_explicit_operator_approval",
+        "smoke": "manual_connector_secret_surface_review",
+        "state": "queued_target_present_patch_blocked",
+        "activation": {
+          "appliesPatch": false,
+          "importsSecrets": false,
+          "touchesShadowFiles": false,
+          "requiredNextGates": [
+            "targeted_test",
+            "gac_approval",
+            "operator_review",
+            "rollback_plan"
+          ]
+        },
+        "digest": "7e8282315b11d9913ba30f415eb137f13cd25be877d8ea0281410aeee7bc4444"
+      }
+    ],
+    "summary": {
+      "backportCount": 6,
+      "targetPresentCount": 6,
+      "missingTargetCount": 0,
+      "patchesApplied": 0,
+      "secretsImported": 0,
+      "shadowFileWrites": 0
+    },
+    "gates": [
+      "targeted_test_required",
+      "gac_approval_required",
+      "operator_review_required",
+      "rollback_plan_required",
+      "no_secret_import",
+      "no_shadow_file_write"
+    ],
+    "executionPolicy": {
+      "queueOnly": true,
+      "appliesPatches": false,
+      "importsSecrets": false,
+      "writesShadowFiles": false,
+      "launchesDaemons": false
+    },
+    "language": {
+      "human": "Original Hermes v0.11 security hardening is staged as a backport queue with target presence, smoke, GAC, operator review, and rollback gates.",
+      "agent": "(original_hermes, security.backport, behcs, 1, hardening, queue, staged, [targets+gates+smokes], map_mapped, IX, log, persistent, whiteroom, light)",
+      "device": "original_hermes_security_backport status=queue_only patches=0 secrets=0 shadow_writes=0"
+    },
+    "validation": {
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "digest": "1be01aa8b612728dc0964df5c55f8d4673c86899053c9715eddffa76e4b72f86"
+    },
+    "digest": "02b7da583b9105f1e57a3ad3efeee5fe62451b37008c02206239b02f6d6ec38d"
+  },
+  "manifest": {
+    "id": "original-hermes-agent-security-backport-runtime.v1",
+    "description": "Queue-only Original Hermes security backport staging surface for BEHCS hardening.",
+    "capabilities": [
+      "security_backport_queue",
+      "target_presence_check",
+      "smoke_mapping",
+      "patch_gate_manifest"
+    ],
+    "sideEffects": [],
+    "defaultExecution": "queue_only_no_patch_apply"
+  },
+  "outputs": {
+    "snapshot": "data/behcs/original-hermes-agent/contracts/security-backport-runtime-snapshot-latest.json",
+    "queue": "data/behcs/original-hermes-agent/security-backport-queue-latest.ndjson",
+    "reportJson": "reports/original-hermes-agent-security-backport-smoke-latest.json",
+    "reportMd": "reports/original-hermes-agent-security-backport-smoke-latest.md"
+  },
+  "honesty": {
+    "appliesPatches": false,
+    "importsSecrets": false,
+    "writesShadowFiles": false,
+    "launchesDaemons": false
+  }
+}

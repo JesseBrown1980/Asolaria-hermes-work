@@ -1,0 +1,20 @@
+{
+  "id": "original-hermes-agent-shannon-consensus",
+  "generatedAt": "2026-04-25T02:53:10.203Z",
+  "status": "PROCEED_ORIGINAL_HERMES_AGENT_CONTRACT_ABSORPTION_RUNTIME_BLOCKED",
+  "confidence": 0.95,
+  "runtimeInstallAllowed": false,
+  "reasons": [
+    "Upstream https://github.com/NousResearch/hermes-agent.git head 2182de55bb7734b804abd3403570ec45428feece",
+    "Version 0.11.0; latest tag v2026.4.23",
+    "10 architecture capsules mapped",
+    "2 critical risks require GAC/supervisor handling",
+    "Gulp proof gulp-2026-04-25T025316933Z-614002 mistakes=0"
+  ],
+  "next": [
+    "Implement GAC-gated plugin/hook bridge before any Hermes hook execution.",
+    "Map transport ABC into Asolaria workerRouter without importing provider secrets.",
+    "Backport checkpoint/rollback and SQLite WAL/session ideas selectively.",
+    "Keep runtime install WSL-only/manual; native Windows execution remains blocked."
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "ts": "2026-05-12T14:37:54.524Z",
+  "supervisors": {
+    "pid-targeted-kick-supervisor": {
+      "live": true,
+      "pid": 5044,
+      "ping": {
+        "ok": null,
+        "method": "none"
+      },
+      "status": "live",
+      "age_ms": 333761988,
+      "duplicate_pids": [],
+      "room": "bus-and-kick",
+      "D_room": 29
+    },
+    "new-applicant-onboarding-supervisor": {
+      "live": true,
+      "pid": 15964,
+      "ping": {
+        "ok": null,
+        "method": "none"
+      },
+      "status": "live",
+      "age_ms": 333761783,
+      "duplicate_pids": [],
+      "room": "meta-supervisor-hermes",
+      "D_room": 41
+    },
+    "act-supervisor": {
+      "live": false,
+      "pid": null,
+      "ping": {
+        "ok": false,
+        "error": "no-process"
+      },
+      "status": "dead",
+      "age_ms": null,
+      "duplicate_pids": [],
+      "room": "gc-inbox-supervisor",
+      "D_room": 35
+    },
+    "immune-l1-supervisor": {
+      "live": true,
+      "pid": 7112,
+      "ping": {
+        "ok": true,
+        "status": 200,
+        "method": "http"
+      },
+      "status": "live",
+      "age_ms": 333791883,
+      "duplicate_pids": [],
+      "room": "agent-auditor",
+      "D_room": 30
+    },
+    "cycle-orchestrator": {
+      "live": true,
+      "pid": 35308,
+      "ping": {
+        "ok": null,
+        "method": "none"
+      },
+      "status": "live",
+      "age_ms": 384488,
+      "duplicate_pids": [],
+      "room": "supervisor-daemon",
+      "D_room": 27
+    },
+    "super-gulp-tier3-consumer": {
+      "live": true,
+      "pid": 10140,
+      "ping": {
+        "ok": null,
+        "method": "none"
+      },
+      "status": "live",
+      "age_ms": 333792093,
+      "duplicate_pids": [],
+      "room": "super-gulp",
+      "D_room": 37
+    },
+    "whiteroom-consumer": {
+      "live": true,
+      "pid": 17404,
+      "ping": {
+        "ok": null,
+        "method": "none"
+      },
+      "status": "live",
+      "age_ms": 334169613,
+      "duplicate_pids": [],
+      "room": "agent-whiteroom-digester",
+      "D_room": 34
+    },
+    "gulp-http-bridge": {
+      "live": true,
+      "pid": 324,
+      "ping": {
+        "ok": true,
+        "status": 200,
+        "method": "http"
+      },
+      "status": "live",
+      "age_ms": 333791606,
+      "duplicate_pids": [],
+      "room": "agent-gulp-state",
+      "D_room": 31
+    },
+    "stage-to-actual-converter": {
+      "live": true,
+      "pid": 7876,
+      "ping": {
+        "ok": null,
+        "method": "none"
+      },
+      "status": "live",
+      "age_ms": 333792151,
+      "duplicate_pids": [],
+      "room": "unison-processor",
+      "D_room": 26
+    }
+  },
+  "healed": [
+    {
+      "name": "act-supervisor",
+      "new_pid": 25972,
+      "prior_status": "dead"
+    }
+  ],
+  "flat": [],
+  "skipped_newborn": []
+}

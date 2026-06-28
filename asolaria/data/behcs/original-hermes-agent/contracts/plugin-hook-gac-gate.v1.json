@@ -1,0 +1,33 @@
+{
+  "contractId": "original-hermes-agent-contracts.v1.plugin-hook-gac-gate",
+  "generatedAt": "2026-04-25T02:53:40.062Z",
+  "source": {
+    "upstream": "NousResearch/hermes-agent",
+    "capsule": "plugin_hook_surface",
+    "sourceDigest": "95a72f0ae96e365ec9f4ea194b54f1d80697d298adad69a8f7efc1c86d92f593"
+  },
+  "hookPhases": [
+    "on_session_start",
+    "pre_tool_call",
+    "post_tool_call",
+    "transform_tool_result",
+    "transform_terminal_output",
+    "on_session_finalize"
+  ],
+  "defaultDecision": "deny_runtime_hook_until_registered_and_gac_approved",
+  "allowConditions": [
+    "plugin_manifest_digest_present",
+    "hook_phase_registered",
+    "tool_scope_declared",
+    "audit_log_target_present",
+    "no_shell_or_network_expansion_without_explicit_gate"
+  ],
+  "denyConditions": [
+    "secret_access_request",
+    "unbounded_shell",
+    "network_callback_without_connector_policy",
+    "shadow_file_write",
+    "missing_rollback_surface"
+  ],
+  "digest": "e671ad4a4e7912b9ba8a57ee8a57ffb71112c326e0197ffb905c79439ed33e25"
+}

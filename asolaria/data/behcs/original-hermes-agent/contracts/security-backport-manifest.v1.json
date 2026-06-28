@@ -1,0 +1,43 @@
+{
+  "contractId": "original-hermes-agent-contracts.v1.security-backport",
+  "generatedAt": "2026-04-25T02:53:40.062Z",
+  "source": {
+    "upstream": "NousResearch/hermes-agent",
+    "capsule": "release_v011_security_hardening",
+    "sourceDigest": "d16b682b558cadeba8134009161b5a27e854dc359e1ac6468d0c7ffe8304d980"
+  },
+  "backports": [
+    {
+      "id": "api_auth_enforcement",
+      "target": "src/gateway/toolAuthority.js",
+      "gate": "loopback_or_authenticated_authority"
+    },
+    {
+      "id": "path_traversal_checkpoint_guard",
+      "target": "tools/c-drive-junction-migrator.js",
+      "gate": "resolved_path_stays_under_allowed_root"
+    },
+    {
+      "id": "sandbox_write_shell_injection_guard",
+      "target": "services/sandbox-manager",
+      "gate": "shell_false_or_argv_only"
+    },
+    {
+      "id": "ssrf_redirect_guard",
+      "target": "src/riskEngine.js",
+      "gate": "block_private_ip_redirects_for_remote_fetch"
+    },
+    {
+      "id": "webhook_signature_validation",
+      "target": "routes/hooks.js",
+      "gate": "per_connector_signature_or_fail_closed"
+    },
+    {
+      "id": "oauth_lifecycle_and_no_secret_import",
+      "target": "src/connectors/*",
+      "gate": "existing_vault_only_explicit_operator_approval"
+    }
+  ],
+  "executionDefault": "queued_no_patch_until_targeted_tests",
+  "digest": "565876f8dd9fdae150258e1808a6ec2f23c54e58b47d9b412fed04a94f558f6b"
+}

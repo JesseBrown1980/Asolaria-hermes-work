@@ -1,0 +1,229 @@
+{
+  "id": "original-hermes-route-server-smoke.v1",
+  "generatedAt": "2026-04-25T02:54:37.515Z",
+  "status": "ORIGINAL_HERMES_ROUTE_SERVER_SMOKE_PASS",
+  "pass": true,
+  "logical": {
+    "logicalAgents": 10000000000,
+    "gulpWindow": 2000,
+    "gulpWindows": 5000000,
+    "mode": "compact_route_surface_coverage_no_process_storm"
+  },
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/worker-router/original-hermes-transport-contract",
+      "statusCode": 200,
+      "elapsedMs": 6931,
+      "ok": true,
+      "jsonSummary": {
+        "ok": true,
+        "topKeys": [
+          "ok",
+          "snapshot"
+        ],
+        "snapshotId": "original-hermes-agent-transport-router-runtime.v1",
+        "snapshotStatus": "TRANSPORT_ROUTER_CONTRACT_STAGED_NO_SECRET_IMPORT_NO_DISPATCH",
+        "counts": {},
+        "guardDecision": "",
+        "guardReason": ""
+      },
+      "parseOk": true,
+      "error": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/worker-router/original-hermes-learning-loop?limit=8",
+      "statusCode": 200,
+      "elapsedMs": 348,
+      "ok": true,
+      "jsonSummary": {
+        "ok": true,
+        "topKeys": [
+          "ok",
+          "snapshot"
+        ],
+        "snapshotId": "original-hermes-agent-learning-loop-runtime.v1",
+        "snapshotStatus": "LEARNING_LOOP_CANDIDATES_READY_ACTIVATION_BLOCKED",
+        "counts": {
+          "candidates": 8
+        },
+        "guardDecision": "",
+        "guardReason": ""
+      },
+      "parseOk": true,
+      "error": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/worker-router/original-hermes-wal-state-contract",
+      "statusCode": 200,
+      "elapsedMs": 11,
+      "ok": true,
+      "jsonSummary": {
+        "ok": true,
+        "topKeys": [
+          "ok",
+          "snapshot"
+        ],
+        "snapshotId": "original-hermes-agent-wal-state-runtime.v1",
+        "snapshotStatus": "WAL_STATE_MANIFEST_READY_MIGRATION_BLOCKED",
+        "counts": {
+          "stores": 5
+        },
+        "guardDecision": "",
+        "guardReason": ""
+      },
+      "parseOk": true,
+      "error": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/worker-router/original-hermes-security-backport",
+      "statusCode": 200,
+      "elapsedMs": 6,
+      "ok": true,
+      "jsonSummary": {
+        "ok": true,
+        "topKeys": [
+          "ok",
+          "snapshot"
+        ],
+        "snapshotId": "original-hermes-agent-security-backport-runtime.v1",
+        "snapshotStatus": "SECURITY_BACKPORT_QUEUE_READY_PATCHES_BLOCKED",
+        "counts": {
+          "backports": 6
+        },
+        "guardDecision": "",
+        "guardReason": ""
+      },
+      "parseOk": true,
+      "error": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/worker-router/original-hermes-runtime-index?learningLimit=8",
+      "statusCode": 200,
+      "elapsedMs": 3478,
+      "ok": true,
+      "jsonSummary": {
+        "ok": true,
+        "topKeys": [
+          "ok",
+          "snapshot"
+        ],
+        "snapshotId": "original-hermes-agent-runtime-index.v1",
+        "snapshotStatus": "ORIGINAL_HERMES_RUNTIME_INDEX_READY_ACTIVATION_BLOCKED",
+        "counts": {
+          "supervisors": 6,
+          "mapNodes": 8
+        },
+        "guardDecision": "",
+        "guardReason": ""
+      },
+      "parseOk": true,
+      "error": ""
+    }
+  ],
+  "hookGuards": [
+    {
+      "id": "legacy_benign_read",
+      "expectedDecision": "allow",
+      "actualDecision": "allow",
+      "pass": true,
+      "response": {
+        "method": "POST",
+        "path": "/api/hooks/guard",
+        "statusCode": 200,
+        "elapsedMs": 6,
+        "ok": true,
+        "jsonSummary": {
+          "ok": true,
+          "topKeys": [
+            "ok",
+            "blocked"
+          ],
+          "snapshotId": "",
+          "snapshotStatus": "",
+          "counts": {},
+          "guardDecision": "allow",
+          "guardReason": ""
+        },
+        "parseOk": true,
+        "error": ""
+      }
+    },
+    {
+      "id": "legacy_env_block",
+      "expectedDecision": "block",
+      "actualDecision": "block",
+      "pass": true,
+      "response": {
+        "method": "POST",
+        "path": "/api/hooks/guard",
+        "statusCode": 200,
+        "elapsedMs": 5,
+        "ok": true,
+        "jsonSummary": {
+          "ok": true,
+          "topKeys": [
+            "ok",
+            "blocked",
+            "reason"
+          ],
+          "snapshotId": "",
+          "snapshotStatus": "",
+          "counts": {},
+          "guardDecision": "block",
+          "guardReason": "Access to .env files containing sensitive data is prohibited. Use .env.sample instead."
+        },
+        "parseOk": true,
+        "error": ""
+      }
+    },
+    {
+      "id": "original_hermes_plugin_shell_denied",
+      "expectedDecision": "block",
+      "actualDecision": "block",
+      "pass": true,
+      "response": {
+        "method": "POST",
+        "path": "/api/hooks/guard",
+        "statusCode": 200,
+        "elapsedMs": 6,
+        "ok": true,
+        "jsonSummary": {
+          "ok": true,
+          "topKeys": [
+            "ok",
+            "blocked",
+            "reason",
+            "originalHermesPluginGate"
+          ],
+          "snapshotId": "",
+          "snapshotStatus": "",
+          "counts": {},
+          "guardDecision": "block",
+          "guardReason": "Original Hermes plugin hook denied: unknown_hook_phase, unbounded_shell, missing_rollback_surface"
+        },
+        "parseOk": true,
+        "error": ""
+      }
+    }
+  ],
+  "mainServerMounts": {
+    "hooksLoopbackOnly": true,
+    "workerRouterLoopbackOnly": true
+  },
+  "honesty": {
+    "temporaryLoopbackServer": true,
+    "mainServerLaunch": false,
+    "gitStage": false,
+    "gitCommit": false,
+    "gitPush": false,
+    "externalNetwork": false,
+    "readsSecretValues": false,
+    "editsShadowFiles": false
+  },
+  "digest": "8d7a49ea594f9f75a00efd738279124d8d065c7d8284a2688df6392ed8cc911c"
+}

@@ -1,0 +1,533 @@
+{
+  "id": "original-hermes-agent-security-targeted-tests.v1",
+  "generatedAt": "2026-04-25T02:54:32.114Z",
+  "status": "SECURITY_TARGETED_TESTS_PASS_PATCHES_BLOCKED",
+  "ok": true,
+  "queueDigest": "db7230a32f4d24e6fbeaf4da4087fc3d09004ed48d0f56d17fcefbb4890f94ab",
+  "securityManifest": {
+    "id": "original-hermes-agent-security-backport-runtime.v1",
+    "description": "Queue-only Original Hermes security backport staging surface for BEHCS hardening.",
+    "capabilities": [
+      "security_backport_queue",
+      "target_presence_check",
+      "smoke_mapping",
+      "patch_gate_manifest"
+    ],
+    "sideEffects": [],
+    "defaultExecution": "queue_only_no_patch_apply"
+  },
+  "commandChecks": [
+    {
+      "id": "api_auth_enforcement",
+      "target": "src/gateway/toolAuthority.js",
+      "command": "node --check src/gateway/toolAuthority.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 118,
+      "output": "",
+      "error": "",
+      "digest": "9ed6de83c1898808ce4cd72dd02287c2aa6917556f370eb0b8ec3bd0744898de"
+    },
+    {
+      "id": "path_traversal_checkpoint_guard",
+      "target": "tools/c-drive-junction-migrator.js",
+      "command": "node --check tools/c-drive-junction-migrator.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 124,
+      "output": "",
+      "error": "",
+      "digest": "ee0cfa3f984d9c2ca05803d150ebdabe956cc0c5a947f7605133b75cd5ae4cbd"
+    },
+    {
+      "id": "sandbox_write_shell_injection_guard",
+      "target": "services/sandbox-manager/server.js",
+      "command": "node --check services/sandbox-manager/server.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 109,
+      "output": "",
+      "error": "",
+      "digest": "95a90315b8abb9cef6a1272e87fbc69513bd345f2a8ced387f2145ad3bb7e0ab"
+    },
+    {
+      "id": "ssrf_redirect_guard",
+      "target": "src/riskEngine.js",
+      "command": "node --check src/riskEngine.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 106,
+      "output": "",
+      "error": "",
+      "digest": "9f3513f60f38469529c740f2d315db920f752dadf7977be9264c9cf4a732332f"
+    },
+    {
+      "id": "webhook_signature_validation",
+      "target": "routes/hooks.js",
+      "command": "node --check routes/hooks.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 104,
+      "output": "",
+      "error": "",
+      "digest": "1d4982c1a73b5b61d637614e594fde899267951e1bffe9e8a20113583ecf2736"
+    }
+  ],
+  "connectorReview": {
+    "id": "oauth_lifecycle_and_no_secret_import",
+    "status": "review_only",
+    "fileCount": 47,
+    "filesWithEnvRefs": 37,
+    "filesWithVaultRefs": 17,
+    "filesWithAuthTerms": 44,
+    "rows": [
+      {
+        "file": "src/connectors/abacusConnector.js",
+        "envRefs": 4,
+        "vaultRefs": 2,
+        "authTerms": 23,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "e044ee08db82d2ce8b8b8f5eb8aba2e3070a78f0e67a15b1f96e32fd1281b98c"
+      },
+      {
+        "file": "src/connectors/anthropicCliConnector.js",
+        "envRefs": 5,
+        "vaultRefs": 0,
+        "authTerms": 12,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "2798fe596ecad5307b97334d24677b6ca803a36418336b567d5a5b9691390fb6"
+      },
+      {
+        "file": "src/connectors/atlassianConnector.js",
+        "envRefs": 5,
+        "vaultRefs": 5,
+        "authTerms": 139,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "3fd8df6e50614c2c984f805508596def53bfdfc20ec55280f4eecb68daad3d9b"
+      },
+      {
+        "file": "src/connectors/augmentContextConnector.js",
+        "envRefs": 36,
+        "vaultRefs": 6,
+        "authTerms": 110,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "67acb80e895644ad36eb010ef424a5d0d610cfcc80861323984d07ca1a66e195"
+      },
+      {
+        "file": "src/connectors/avatarNpcConnector.js",
+        "envRefs": 2,
+        "vaultRefs": 0,
+        "authTerms": 10,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "f366e17065042dd704590291cb3004f2535ba830186ef8e5b7a414ba0b108c8e"
+      },
+      {
+        "file": "src/connectors/capturesConnector.js",
+        "envRefs": 9,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "311b9e0d200e21ded78e8fedb157367ead07561250ff8ca2ea9463a439f216bc"
+      },
+      {
+        "file": "src/connectors/chromeConnector.js",
+        "envRefs": 4,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "a989f227920fd840a0693e3f8d9e52ef06ac67a1cd68831d892abd4459b4a6a6"
+      },
+      {
+        "file": "src/connectors/codexConnector.js",
+        "envRefs": 1,
+        "vaultRefs": 0,
+        "authTerms": 3,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "d655361c8a12bbb8806be09536cc07a4a6ce65facc2226d2bfda21ddd6601e62"
+      },
+      {
+        "file": "src/connectors/cursorAgentConnector.js",
+        "envRefs": 2,
+        "vaultRefs": 0,
+        "authTerms": 8,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "f24edc52872c9bc5a09789245c8f1eec4c38f2d2c674a1ad19d32fb97ee5076e"
+      },
+      {
+        "file": "src/connectors/desktopCaptureConnector.js",
+        "envRefs": 1,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "0c37143d737dea159914818a70f0c0409d4fcfdee23b3f09c15c183ce6690fbc"
+      },
+      {
+        "file": "src/connectors/desktopControlConnector.js",
+        "envRefs": 1,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "3556d4fa91f0b2e3fbcc98665e28bfd44456e884c92d7d857d50abf882c8201a"
+      },
+      {
+        "file": "src/connectors/desktopDisplayConnector.js",
+        "envRefs": 0,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "4ea5c58faaec775a51fd068c3ff40c7dbe50c958c352bd0dd02ed375d519675f"
+      },
+      {
+        "file": "src/connectors/externalBrainConnector.js",
+        "envRefs": 1,
+        "vaultRefs": 4,
+        "authTerms": 294,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "c94e19374d28d44d1b2a3ef0cf0801ce8604a75a1793bbb8e68e3637d2dfbf0d"
+      },
+      {
+        "file": "src/connectors/gcpConnector.js",
+        "envRefs": 1,
+        "vaultRefs": 3,
+        "authTerms": 71,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "774c09fd2087260f3a4c20f55c879382910813fd104e66ca2d8bf2c336b0b9d1"
+      },
+      {
+        "file": "src/connectors/geminiApiConnector.js",
+        "envRefs": 5,
+        "vaultRefs": 2,
+        "authTerms": 79,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "9e30c86413a8a25e6bd6db0e68b5d347d47eca20ede6c2157895f60010298fe3"
+      },
+      {
+        "file": "src/connectors/geminiCliConnector.js",
+        "envRefs": 7,
+        "vaultRefs": 0,
+        "authTerms": 10,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "8b02ea0f05a5af72ec9ecc1c0e8b5cb743bb8094551e8faf7a30f173cf56326d"
+      },
+      {
+        "file": "src/connectors/geminiLiveConnector.js",
+        "envRefs": 4,
+        "vaultRefs": 0,
+        "authTerms": 31,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "9e665dc86459dac3d55d6353f52186419c9498fefaea2081c470d9e09e69d8dc"
+      },
+      {
+        "file": "src/connectors/githubConnector.js",
+        "envRefs": 6,
+        "vaultRefs": 7,
+        "authTerms": 64,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "bb4c9b4633f5e37061ab07ed41b746cae3bf1b1ef6787886d3cb26cd0e5bfba5"
+      },
+      {
+        "file": "src/connectors/googleConnector.js",
+        "envRefs": 7,
+        "vaultRefs": 4,
+        "authTerms": 187,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "ab21419ead2eea5090ed7c2b8d839198b0bc417dc9d908a326dc4506b61d734f"
+      },
+      {
+        "file": "src/connectors/googleWorkspaceCliConnector.js",
+        "envRefs": 3,
+        "vaultRefs": 0,
+        "authTerms": 20,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "666bc329e32a9cfc97b57db5991982c8bcbcf365ce59635240228b21fd35b86d"
+      },
+      {
+        "file": "src/connectors/hooksConnector.js",
+        "envRefs": 0,
+        "vaultRefs": 0,
+        "authTerms": 9,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "d14a04ca7ffde30ddf22895c308e681e9cebf3c4b7cf7d7fd65d590dd6b6fdf2"
+      },
+      {
+        "file": "src/connectors/hubspotConnector.js",
+        "envRefs": 4,
+        "vaultRefs": 4,
+        "authTerms": 182,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "bdbd81b1cb286510b7b4395277ff015a0d41b9e6f775615e6b0341c6cace1073"
+      },
+      {
+        "file": "src/connectors/kimiCodeConnector.js",
+        "envRefs": 8,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "4e94432284d1ec7902d85f4a7b8d6760b0264b67f8f292abedc9361e179b9152"
+      },
+      {
+        "file": "src/connectors/localOpsConnector.js",
+        "envRefs": 1,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "91853650966e26565898703bbaf9700b9a85ff5a99ca08cbd95f2f7350b845c5"
+      },
+      {
+        "file": "src/connectors/localRebuildConnector.js",
+        "envRefs": 0,
+        "vaultRefs": 0,
+        "authTerms": 11,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "f0af8b6b8cf345337d647cf6c257fa442c50a592a244ecbff8139bb846168352"
+      },
+      {
+        "file": "src/connectors/microsoftConnector.js",
+        "envRefs": 4,
+        "vaultRefs": 3,
+        "authTerms": 34,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "b3543d15891a79a6a673911c924dc04a9dabdbf3c6b4dfe0376fc6fb96c120c9"
+      },
+      {
+        "file": "src/connectors/mqttConnector.js",
+        "envRefs": 18,
+        "vaultRefs": 2,
+        "authTerms": 50,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "f995124b5b1232a32a861653f571a0c5f40bbe82a7c8d329821390ffb2d0ebe1"
+      },
+      {
+        "file": "src/connectors/notebooklmConnector.js",
+        "envRefs": 0,
+        "vaultRefs": 0,
+        "authTerms": 20,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "56ae56aa903a2aa604513f8f4cc4c9b80e3d0208ec570511b44cc851f5811f7a"
+      },
+      {
+        "file": "src/connectors/openclawConnector.js",
+        "envRefs": 1,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "ba81d8b8a3580f6a3c598f27d14039b08245ae9c2eb2b836759a3c0a94f47904"
+      },
+      {
+        "file": "src/connectors/opencodeConnector.js",
+        "envRefs": 4,
+        "vaultRefs": 0,
+        "authTerms": 0,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "a9a6a42e4842330c4a8f126a8d3aae7cbadd986533bc00822bb14c4e4273967b"
+      },
+      {
+        "file": "src/connectors/padConnector.js",
+        "envRefs": 0,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "09bc6125018f708a36e6a9976b94f6426046217f12038237f1490ade76136f66"
+      },
+      {
+        "file": "src/connectors/phoneBrowserHistoryConnector.js",
+        "envRefs": 1,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "c5334e7f531a028c883d5b98daba5a3da956c4d8d6bb2d0b66f93e5c31c9182c"
+      },
+      {
+        "file": "src/connectors/phoneDeveloperOptionsConnector.js",
+        "envRefs": 2,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "cd3fc0d6f10f3bcf91e800271c777835dc4f094a0a7f23d5ffafa369ebeed519"
+      },
+      {
+        "file": "src/connectors/phoneMirrorConnector.js",
+        "envRefs": 1,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "19f8c04a31f02110a73cb20b180537317857042d4ed4f445d36154c04ede10bb"
+      },
+      {
+        "file": "src/connectors/phoneProMirrorConnector.js",
+        "envRefs": 7,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "ace1e559e86aa14136f0358d8d1658d3838bf853ddbf45c16163cc4e7f909550"
+      },
+      {
+        "file": "src/connectors/phoneTermuxConnector.js",
+        "envRefs": 2,
+        "vaultRefs": 0,
+        "authTerms": 0,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "a7ae2d6c21f3dd2884f5d4c077912d7fac407a7ae799d7d637740b0abca60c5d"
+      },
+      {
+        "file": "src/connectors/screenshotConnector.js",
+        "envRefs": 0,
+        "vaultRefs": 0,
+        "authTerms": 2,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "de3116697db84a991fb742480333b43e5a07da97358c6a0438aeec12150acd53"
+      },
+      {
+        "file": "src/connectors/slackConnector.js",
+        "envRefs": 2,
+        "vaultRefs": 5,
+        "authTerms": 82,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "635e9557e2c95ffa145b99dfccb5397ca29db24b395de67f8b2068d525bbf8ac"
+      },
+      {
+        "file": "src/connectors/symphonyConnector.js",
+        "envRefs": 32,
+        "vaultRefs": 2,
+        "authTerms": 60,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "ef8d132a41d2a94c779ad5a001f2dc64bca9e0b551271b78c8290ca4cb5c3737"
+      },
+      {
+        "file": "src/connectors/systemPaths.js",
+        "envRefs": 8,
+        "vaultRefs": 0,
+        "authTerms": 0,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "ee5e6c7b19973723cc04b19647fb1eef95a1bbddfe9202fd673b000373740062"
+      },
+      {
+        "file": "src/connectors/telegramConnector.js",
+        "envRefs": 5,
+        "vaultRefs": 2,
+        "authTerms": 104,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "c19a38e7486778065eb12bae861339fb069b39c4e2caef58b4df9452df2f0226"
+      },
+      {
+        "file": "src/connectors/uiVisualAuditConnector.js",
+        "envRefs": 0,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "68a486778d879892022885fa6f9a2627e806e1b4bc5d47b475c3b0ec7cf6c04d"
+      },
+      {
+        "file": "src/connectors/vertexConnector.js",
+        "envRefs": 14,
+        "vaultRefs": 3,
+        "authTerms": 172,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "45edffb32e1f75f9c8374f310180548208be3f6657d0abe0ef9ca991bfe6eaa9"
+      },
+      {
+        "file": "src/connectors/virtualDisplayConnector.js",
+        "envRefs": 0,
+        "vaultRefs": 0,
+        "authTerms": 1,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "117cea7e239994c596ed66ab9ba5ebdde3d2cb2ad8f9f0abbd11abfcf205704d"
+      },
+      {
+        "file": "src/connectors/voiceConnector.js",
+        "envRefs": 16,
+        "vaultRefs": 7,
+        "authTerms": 85,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "20d37bde9c70b89fe4fc044b6f6ab5035134e12e8d20f1de59d8c9172a842f27"
+      },
+      {
+        "file": "src/connectors/wolConnector.js",
+        "envRefs": 0,
+        "vaultRefs": 4,
+        "authTerms": 16,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "cea2bad87db87565bd3d9d2478258dd5a7bbd23a31b3f073f20023b86b27fc66"
+      },
+      {
+        "file": "src/connectors/workerRouter.js",
+        "envRefs": 0,
+        "vaultRefs": 0,
+        "authTerms": 4,
+        "exportsStatus": true,
+        "review": "manual_review_required_no_secret_values_read",
+        "digest": "25e0bf0e07aaf4d8c645d6d6e342068bf44308c855ffadd2357d624a385a69bd"
+      }
+    ],
+    "digest": "3c3be3fc3f50e9b23a1bb2e866ec498262496139a0cc562f2bef5c8c5a2ab00f"
+  },
+  "summary": {
+    "commandCheckCount": 5,
+    "commandPassCount": 5,
+    "connectorFilesReviewed": 47,
+    "patchesApplied": 0,
+    "providerCalls": 0,
+    "secretValuesRead": 0,
+    "shadowWrites": 0
+  },
+  "honesty": {
+    "shell": false,
+    "appliesPatches": false,
+    "callsProviders": false,
+    "readsSecretValues": false,
+    "launchesDaemons": false,
+    "writesShadowFiles": false
+  },
+  "digest": "da5b7f4d8f5972fae85c66dc3010162530e23801196f9f05b737b96de74f893d"
+}

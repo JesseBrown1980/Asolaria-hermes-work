@@ -1,0 +1,91 @@
+[
+  {
+    "id": "original_hermes_implementation_supervisor_of_supervisors",
+    "generatedAt": "2026-04-25T02:53:40.062Z",
+    "role": "implementation_root",
+    "scope": "Turn original Hermes upstream architecture capsules into BEHCS runtime contracts without running upstream Hermes.",
+    "gates": [
+      "source_digest",
+      "contract_validation",
+      "gac",
+      "shannon",
+      "real_gulp_proof",
+      "no_secret_import"
+    ]
+  },
+  {
+    "id": "original_hermes_impl_memory_skills_supervisor",
+    "generatedAt": "2026-04-25T02:53:40.062Z",
+    "role": "contract_lane_supervisor",
+    "lane": "memory_skills",
+    "ordinal": 1,
+    "queueItem": "activate_learning_loop_contract",
+    "contractDigest": "36cf5d776e48c79bcd4a3e9232a998cf825795119ff09913b7c0829cb5199a60",
+    "gates": [
+      "contract_schema",
+      "rollback_surface",
+      "manual_runtime_enable",
+      "audit_log"
+    ]
+  },
+  {
+    "id": "original_hermes_impl_memory_ledger_supervisor",
+    "generatedAt": "2026-04-25T02:53:40.062Z",
+    "role": "contract_lane_supervisor",
+    "lane": "memory_ledger",
+    "ordinal": 2,
+    "queueItem": "stage_wal_state_contract",
+    "contractDigest": "d25c947996bc8380f077f9eae13866f9bd8b27864d93a0619d4072b4d4395005",
+    "gates": [
+      "contract_schema",
+      "rollback_surface",
+      "manual_runtime_enable",
+      "audit_log"
+    ]
+  },
+  {
+    "id": "original_hermes_impl_model_routing_supervisor",
+    "generatedAt": "2026-04-25T02:53:40.062Z",
+    "role": "contract_lane_supervisor",
+    "lane": "model_routing",
+    "ordinal": 3,
+    "queueItem": "stage_transport_router_contract",
+    "contractDigest": "d6a63fd20a33bced995e5325b557e3c57e9c73721c1754f3fee73a1e6b31dcc9",
+    "gates": [
+      "contract_schema",
+      "rollback_surface",
+      "manual_runtime_enable",
+      "audit_log"
+    ]
+  },
+  {
+    "id": "original_hermes_impl_plugins_hooks_supervisor",
+    "generatedAt": "2026-04-25T02:53:40.062Z",
+    "role": "contract_lane_supervisor",
+    "lane": "plugins_hooks",
+    "ordinal": 4,
+    "queueItem": "activate_plugin_hook_gac_gate",
+    "contractDigest": "e671ad4a4e7912b9ba8a57ee8a57ffb71112c326e0197ffb905c79439ed33e25",
+    "gates": [
+      "contract_schema",
+      "rollback_surface",
+      "manual_runtime_enable",
+      "audit_log"
+    ]
+  },
+  {
+    "id": "original_hermes_impl_security_supervisor",
+    "generatedAt": "2026-04-25T02:53:40.062Z",
+    "role": "contract_lane_supervisor",
+    "lane": "security",
+    "ordinal": 5,
+    "queueItem": "stage_security_backport_manifest",
+    "contractDigest": "565876f8dd9fdae150258e1808a6ec2f23c54e58b47d9b412fed04a94f558f6b",
+    "gates": [
+      "contract_schema",
+      "rollback_surface",
+      "manual_runtime_enable",
+      "audit_log"
+    ]
+  }
+]

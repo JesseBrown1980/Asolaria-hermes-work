@@ -1,0 +1,97 @@
+[
+  {
+    "id": "original_hermes_runtime_supervisor_root",
+    "generatedAt": "2026-04-25T02:54:31.564Z",
+    "role": "supervisor_of_supervisors",
+    "scope": "Coordinate Original Hermes transport, learning loop, WAL/session, plugin hook, and security backport surfaces.",
+    "gates": [
+      "no_shadow_file_edits",
+      "no_provider_secret_import",
+      "no_runtime_launch_without_operator_gate",
+      "real_gulp_proof_before_activation",
+      "reverse_gain_before_learning_promotion"
+    ],
+    "authority": "read_only_index"
+  },
+  {
+    "id": "original_hermes_transport_supervisor",
+    "generatedAt": "2026-04-25T02:54:31.564Z",
+    "role": "surface_supervisor",
+    "ordinal": 1,
+    "surface": "transport",
+    "status": "ready_blocked",
+    "digest": "3c0f1f8eeab5a1b20fbd82658756dec25ebfa1f58b20f94aa2a7024b84bfc7c3",
+    "gates": {
+      "dispatchesNow": false,
+      "launchesGateway": false,
+      "launchesProviderCalls": false,
+      "routeOnly": true
+    }
+  },
+  {
+    "id": "original_hermes_learningLoop_supervisor",
+    "generatedAt": "2026-04-25T02:54:31.564Z",
+    "role": "surface_supervisor",
+    "ordinal": 2,
+    "surface": "learningLoop",
+    "status": "ready_blocked",
+    "digest": "d61ff7d69a3575eb4454f7be06bbb9aef4f78f622e6561d35ad17d8d05e0e903",
+    "gates": [
+      "reverse_gain_before_promotion",
+      "bounded_replay_required",
+      "real_gulp_proof_required",
+      "gac_approval_for_skill_activation",
+      "operator_review_required"
+    ]
+  },
+  {
+    "id": "original_hermes_walState_supervisor",
+    "generatedAt": "2026-04-25T02:54:31.564Z",
+    "role": "surface_supervisor",
+    "ordinal": 3,
+    "surface": "walState",
+    "status": "ready_blocked",
+    "digest": "f388b57b838bfb217f6a58cb163cd3bac43194f510c3f14e930010f9b09dd647",
+    "gates": [
+      "manifest_first",
+      "no_store_migration_until_smoke",
+      "single_writer_or_sqlite_wal_required",
+      "stale_temp_cleanup_requires_operator_review",
+      "secret_material_forbidden_in_state_rows"
+    ]
+  },
+  {
+    "id": "original_hermes_pluginHookGate_supervisor",
+    "generatedAt": "2026-04-25T02:54:31.564Z",
+    "role": "surface_supervisor",
+    "ordinal": 4,
+    "surface": "pluginHookGate",
+    "status": "ready_blocked",
+    "digest": "a25ea1e1b7eed228ab6130308857bf0f0b7402807df771356d2a31b86cfe1b53",
+    "gates": {
+      "unsafeDenied": true,
+      "registeredReadOnlyAllowed": true,
+      "runtimeHooksEnabled": false,
+      "shellExpansionAllowed": false,
+      "secretAccessAllowed": false,
+      "shadowWritesAllowed": false
+    }
+  },
+  {
+    "id": "original_hermes_securityBackport_supervisor",
+    "generatedAt": "2026-04-25T02:54:31.564Z",
+    "role": "surface_supervisor",
+    "ordinal": 5,
+    "surface": "securityBackport",
+    "status": "ready_blocked",
+    "digest": "24e5356b6ee9f25da561d281bf8a0c22646f2e7324d96a040d2bd0ba7c8794a2",
+    "gates": [
+      "targeted_test_required",
+      "gac_approval_required",
+      "operator_review_required",
+      "rollback_plan_required",
+      "no_secret_import",
+      "no_shadow_file_write"
+    ]
+  }
+]

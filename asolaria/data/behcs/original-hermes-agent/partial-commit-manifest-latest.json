@@ -1,0 +1,1336 @@
+{
+  "id": "original-hermes-partial-commit-manifest.v1",
+  "generatedAt": "2026-04-25T02:54:58.219Z",
+  "status": "READY_WITH_MANUAL_HUNK_REVIEW_REQUIRED",
+  "pass": true,
+  "readyToStage": false,
+  "readyToStageWholeFiles": true,
+  "readyForManualHunkReview": true,
+  "source": {
+    "readinessPath": "reports/original-hermes-github-update-readiness-latest.json",
+    "readinessStatus": "ORIGINAL_HERMES_UPDATE_READY_PARTIAL_COMMIT_RECOMMENDED",
+    "readinessReady": true,
+    "readinessDigest": "1b4fd6415024ccdc678a9cc8390fce7a35c0e4232471c345a915d957092ca649"
+  },
+  "files": {
+    "stageable": [
+      {
+        "status": "M",
+        "path": "TASKS.md",
+        "raw": " M TASKS.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": true,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-implementation-tranche-latest.json",
+        "raw": "A  reports/original-hermes-agent-implementation-tranche-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-implementation-tranche-latest.md",
+        "raw": "A  reports/original-hermes-agent-implementation-tranche-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-learning-loop-smoke-latest.json",
+        "raw": "A  reports/original-hermes-agent-learning-loop-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-learning-loop-smoke-latest.md",
+        "raw": "A  reports/original-hermes-agent-learning-loop-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-runtime-index-latest.json",
+        "raw": "A  reports/original-hermes-agent-runtime-index-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-runtime-index-latest.md",
+        "raw": "A  reports/original-hermes-agent-runtime-index-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-security-backport-smoke-latest.json",
+        "raw": "A  reports/original-hermes-agent-security-backport-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-security-backport-smoke-latest.md",
+        "raw": "A  reports/original-hermes-agent-security-backport-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-security-targeted-tests-latest.json",
+        "raw": "A  reports/original-hermes-agent-security-targeted-tests-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-security-targeted-tests-latest.md",
+        "raw": "A  reports/original-hermes-agent-security-targeted-tests-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-transport-router-smoke-latest.json",
+        "raw": "A  reports/original-hermes-agent-transport-router-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-transport-router-smoke-latest.md",
+        "raw": "A  reports/original-hermes-agent-transport-router-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-upstream-20b-absorption-latest.json",
+        "raw": "A  reports/original-hermes-agent-upstream-20b-absorption-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-upstream-20b-absorption-latest.md",
+        "raw": "A  reports/original-hermes-agent-upstream-20b-absorption-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-wal-state-smoke-latest.json",
+        "raw": "A  reports/original-hermes-agent-wal-state-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-wal-state-smoke-latest.md",
+        "raw": "A  reports/original-hermes-agent-wal-state-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-github-update-readiness-latest.json",
+        "raw": "A  reports/original-hermes-github-update-readiness-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-github-update-readiness-latest.md",
+        "raw": "A  reports/original-hermes-github-update-readiness-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-manual-hunk-review-latest.json",
+        "raw": "A  reports/original-hermes-manual-hunk-review-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-manual-hunk-review-latest.md",
+        "raw": "A  reports/original-hermes-manual-hunk-review-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-partial-commit-manifest-latest.json",
+        "raw": "A  reports/original-hermes-partial-commit-manifest-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-partial-commit-manifest-latest.md",
+        "raw": "A  reports/original-hermes-partial-commit-manifest-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "M",
+        "path": "routes/hooks.js",
+        "raw": " M routes/hooks.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": true,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "M",
+        "path": "routes/workerRouter.js",
+        "raw": " M routes/workerRouter.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": true,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesAgentContracts.js",
+        "raw": "A  src/behcs/originalHermesAgentContracts.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesLearningLoop.js",
+        "raw": "A  src/behcs/originalHermesLearningLoop.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesRuntimeIndex.js",
+        "raw": "A  src/behcs/originalHermesRuntimeIndex.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesSecurityBackport.js",
+        "raw": "A  src/behcs/originalHermesSecurityBackport.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesTransportRouter.js",
+        "raw": "A  src/behcs/originalHermesTransportRouter.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesWalState.js",
+        "raw": "A  src/behcs/originalHermesWalState.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "M",
+        "path": "src/connectors/hooksConnector.js",
+        "raw": " M src/connectors/hooksConnector.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": true,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-agent-implementation-orchestrator.js",
+        "raw": "A  tools/original-hermes-agent-implementation-orchestrator.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-agent-upstream-absorber.js",
+        "raw": "A  tools/original-hermes-agent-upstream-absorber.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "AM",
+        "path": "tools/original-hermes-github-update-readiness.js",
+        "raw": "AM tools/original-hermes-github-update-readiness.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-learning-loop-smoke.js",
+        "raw": "A  tools/original-hermes-learning-loop-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-manual-hunk-review.js",
+        "raw": "A  tools/original-hermes-manual-hunk-review.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "AM",
+        "path": "tools/original-hermes-partial-commit-manifest.js",
+        "raw": "AM tools/original-hermes-partial-commit-manifest.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-route-server-smoke.js",
+        "raw": "A  tools/original-hermes-route-server-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-runtime-index-smoke.js",
+        "raw": "A  tools/original-hermes-runtime-index-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-security-backport-smoke.js",
+        "raw": "A  tools/original-hermes-security-backport-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-security-targeted-tests.js",
+        "raw": "A  tools/original-hermes-security-targeted-tests.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-transport-router-smoke.js",
+        "raw": "A  tools/original-hermes-transport-router-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-wal-state-smoke.js",
+        "raw": "A  tools/original-hermes-wal-state-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "??",
+        "path": "reports/original-hermes-route-server-smoke-latest.json",
+        "raw": "?? reports/original-hermes-route-server-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "??",
+        "path": "reports/original-hermes-route-server-smoke-latest.md",
+        "raw": "?? reports/original-hermes-route-server-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      }
+    ],
+    "wholeFileStageable": [
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-implementation-tranche-latest.json",
+        "raw": "A  reports/original-hermes-agent-implementation-tranche-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-implementation-tranche-latest.md",
+        "raw": "A  reports/original-hermes-agent-implementation-tranche-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-learning-loop-smoke-latest.json",
+        "raw": "A  reports/original-hermes-agent-learning-loop-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-learning-loop-smoke-latest.md",
+        "raw": "A  reports/original-hermes-agent-learning-loop-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-runtime-index-latest.json",
+        "raw": "A  reports/original-hermes-agent-runtime-index-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-runtime-index-latest.md",
+        "raw": "A  reports/original-hermes-agent-runtime-index-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-security-backport-smoke-latest.json",
+        "raw": "A  reports/original-hermes-agent-security-backport-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-security-backport-smoke-latest.md",
+        "raw": "A  reports/original-hermes-agent-security-backport-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-security-targeted-tests-latest.json",
+        "raw": "A  reports/original-hermes-agent-security-targeted-tests-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-security-targeted-tests-latest.md",
+        "raw": "A  reports/original-hermes-agent-security-targeted-tests-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-transport-router-smoke-latest.json",
+        "raw": "A  reports/original-hermes-agent-transport-router-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-transport-router-smoke-latest.md",
+        "raw": "A  reports/original-hermes-agent-transport-router-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-upstream-20b-absorption-latest.json",
+        "raw": "A  reports/original-hermes-agent-upstream-20b-absorption-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-upstream-20b-absorption-latest.md",
+        "raw": "A  reports/original-hermes-agent-upstream-20b-absorption-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-wal-state-smoke-latest.json",
+        "raw": "A  reports/original-hermes-agent-wal-state-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-agent-wal-state-smoke-latest.md",
+        "raw": "A  reports/original-hermes-agent-wal-state-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-github-update-readiness-latest.json",
+        "raw": "A  reports/original-hermes-github-update-readiness-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-github-update-readiness-latest.md",
+        "raw": "A  reports/original-hermes-github-update-readiness-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-manual-hunk-review-latest.json",
+        "raw": "A  reports/original-hermes-manual-hunk-review-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-manual-hunk-review-latest.md",
+        "raw": "A  reports/original-hermes-manual-hunk-review-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-partial-commit-manifest-latest.json",
+        "raw": "A  reports/original-hermes-partial-commit-manifest-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "reports/original-hermes-partial-commit-manifest-latest.md",
+        "raw": "A  reports/original-hermes-partial-commit-manifest-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesAgentContracts.js",
+        "raw": "A  src/behcs/originalHermesAgentContracts.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesLearningLoop.js",
+        "raw": "A  src/behcs/originalHermesLearningLoop.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesRuntimeIndex.js",
+        "raw": "A  src/behcs/originalHermesRuntimeIndex.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesSecurityBackport.js",
+        "raw": "A  src/behcs/originalHermesSecurityBackport.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesTransportRouter.js",
+        "raw": "A  src/behcs/originalHermesTransportRouter.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "src/behcs/originalHermesWalState.js",
+        "raw": "A  src/behcs/originalHermesWalState.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-agent-implementation-orchestrator.js",
+        "raw": "A  tools/original-hermes-agent-implementation-orchestrator.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-agent-upstream-absorber.js",
+        "raw": "A  tools/original-hermes-agent-upstream-absorber.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "AM",
+        "path": "tools/original-hermes-github-update-readiness.js",
+        "raw": "AM tools/original-hermes-github-update-readiness.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-learning-loop-smoke.js",
+        "raw": "A  tools/original-hermes-learning-loop-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-manual-hunk-review.js",
+        "raw": "A  tools/original-hermes-manual-hunk-review.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "AM",
+        "path": "tools/original-hermes-partial-commit-manifest.js",
+        "raw": "AM tools/original-hermes-partial-commit-manifest.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-route-server-smoke.js",
+        "raw": "A  tools/original-hermes-route-server-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-runtime-index-smoke.js",
+        "raw": "A  tools/original-hermes-runtime-index-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-security-backport-smoke.js",
+        "raw": "A  tools/original-hermes-security-backport-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-security-targeted-tests.js",
+        "raw": "A  tools/original-hermes-security-targeted-tests.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-transport-router-smoke.js",
+        "raw": "A  tools/original-hermes-transport-router-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "A",
+        "path": "tools/original-hermes-wal-state-smoke.js",
+        "raw": "A  tools/original-hermes-wal-state-smoke.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "??",
+        "path": "reports/original-hermes-route-server-smoke-latest.json",
+        "raw": "?? reports/original-hermes-route-server-smoke-latest.json",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "??",
+        "path": "reports/original-hermes-route-server-smoke-latest.md",
+        "raw": "?? reports/original-hermes-route-server-smoke-latest.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": false,
+        "reason": "allowed_original_hermes_path"
+      }
+    ],
+    "manualHunkReview": [
+      {
+        "status": "M",
+        "path": "TASKS.md",
+        "raw": " M TASKS.md",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": true,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "M",
+        "path": "routes/hooks.js",
+        "raw": " M routes/hooks.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": true,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "M",
+        "path": "routes/workerRouter.js",
+        "raw": " M routes/workerRouter.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": true,
+        "reason": "allowed_original_hermes_path"
+      },
+      {
+        "status": "M",
+        "path": "src/connectors/hooksConnector.js",
+        "raw": " M src/connectors/hooksConnector.js",
+        "exists": true,
+        "allowed": true,
+        "blocked": false,
+        "requiresManualHunkReview": true,
+        "reason": "allowed_original_hermes_path"
+      }
+    ],
+    "blocked": []
+  },
+  "safety": {
+    "secretScan": [
+      {
+        "path": "TASKS.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 473165,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-implementation-tranche-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 39226,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-implementation-tranche-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 2033,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-learning-loop-smoke-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 29953,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-learning-loop-smoke-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 1609,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-runtime-index-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 80319,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-runtime-index-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 2393,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-security-backport-smoke-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 9328,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-security-backport-smoke-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 1677,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-security-targeted-tests-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 18691,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-security-targeted-tests-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 1104,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-transport-router-smoke-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 16584,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-transport-router-smoke-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 1413,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-upstream-20b-absorption-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 43951,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-upstream-20b-absorption-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 4975,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-wal-state-smoke-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 9527,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-agent-wal-state-smoke-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 1488,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-github-update-readiness-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 644586,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-github-update-readiness-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 5794,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-manual-hunk-review-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 35739,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-manual-hunk-review-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 21460,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-partial-commit-manifest-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 45696,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-partial-commit-manifest-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 6361,
+        "highRiskHits": []
+      },
+      {
+        "path": "routes/hooks.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 4596,
+        "highRiskHits": []
+      },
+      {
+        "path": "routes/workerRouter.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 4326,
+        "highRiskHits": []
+      },
+      {
+        "path": "src/behcs/originalHermesAgentContracts.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 8679,
+        "highRiskHits": []
+      },
+      {
+        "path": "src/behcs/originalHermesLearningLoop.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 9233,
+        "highRiskHits": []
+      },
+      {
+        "path": "src/behcs/originalHermesRuntimeIndex.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 10010,
+        "highRiskHits": []
+      },
+      {
+        "path": "src/behcs/originalHermesSecurityBackport.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 6187,
+        "highRiskHits": []
+      },
+      {
+        "path": "src/behcs/originalHermesTransportRouter.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 7661,
+        "highRiskHits": []
+      },
+      {
+        "path": "src/behcs/originalHermesWalState.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 7964,
+        "highRiskHits": []
+      },
+      {
+        "path": "src/connectors/hooksConnector.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 11653,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-agent-implementation-orchestrator.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 24963,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-agent-upstream-absorber.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 35431,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-github-update-readiness.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 10344,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-learning-loop-smoke.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 6497,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-manual-hunk-review.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 14607,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-partial-commit-manifest.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 12653,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-route-server-smoke.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 10936,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-runtime-index-smoke.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 5688,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-security-backport-smoke.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 4352,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-security-targeted-tests.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 7701,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-transport-router-smoke.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 4733,
+        "highRiskHits": []
+      },
+      {
+        "path": "tools/original-hermes-wal-state-smoke.js",
+        "exists": true,
+        "skipped": false,
+        "bytes": 5251,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-route-server-smoke-latest.json",
+        "exists": true,
+        "skipped": false,
+        "bytes": 5947,
+        "highRiskHits": []
+      },
+      {
+        "path": "reports/original-hermes-route-server-smoke-latest.md",
+        "exists": true,
+        "skipped": false,
+        "bytes": 1392,
+        "highRiskHits": []
+      }
+    ],
+    "blockedPrefixes": [
+      ".env",
+      ".external/",
+      "runtime/admin-terminals/",
+      "runtime/outbound-",
+      "runtime/dasein-",
+      "tmp/",
+      "captures/",
+      "data/behcs/d0-runtime/",
+      "data/behcs/garbage-collector/message-paths.ndjson"
+    ],
+    "allowedPrefixes": [
+      "src/behcs/originalHermes",
+      "tools/original-hermes-",
+      "reports/original-hermes-agent-",
+      "reports/original-hermes-github-",
+      "reports/original-hermes-partial-",
+      "reports/original-hermes-manual-",
+      "reports/original-hermes-route-",
+      "data/behcs/original-hermes-agent/",
+      "data/behcs/maps/original-hermes-agent/",
+      "data/behcs/supervisors/original-hermes-agent/"
+    ],
+    "allowedExact": [
+      "routes/workerRouter.js",
+      "routes/hooks.js",
+      "src/connectors/hooksConnector.js",
+      "TASKS.md"
+    ],
+    "manualHunkReviewPaths": [
+      "routes/workerRouter.js",
+      "routes/hooks.js",
+      "src/connectors/hooksConnector.js",
+      "TASKS.md"
+    ]
+  },
+  "summary": {
+    "stageableFiles": 46,
+    "wholeFileStageableFiles": 42,
+    "manualHunkReviewFiles": 4,
+    "blockedFiles": 0,
+    "missingFiles": 0,
+    "requiredStagePaths": 6,
+    "missingRequiredStagePaths": 0,
+    "highRiskSecretHits": 0,
+    "unrelatedDirty": 3093
+  },
+  "stageCommands": [
+    "git add -- 'reports/original-hermes-agent-implementation-tranche-latest.json' 'reports/original-hermes-agent-implementation-tranche-latest.md' 'reports/original-hermes-agent-learning-loop-smoke-latest.json' 'reports/original-hermes-agent-learning-loop-smoke-latest.md' 'reports/original-hermes-agent-runtime-index-latest.json' 'reports/original-hermes-agent-runtime-index-latest.md' 'reports/original-hermes-agent-security-backport-smoke-latest.json' 'reports/original-hermes-agent-security-backport-smoke-latest.md' 'reports/original-hermes-agent-security-targeted-tests-latest.json' 'reports/original-hermes-agent-security-targeted-tests-latest.md' 'reports/original-hermes-agent-transport-router-smoke-latest.json' 'reports/original-hermes-agent-transport-router-smoke-latest.md' 'reports/original-hermes-agent-upstream-20b-absorption-latest.json' 'reports/original-hermes-agent-upstream-20b-absorption-latest.md' 'reports/original-hermes-agent-wal-state-smoke-latest.json' 'reports/original-hermes-agent-wal-state-smoke-latest.md' 'reports/original-hermes-github-update-readiness-latest.json' 'reports/original-hermes-github-update-readiness-latest.md' 'reports/original-hermes-manual-hunk-review-latest.json' 'reports/original-hermes-manual-hunk-review-latest.md' 'reports/original-hermes-partial-commit-manifest-latest.json' 'reports/original-hermes-partial-commit-manifest-latest.md' 'src/behcs/originalHermesAgentContracts.js' 'src/behcs/originalHermesLearningLoop.js' 'src/behcs/originalHermesRuntimeIndex.js'",
+    "git add -- 'src/behcs/originalHermesSecurityBackport.js' 'src/behcs/originalHermesTransportRouter.js' 'src/behcs/originalHermesWalState.js' 'tools/original-hermes-agent-implementation-orchestrator.js' 'tools/original-hermes-agent-upstream-absorber.js' 'tools/original-hermes-github-update-readiness.js' 'tools/original-hermes-learning-loop-smoke.js' 'tools/original-hermes-manual-hunk-review.js' 'tools/original-hermes-partial-commit-manifest.js' 'tools/original-hermes-route-server-smoke.js' 'tools/original-hermes-runtime-index-smoke.js' 'tools/original-hermes-security-backport-smoke.js' 'tools/original-hermes-security-targeted-tests.js' 'tools/original-hermes-transport-router-smoke.js' 'tools/original-hermes-wal-state-smoke.js' 'reports/original-hermes-route-server-smoke-latest.json' 'reports/original-hermes-route-server-smoke-latest.md'"
+  ],
+  "manualHunkCommands": [
+    "git add -p -- 'TASKS.md'",
+    "git add -p -- 'routes/hooks.js'",
+    "git add -p -- 'routes/workerRouter.js'",
+    "git add -p -- 'src/connectors/hooksConnector.js'"
+  ],
+  "commitCommandPreview": "git commit -m \"Integrate Original Hermes runtime gates\"",
+  "honesty": {
+    "staged": false,
+    "committed": false,
+    "pushed": false,
+    "network": false,
+    "printedSecretValues": false,
+    "editedShadowFiles": false
+  },
+  "digest": "2a2ad070420223953cdb427124e52f3aec37f7d32a9d0887bec84f0ef9d06fc3"
+}

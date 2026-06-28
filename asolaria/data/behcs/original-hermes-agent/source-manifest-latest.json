@@ -1,0 +1,237 @@
+{
+  "id": "original-hermes-agent-source-manifest",
+  "generatedAt": "2026-04-25T02:53:10.203Z",
+  "upstreamUrl": "https://github.com/NousResearch/hermes-agent.git",
+  "localClone": "D:/Asolaria-External/hermes-agent-upstream",
+  "requestedDStage": {
+    "path": "D:\\Asolaria-External\\hermes-agent-upstream",
+    "status": "D_STAGE_READY",
+    "replacement": "D:\\Asolaria-External\\hermes-agent-upstream shallow filtered clone for inspection"
+  },
+  "branch": "main",
+  "head": "2182de55bb7734b804abd3403570ec45428feece",
+  "latestTag": "v2026.4.23",
+  "version": "0.11.0",
+  "release": {
+    "file": "RELEASE_v0.11.0.md",
+    "title": "Hermes Agent v0.11.0 (v2026.4.23)",
+    "since": "1,556 commits · 761 merged PRs · 1,314 files changed · 224,174 insertions · 29 community contributors (290 including co-authors)",
+    "sha256": "d16b682b558cadeba8134009161b5a27e854dc359e1ac6468d0c7ffe8304d980"
+  },
+  "sourceEntries": [
+    {
+      "path": "README.md",
+      "exists": true,
+      "bytes": 11470,
+      "sha256": "700e2392191eefa61dd36e2e6d90f61c8c1864115893a10abaa82acc1856cd5b",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "RELEASE_v0.11.0.md",
+      "exists": true,
+      "bytes": 43890,
+      "sha256": "d16b682b558cadeba8134009161b5a27e854dc359e1ac6468d0c7ffe8304d980",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "RELEASE_v0.10.0.md",
+      "exists": true,
+      "bytes": 1795,
+      "sha256": "bbc8c0854677d7d79389b6a8ab22c397fb9a8f68807abe3286065e89da4885c5",
+      "sensitiveSurface": false,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "pyproject.toml",
+      "exists": true,
+      "bytes": 6215,
+      "sha256": "e8ff1f1c04f626131520349e84596d653d31e1ca61bde0de3fd5b04abe108be8",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "cli.py",
+      "exists": true,
+      "bytes": 511182,
+      "sha256": "65cff960590d06a03cc68b12238a97306fb80b58750dbfcf3628b555db0c8561",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "run_agent.py",
+      "exists": true,
+      "bytes": 669995,
+      "sha256": "3afdf4929ed649a7719ec9b6839f88d01f25669424fdc3f993a6f1bd73c6cd04",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "hermes_state.py",
+      "exists": true,
+      "bytes": 70138,
+      "sha256": "17653bb5754d62bfa0348d53feccd715aff43f66e1b3dd65035ffbd22f351d52",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/transports/base.py",
+      "exists": true,
+      "bytes": 3113,
+      "sha256": "f7f7a819569d4bbaac4a47b8bb970eb175559b1c8a7a035b9414e549fa0d1bee",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/transports/chat_completions.py",
+      "exists": true,
+      "bytes": 16524,
+      "sha256": "37cd6aa4502e7e203eebf75541e534adc40a25e77bc906c66d96e3b61ded2e8c",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/transports/anthropic.py",
+      "exists": true,
+      "bytes": 6763,
+      "sha256": "10d8173cf290d3d7e6a7ec5fb572e83925d138c908682f6995ba7adcd43896b2",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/transports/codex.py",
+      "exists": true,
+      "bytes": 9407,
+      "sha256": "6a7de51c1b320105bcc33b55983af059c7ce87383071a6530f5535a2de399d7e",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/transports/bedrock.py",
+      "exists": true,
+      "bytes": 5613,
+      "sha256": "5068451f7b140b4e83014dfc578015e431e6b8db44ce13a0376db1cd2c45da3f",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/context_compressor.py",
+      "exists": true,
+      "bytes": 60845,
+      "sha256": "d14ff439bb77eb47057de71b8fe67a77d2f3c3c0f7177649bbd58febd5b021ea",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/memory_manager.py",
+      "exists": true,
+      "bytes": 16104,
+      "sha256": "f472b6c39aed429858160e7be1b95e2d66479fc9db066265bea900415abe2cb9",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/memory_provider.py",
+      "exists": true,
+      "bytes": 10426,
+      "sha256": "a9d2c776ce2a82c3e102090cb230a7ca208df404e717cb18fb42afbb2b332be6",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/shell_hooks.py",
+      "exists": true,
+      "bytes": 30222,
+      "sha256": "8ea00b580ccad1e822e44f267c066e535cfcb7142e0eedc0c0f8ca73116c2223",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "agent/skill_commands.py",
+      "exists": true,
+      "bytes": 14911,
+      "sha256": "091693002dc5fe3be48edf24619bdbc060edf0751376fe8d43b74a4370705374",
+      "sensitiveSurface": false,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "gateway/run.py",
+      "exists": true,
+      "bytes": 536505,
+      "sha256": "4072e4081869f2c8ebe96892a093fe2b8174baf870c48ca9a1164e45dd46370c",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "gateway/config.py",
+      "exists": true,
+      "bytes": 61969,
+      "sha256": "438f0af2705c0889dc9e7481d558c8e7433fccbb20114fed6bea8b300f0d3ce9",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "gateway/platforms/api_server.py",
+      "exists": true,
+      "bytes": 118474,
+      "sha256": "a6a8398c1d0acf97bf408732946761ef69059882d06d1001d4028afb14ab8aeb",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "cron/scheduler.py",
+      "exists": true,
+      "bytes": 54131,
+      "sha256": "1e7e8e27de0dd042dc626b9a91a1b067ac1ad287216b6cb4705db548565c822f",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "cron/jobs.py",
+      "exists": true,
+      "bytes": 30954,
+      "sha256": "80ddb37211cd6e0712dae3d444b5de3ad0f5e68717942a670f863795d62290d9",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "hermes_cli/plugins.py",
+      "exists": true,
+      "bytes": 47315,
+      "sha256": "95a72f0ae96e365ec9f4ea194b54f1d80697d298adad69a8f7efc1c86d92f593",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "tools/checkpoint_manager.py",
+      "exists": true,
+      "bytes": 25163,
+      "sha256": "2f2aed54be3bcb5c47120bc307399a8e7f7f218912b0e106fcad916121cb558d",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "tools/delegate_task.py",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "sensitiveSurface": false,
+      "persistedContent": "digest_and_capsule_summary_only"
+    },
+    {
+      "path": "skills/autonomous-ai-agents/hermes-agent/SKILL.md",
+      "exists": true,
+      "bytes": 28723,
+      "sha256": "6434472259d6d678a2200413acd785067298e4b6476cdd2bd2d8969f3692ffd2",
+      "sensitiveSurface": true,
+      "persistedContent": "digest_and_capsule_summary_only"
+    }
+  ],
+  "counts": {
+    "sourceEntries": 26,
+    "present": 25,
+    "sensitiveSurfaces": 23
+  },
+  "digest": "9277ba7a493010f3242199ddd3012afafca2ce8fecdb6f925333fefbbd77eb6b"
+}

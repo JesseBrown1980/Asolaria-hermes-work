@@ -1,0 +1,24 @@
+{
+  "name": "omnidispatcher",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Asolaria federation omnidispatcher — 1000-slot PID-table dispatcher for FEDENV-v1 envelopes",
+  "main": "omnidispatcher.mjs",
+  "engines": {
+    "node": ">=20.11.0 <21"
+  },
+  "scripts": {
+    "boot": "node omnidispatcher.mjs --boot",
+    "preflight": "node omnidispatcher.mjs --preflight"
+  },
+  "private": true,
+  "license": "UNLICENSED",
+  "metadata": {
+    "anchor_pid": "ASOLARIA-OMNIDISPATCHER-SPEC-2026-05-22",
+    "manifest_sha": "b3bf33347ca962aae46143839a279a991d19fbf6caecec6eb2e90a5e0313dcde",
+    "spec_sha": "ad1dea5d1b5a91c9e37e96dcf52960d7b2e13275ae8ccbaf9f12ffe0895567f5",
+    "schema_sha": "cf724b2e",
+    "cosign_window": "QUINTUPLE-DELEGATED-2WEEK-2026-05-22-to-2026-06-05",
+    "no_deps": true
+  }
+}

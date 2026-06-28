@@ -1,0 +1,2016 @@
+{
+  "id": "original-hermes-github-update-readiness.v1",
+  "generatedAt": "2026-04-25T02:54:58.180Z",
+  "status": "ORIGINAL_HERMES_UPDATE_READY_PARTIAL_COMMIT_RECOMMENDED",
+  "ready": true,
+  "git": {
+    "statusCommand": {
+      "command": "git status --short --untracked-files=all",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 287,
+      "output": " M AGENTS.md\n M BROWN-HILBERT.md\n M CLAUDE.md\n M CODEX.md\n M PHONE-URLS.md\n M README.md\n M TASKS.md\n M config/public-release.manifest.json\n M data/behcs/d0-runtime/cron-kicks.ndjson\n M data/behcs/d0-runtime/mistakes.ndjson\n M docs/PUBLISHABLE_RELEASE.md\n M docs/VAULT_APPROLE_RUNBOOK.md\n M ix/grammar/verb-table.json\n M ix/index.js\n M package.json\n M reports/one-button-start-latest.md\n M reports/original-hermes-agent-implementation-tranche-latest.json\n M reports/original-hermes-agent-implementation-tranche-latest.md\n M reports/original-hermes-agent-learning-loop-smoke-latest.json\n M reports/original-hermes-agent-learning-loop-smoke-latest.md\n M reports/original-hermes-agent-runtime-index-latest.json\n M reports/original-hermes-agent-runtime-index-latest.md\n M reports/original-hermes-agent-security-backport-smoke-latest.json\n M reports/original-hermes-agent-security-backport-smoke-latest.md\n M reports/original-hermes-agent-security-targeted-tests-latest.json\n M reports/original-hermes-agen",
+      "error": "",
+      "truncated": true
+    },
+    "originalHermes": [
+      {
+        "status": "M",
+        "path": "TASKS.md",
+        "raw": " M TASKS.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-implementation-tranche-latest.json",
+        "raw": " M reports/original-hermes-agent-implementation-tranche-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-implementation-tranche-latest.md",
+        "raw": " M reports/original-hermes-agent-implementation-tranche-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-learning-loop-smoke-latest.json",
+        "raw": " M reports/original-hermes-agent-learning-loop-smoke-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-learning-loop-smoke-latest.md",
+        "raw": " M reports/original-hermes-agent-learning-loop-smoke-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-runtime-index-latest.json",
+        "raw": " M reports/original-hermes-agent-runtime-index-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-runtime-index-latest.md",
+        "raw": " M reports/original-hermes-agent-runtime-index-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-security-backport-smoke-latest.json",
+        "raw": " M reports/original-hermes-agent-security-backport-smoke-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-security-backport-smoke-latest.md",
+        "raw": " M reports/original-hermes-agent-security-backport-smoke-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-security-targeted-tests-latest.json",
+        "raw": " M reports/original-hermes-agent-security-targeted-tests-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-security-targeted-tests-latest.md",
+        "raw": " M reports/original-hermes-agent-security-targeted-tests-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-transport-router-smoke-latest.json",
+        "raw": " M reports/original-hermes-agent-transport-router-smoke-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-transport-router-smoke-latest.md",
+        "raw": " M reports/original-hermes-agent-transport-router-smoke-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-upstream-20b-absorption-latest.json",
+        "raw": " M reports/original-hermes-agent-upstream-20b-absorption-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-upstream-20b-absorption-latest.md",
+        "raw": " M reports/original-hermes-agent-upstream-20b-absorption-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-wal-state-smoke-latest.json",
+        "raw": " M reports/original-hermes-agent-wal-state-smoke-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-agent-wal-state-smoke-latest.md",
+        "raw": " M reports/original-hermes-agent-wal-state-smoke-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-route-server-smoke-latest.json",
+        "raw": " M reports/original-hermes-route-server-smoke-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/original-hermes-route-server-smoke-latest.md",
+        "raw": " M reports/original-hermes-route-server-smoke-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "tools/original-hermes-agent-upstream-absorber.js",
+        "raw": " M tools/original-hermes-agent-upstream-absorber.js"
+      }
+    ],
+    "unrelated": [
+      {
+        "status": "M",
+        "path": "AGENTS.md",
+        "raw": " M AGENTS.md"
+      },
+      {
+        "status": "M",
+        "path": "BROWN-HILBERT.md",
+        "raw": " M BROWN-HILBERT.md"
+      },
+      {
+        "status": "M",
+        "path": "CLAUDE.md",
+        "raw": " M CLAUDE.md"
+      },
+      {
+        "status": "M",
+        "path": "CODEX.md",
+        "raw": " M CODEX.md"
+      },
+      {
+        "status": "M",
+        "path": "PHONE-URLS.md",
+        "raw": " M PHONE-URLS.md"
+      },
+      {
+        "status": "M",
+        "path": "README.md",
+        "raw": " M README.md"
+      },
+      {
+        "status": "M",
+        "path": "config/public-release.manifest.json",
+        "raw": " M config/public-release.manifest.json"
+      },
+      {
+        "status": "M",
+        "path": "data/behcs/d0-runtime/cron-kicks.ndjson",
+        "raw": " M data/behcs/d0-runtime/cron-kicks.ndjson"
+      },
+      {
+        "status": "M",
+        "path": "data/behcs/d0-runtime/mistakes.ndjson",
+        "raw": " M data/behcs/d0-runtime/mistakes.ndjson"
+      },
+      {
+        "status": "M",
+        "path": "docs/PUBLISHABLE_RELEASE.md",
+        "raw": " M docs/PUBLISHABLE_RELEASE.md"
+      },
+      {
+        "status": "M",
+        "path": "docs/VAULT_APPROLE_RUNBOOK.md",
+        "raw": " M docs/VAULT_APPROLE_RUNBOOK.md"
+      },
+      {
+        "status": "M",
+        "path": "ix/grammar/verb-table.json",
+        "raw": " M ix/grammar/verb-table.json"
+      },
+      {
+        "status": "M",
+        "path": "ix/index.js",
+        "raw": " M ix/index.js"
+      },
+      {
+        "status": "M",
+        "path": "package.json",
+        "raw": " M package.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/one-button-start-latest.md",
+        "raw": " M reports/one-button-start-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/phone-tunnel-smoke-latest.md",
+        "raw": " M reports/phone-tunnel-smoke-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/sector-drift-watch-latest.md",
+        "raw": " M reports/sector-drift-watch-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "reports/skills-parity-latest.json",
+        "raw": " M reports/skills-parity-latest.json"
+      },
+      {
+        "status": "M",
+        "path": "reports/startup-methods-latest.md",
+        "raw": " M reports/startup-methods-latest.md"
+      },
+      {
+        "status": "M",
+        "path": "routes/constructions.js",
+        "raw": " M routes/constructions.js"
+      },
+      {
+        "status": "M",
+        "path": "routes/cube-fabric.js",
+        "raw": " M routes/cube-fabric.js"
+      },
+      {
+        "status": "M",
+        "path": "routes/gateway.js",
+        "raw": " M routes/gateway.js"
+      },
+      {
+        "status": "M",
+        "path": "routes/mobile.js",
+        "raw": " M routes/mobile.js"
+      },
+      {
+        "status": "M",
+        "path": "routes/omnispindle.js",
+        "raw": " M routes/omnispindle.js"
+      },
+      {
+        "status": "M",
+        "path": "routes/phone.js",
+        "raw": " M routes/phone.js"
+      },
+      {
+        "status": "M",
+        "path": "routes/remaining.js",
+        "raw": " M routes/remaining.js"
+      },
+      {
+        "status": "M",
+        "path": "routes/workerRuntime.js",
+        "raw": " M routes/workerRuntime.js"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/gaia/inbox.ndjson",
+        "raw": " M runtime/admin-terminals/gaia/inbox.ndjson"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/helm/bootstrap-prompt.txt",
+        "raw": " M runtime/admin-terminals/helm/bootstrap-prompt.txt"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/helm/inbox.ndjson",
+        "raw": " M runtime/admin-terminals/helm/inbox.ndjson"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/helm/screen.txt",
+        "raw": " M runtime/admin-terminals/helm/screen.txt"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/helm/status.json",
+        "raw": " M runtime/admin-terminals/helm/status.json"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/liris/inbox.ndjson",
+        "raw": " M runtime/admin-terminals/liris/inbox.ndjson"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/sentinel/bootstrap-prompt.txt",
+        "raw": " M runtime/admin-terminals/sentinel/bootstrap-prompt.txt"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/sentinel/inbox.ndjson",
+        "raw": " M runtime/admin-terminals/sentinel/inbox.ndjson"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/sentinel/screen.txt",
+        "raw": " M runtime/admin-terminals/sentinel/screen.txt"
+      },
+      {
+        "status": "M",
+        "path": "runtime/admin-terminals/sentinel/status.json",
+        "raw": " M runtime/admin-terminals/sentinel/status.json"
+      },
+      {
+        "status": "M",
+        "path": "runtime/dasein-inbox.ndjson",
+        "raw": " M runtime/dasein-inbox.ndjson"
+      },
+      {
+        "status": "M",
+        "path": "runtime/outbound-liris-inbox.ndjson",
+        "raw": " M runtime/outbound-liris-inbox.ndjson"
+      },
+      {
+        "status": "M",
+        "path": "server.js",
+        "raw": " M server.js"
+      },
+      {
+        "status": "M",
+        "path": "src/brainOrchestrator.js",
+        "raw": " M src/brainOrchestrator.js"
+      },
+      {
+        "status": "M",
+        "path": "src/connectors/gcpConnector.js",
+        "raw": " M src/connectors/gcpConnector.js"
+      },
+      {
+        "status": "M",
+        "path": "src/connectors/systemPaths.js",
+        "raw": " M src/connectors/systemPaths.js"
+      },
+      {
+        "status": "M",
+        "path": "src/connectors/workerRouter.js",
+        "raw": " M src/connectors/workerRouter.js"
+      },
+      {
+        "status": "M",
+        "path": "src/constructionIndex.js",
+        "raw": " M src/constructionIndex.js"
+      },
+      {
+        "status": "M",
+        "path": "src/gateway/server.js",
+        "raw": " M src/gateway/server.js"
+      },
+      {
+        "status": "M",
+        "path": "src/index-kernel/asoTables.js",
+        "raw": " M src/index-kernel/asoTables.js"
+      },
+      {
+        "status": "M",
+        "path": "src/instantAgentSpawner.js",
+        "raw": " M src/instantAgentSpawner.js"
+      },
+      {
+        "status": "M",
+        "path": "src/omnispindle.js",
+        "raw": " M src/omnispindle.js"
+      },
+      {
+        "status": "M",
+        "path": "tools/Build-PublicRelease.ps1",
+        "raw": " M tools/Build-PublicRelease.ps1"
+      },
+      {
+        "status": "M",
+        "path": "tools/Inspect-ChromeProfileWithPlaywright.js",
+        "raw": " M tools/Inspect-ChromeProfileWithPlaywright.js"
+      },
+      {
+        "status": "M",
+        "path": "tools/Keep-Asolaria-SystemSupervisor.ps1",
+        "raw": " M tools/Keep-Asolaria-SystemSupervisor.ps1"
+      },
+      {
+        "status": "M",
+        "path": "tools/agent-keyboard.js",
+        "raw": " M tools/agent-keyboard.js"
+      },
+      {
+        "status": "M",
+        "path": "tools/behcs/agent-cron-kicker.js",
+        "raw": " M tools/behcs/agent-cron-kicker.js"
+      },
+      {
+        "status": "M",
+        "path": "tools/behcs/behcs-bus.js",
+        "raw": " M tools/behcs/behcs-bus.js"
+      },
+      {
+        "status": "M",
+        "path": "tools/behcs/behcs-sidecar.js",
+        "raw": " M tools/behcs/behcs-sidecar.js"
+      },
+      {
+        "status": "M",
+        "path": "tools/behcs/codex-bridge.js",
+        "raw": " M tools/behcs/codex-bridge.js"
+      },
+      {
+        "status": "??",
+        "path": "00-TOP-AGENT-PRECOMMAND.md",
+        "raw": "?? 00-TOP-AGENT-PRECOMMAND.md"
+      },
+      {
+        "status": "??",
+        "path": "CLAUDE-BOOTSTRAP.md",
+        "raw": "?? CLAUDE-BOOTSTRAP.md"
+      },
+      {
+        "status": "??",
+        "path": "GLYPH-GENESIS.js",
+        "raw": "?? GLYPH-GENESIS.js"
+      },
+      {
+        "status": "??",
+        "path": "brown-hilbert/05-2026-04-09-landing.md",
+        "raw": "?? brown-hilbert/05-2026-04-09-landing.md"
+      },
+      {
+        "status": "??",
+        "path": "brown-hilbert/06-2026-04-09-dashboard-wave-renewal.md",
+        "raw": "?? brown-hilbert/06-2026-04-09-dashboard-wave-renewal.md"
+      },
+      {
+        "status": "??",
+        "path": "brown-hilbert/07-2026-04-10-deep-wave-second-cascade.md",
+        "raw": "?? brown-hilbert/07-2026-04-10-deep-wave-second-cascade.md"
+      },
+      {
+        "status": "??",
+        "path": "brown-hilbert/08-2026-04-10-self-healing-500b-and-37plus.md",
+        "raw": "?? brown-hilbert/08-2026-04-10-self-healing-500b-and-37plus.md"
+      },
+      {
+        "status": "??",
+        "path": "brown-hilbert/09-2026-04-10-one-trillion-intelligence-test.md",
+        "raw": "?? brown-hilbert/09-2026-04-10-one-trillion-intelligence-test.md"
+      },
+      {
+        "status": "??",
+        "path": "brown-hilbert/10-2026-04-10-private-internet-4781-recovery.md",
+        "raw": "?? brown-hilbert/10-2026-04-10-private-internet-4781-recovery.md"
+      },
+      {
+        "status": "??",
+        "path": "brown-hilbert/11-2026-04-10-acer-4781-only-cycle-acceptance.md",
+        "raw": "?? brown-hilbert/11-2026-04-10-acer-4781-only-cycle-acceptance.md"
+      },
+      {
+        "status": "??",
+        "path": "brown-hilbert/12-2026-04-10-acer-omni-processor-open-lane.md",
+        "raw": "?? brown-hilbert/12-2026-04-10-acer-omni-processor-open-lane.md"
+      },
+      {
+        "status": "??",
+        "path": "brown-hilbert/13-2026-04-23-gemini-enterprise-seat-binding.md",
+        "raw": "?? brown-hilbert/13-2026-04-23-gemini-enterprise-seat-binding.md"
+      },
+      {
+        "status": "??",
+        "path": "docs/DEEP_WAVE_SYSTEM_WIRING_PLAN.md",
+        "raw": "?? docs/DEEP_WAVE_SYSTEM_WIRING_PLAN.md"
+      },
+      {
+        "status": "??",
+        "path": "docs/HG256_BOUNDARY_POLICY.md",
+        "raw": "?? docs/HG256_BOUNDARY_POLICY.md"
+      },
+      {
+        "status": "??",
+        "path": "docs/HG256_CYCLE_CRON_WIRING.md",
+        "raw": "?? docs/HG256_CYCLE_CRON_WIRING.md"
+      },
+      {
+        "status": "??",
+        "path": "docs/HG256_TRANSPORT_ENVELOPE.md",
+        "raw": "?? docs/HG256_TRANSPORT_ENVELOPE.md"
+      },
+      {
+        "status": "??",
+        "path": "docs/INSTANT_AGENT_PROVIDER_CONSUMPTION_SPEC.md",
+        "raw": "?? docs/INSTANT_AGENT_PROVIDER_CONSUMPTION_SPEC.md"
+      },
+      {
+        "status": "??",
+        "path": "docs/P0_REWRITE_BLUEPRINTS.md",
+        "raw": "?? docs/P0_REWRITE_BLUEPRINTS.md"
+      },
+      {
+        "status": "??",
+        "path": "docs/RUNTIME_SURFACE_INVENTORY.md",
+        "raw": "?? docs/RUNTIME_SURFACE_INVENTORY.md"
+      },
+      {
+        "status": "??",
+        "path": "docs/specs/crypto/CRYPTO_CAPSULE_V1.md",
+        "raw": "?? docs/specs/crypto/CRYPTO_CAPSULE_V1.md"
+      },
+      {
+        "status": "??",
+        "path": "ix/grammar/brown-hilbert-human-pid.grammar.v1.json",
+        "raw": "?? ix/grammar/brown-hilbert-human-pid.grammar.v1.json"
+      },
+      {
+        "status": "??",
+        "path": "ix/grammar/brown-hilbert-opencode-pid.grammar.v1.json",
+        "raw": "?? ix/grammar/brown-hilbert-opencode-pid.grammar.v1.json"
+      },
+      {
+        "status": "??",
+        "path": "ix/verbs/sovereignty.js",
+        "raw": "?? ix/verbs/sovereignty.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/boot.js",
+        "raw": "?? sovereignty/boot.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/config/colony-registry.json",
+        "raw": "?? sovereignty/config/colony-registry.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/config/colony-registry.schema.json",
+        "raw": "?? sovereignty/config/colony-registry.schema.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/config/draft-promotion-policy.schema.json",
+        "raw": "?? sovereignty/config/draft-promotion-policy.schema.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/config/transport-epoch.schema.json",
+        "raw": "?? sovereignty/config/transport-epoch.schema.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/contracts/gnn-contract-v1.json",
+        "raw": "?? sovereignty/contracts/gnn-contract-v1.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/fabricate.js",
+        "raw": "?? sovereignty/ix/chains/fabricate.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/heartbeat-daemon.js",
+        "raw": "?? sovereignty/ix/chains/heartbeat-daemon.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/heartbeat.js",
+        "raw": "?? sovereignty/ix/chains/heartbeat.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/link.js",
+        "raw": "?? sovereignty/ix/chains/link.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/mistake-learn.js",
+        "raw": "?? sovereignty/ix/chains/mistake-learn.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/poll-whatsapp.js",
+        "raw": "?? sovereignty/ix/chains/poll-whatsapp.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/report.js",
+        "raw": "?? sovereignty/ix/chains/report.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/review.js",
+        "raw": "?? sovereignty/ix/chains/review.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/security-sweep.js",
+        "raw": "?? sovereignty/ix/chains/security-sweep.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/skill-extract.js",
+        "raw": "?? sovereignty/ix/chains/skill-extract.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/chains/timestamp-index.js",
+        "raw": "?? sovereignty/ix/chains/timestamp-index.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/exec.js",
+        "raw": "?? sovereignty/ix/exec.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/gates/gnn.js",
+        "raw": "?? sovereignty/ix/gates/gnn.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/gates/hookwall-v2.js",
+        "raw": "?? sovereignty/ix/gates/hookwall-v2.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/gates/hookwall.js",
+        "raw": "?? sovereignty/ix/gates/hookwall.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/gates/shannon.js",
+        "raw": "?? sovereignty/ix/gates/shannon.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/gates/sovereign.js",
+        "raw": "?? sovereignty/ix/gates/sovereign.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/LANGUAGE-V2.md",
+        "raw": "?? sovereignty/ix/grammar/LANGUAGE-V2.md"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/OMNI-LANGUAGE-V3.md",
+        "raw": "?? sovereignty/ix/grammar/OMNI-LANGUAGE-V3.md"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/crltMerge.js",
+        "raw": "?? sovereignty/ix/grammar/crltMerge.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/hilbert-language-map.json",
+        "raw": "?? sovereignty/ix/grammar/hilbert-language-map.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/hilbert-omni-24D.json",
+        "raw": "?? sovereignty/ix/grammar/hilbert-omni-24D.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/meeting-room.js",
+        "raw": "?? sovereignty/ix/grammar/meeting-room.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/meeting-transport.js",
+        "raw": "?? sovereignty/ix/grammar/meeting-transport.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/omni-24d-executor.js",
+        "raw": "?? sovereignty/ix/grammar/omni-24d-executor.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/omni-dispatch.js",
+        "raw": "?? sovereignty/ix/grammar/omni-dispatch.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/omnilanguageHooks.js",
+        "raw": "?? sovereignty/ix/grammar/omnilanguageHooks.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/pipelineGates.js",
+        "raw": "?? sovereignty/ix/grammar/pipelineGates.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/beast.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/beast.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/dasein.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/dasein.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/falcon-phone.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/falcon-phone.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/felipe-a06.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/felipe-a06.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/gaia.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/gaia.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/helm.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/helm.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/liris.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/liris.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/sentinel.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/sentinel.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/shannon.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/shannon.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/vector.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/vector.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/write-all-profiles.js",
+        "raw": "?? sovereignty/ix/grammar/profiles/write-all-profiles.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/profiles/wsl-ubuntu.json",
+        "raw": "?? sovereignty/ix/grammar/profiles/wsl-ubuntu.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/super-agent-wave.js",
+        "raw": "?? sovereignty/ix/grammar/super-agent-wave.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/verb-factory.js",
+        "raw": "?? sovereignty/ix/grammar/verb-factory.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/grammar/verb-table.json",
+        "raw": "?? sovereignty/ix/grammar/verb-table.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/hooks/mqtt-hook.js",
+        "raw": "?? sovereignty/ix/hooks/mqtt-hook.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/index.js",
+        "raw": "?? sovereignty/ix/index.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/nouns/falcon.js",
+        "raw": "?? sovereignty/ix/nouns/falcon.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/nouns/firmware.js",
+        "raw": "?? sovereignty/ix/nouns/firmware.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/nouns/health.js",
+        "raw": "?? sovereignty/ix/nouns/health.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/nouns/nerve.js",
+        "raw": "?? sovereignty/ix/nouns/nerve.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/nouns/sovereignty.js",
+        "raw": "?? sovereignty/ix/nouns/sovereignty.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/package-lock.json",
+        "raw": "?? sovereignty/ix/package-lock.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/package.json",
+        "raw": "?? sovereignty/ix/package.json"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/antigravity.js",
+        "raw": "?? sovereignty/ix/verbs/antigravity.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/dispatch.js",
+        "raw": "?? sovereignty/ix/verbs/dispatch.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/firmware-read.js",
+        "raw": "?? sovereignty/ix/verbs/firmware-read.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/firmware-write.js",
+        "raw": "?? sovereignty/ix/verbs/firmware-write.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/mcp-linear.js",
+        "raw": "?? sovereignty/ix/verbs/mcp-linear.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/mcp-slack.js",
+        "raw": "?? sovereignty/ix/verbs/mcp-slack.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/me-neutralize.js",
+        "raw": "?? sovereignty/ix/verbs/me-neutralize.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/observe.js",
+        "raw": "?? sovereignty/ix/verbs/observe.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/omnispindle.js",
+        "raw": "?? sovereignty/ix/verbs/omnispindle.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/phone-adb.js",
+        "raw": "?? sovereignty/ix/verbs/phone-adb.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/shannon.js",
+        "raw": "?? sovereignty/ix/verbs/shannon.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/swarmdesk.js",
+        "raw": "?? sovereignty/ix/verbs/swarmdesk.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/sync.js",
+        "raw": "?? sovereignty/ix/verbs/sync.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/ix/verbs/web.js",
+        "raw": "?? sovereignty/ix/verbs/web.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/aso.js",
+        "raw": "?? sovereignty/kernel/aso.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/asoTables.js",
+        "raw": "?? sovereignty/kernel/asoTables.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/cache.js",
+        "raw": "?? sovereignty/kernel/cache.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/compile.js",
+        "raw": "?? sovereignty/kernel/compile.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/inventory.js",
+        "raw": "?? sovereignty/kernel/inventory.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/ix-resolver.js",
+        "raw": "?? sovereignty/kernel/ix-resolver.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/profile.js",
+        "raw": "?? sovereignty/kernel/profile.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/query.js",
+        "raw": "?? sovereignty/kernel/query.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/runtime.js",
+        "raw": "?? sovereignty/kernel/runtime.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/schema.js",
+        "raw": "?? sovereignty/kernel/schema.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/sovereignty-boot.js",
+        "raw": "?? sovereignty/kernel/sovereignty-boot.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/sovereignty-gate.js",
+        "raw": "?? sovereignty/kernel/sovereignty-gate.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/state.js",
+        "raw": "?? sovereignty/kernel/state.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/textIds.js",
+        "raw": "?? sovereignty/kernel/textIds.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/kernel/validate.js",
+        "raw": "?? sovereignty/kernel/validate.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/research/asolaria-vs-claude-code-full-comparison.md",
+        "raw": "?? sovereignty/research/asolaria-vs-claude-code-full-comparison.md"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/research/claude-code-leak-analysis.md",
+        "raw": "?? sovereignty/research/claude-code-leak-analysis.md"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/research/signals/2026-04-01-alphasignal-claude-code-computer-use.md",
+        "raw": "?? sovereignty/research/signals/2026-04-01-alphasignal-claude-code-computer-use.md"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/research/signals/2026-04-01-alphasignal-claude-code-pointer-memory.md",
+        "raw": "?? sovereignty/research/signals/2026-04-01-alphasignal-claude-code-pointer-memory.md"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/research/training-group/asolaria-tools-discoveries-mistakes.md",
+        "raw": "?? sovereignty/research/training-group/asolaria-tools-discoveries-mistakes.md"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/routes/manifestSync.js",
+        "raw": "?? sovereignty/routes/manifestSync.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/runtimePaths.js",
+        "raw": "?? sovereignty/runtimePaths.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/sovereignty-gate.js",
+        "raw": "?? sovereignty/sovereignty-gate.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/agentEntryBridge.js",
+        "raw": "?? sovereignty/src/agentEntryBridge.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaActivationRamp.js",
+        "raw": "?? sovereignty/src/asolariaActivationRamp.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaAssignableTaskBoard.js",
+        "raw": "?? sovereignty/src/asolariaAssignableTaskBoard.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaBootstrapProfile.js",
+        "raw": "?? sovereignty/src/asolariaBootstrapProfile.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaBridgeSurfaceExtractor.js",
+        "raw": "?? sovereignty/src/asolariaBridgeSurfaceExtractor.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaDeviceChainMap.js",
+        "raw": "?? sovereignty/src/asolariaDeviceChainMap.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaInstantContextWindow.js",
+        "raw": "?? sovereignty/src/asolariaInstantContextWindow.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaNamedAgentRegistry.js",
+        "raw": "?? sovereignty/src/asolariaNamedAgentRegistry.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaRepairPacket.js",
+        "raw": "?? sovereignty/src/asolariaRepairPacket.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaRuntimeRoot.js",
+        "raw": "?? sovereignty/src/asolariaRuntimeRoot.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaStageRepairLoop.js",
+        "raw": "?? sovereignty/src/asolariaStageRepairLoop.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/asolariaTimedAbilityLedger.js",
+        "raw": "?? sovereignty/src/asolariaTimedAbilityLedger.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/chainbackLoop.js",
+        "raw": "?? sovereignty/src/chainbackLoop.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/commsShadowInterface.js",
+        "raw": "?? sovereignty/src/commsShadowInterface.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/connectionVaultMonitor.js",
+        "raw": "?? sovereignty/src/connectionVaultMonitor.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/connectorFourFileLocalization.js",
+        "raw": "?? sovereignty/src/connectorFourFileLocalization.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/connectors/hooksConnector.js",
+        "raw": "?? sovereignty/src/connectors/hooksConnector.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/deepVoteWindow.js",
+        "raw": "?? sovereignty/src/deepVoteWindow.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/deviceCommsPostureProfiles.js",
+        "raw": "?? sovereignty/src/deviceCommsPostureProfiles.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/deviceIndexScope.js",
+        "raw": "?? sovereignty/src/deviceIndexScope.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/edgeRiskEngine.js",
+        "raw": "?? sovereignty/src/edgeRiskEngine.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/entryPointAuthorityMap.js",
+        "raw": "?? sovereignty/src/entryPointAuthorityMap.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/fabricMaximumReflectionPlanner.js",
+        "raw": "?? sovereignty/src/fabricMaximumReflectionPlanner.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/fabricPolymorphismReflectionController.js",
+        "raw": "?? sovereignty/src/fabricPolymorphismReflectionController.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/federationRehydrationBatch.js",
+        "raw": "?? sovereignty/src/federationRehydrationBatch.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/followupSurfaceRoutingSkill.js",
+        "raw": "?? sovereignty/src/followupSurfaceRoutingSkill.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/futureLayerBackendEchoMaterializer.js",
+        "raw": "?? sovereignty/src/futureLayerBackendEchoMaterializer.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/futureLayerComparisonResultMaterializer.js",
+        "raw": "?? sovereignty/src/futureLayerComparisonResultMaterializer.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/futureLayerDeliveryLedger.js",
+        "raw": "?? sovereignty/src/futureLayerDeliveryLedger.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/futureLayerGateMaterializer.js",
+        "raw": "?? sovereignty/src/futureLayerGateMaterializer.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/futureLayerLiveAppendMaterializer.js",
+        "raw": "?? sovereignty/src/futureLayerLiveAppendMaterializer.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/futureLayerMutualVerificationMaterializer.js",
+        "raw": "?? sovereignty/src/futureLayerMutualVerificationMaterializer.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/futureLayerSendAttemptMaterializer.js",
+        "raw": "?? sovereignty/src/futureLayerSendAttemptMaterializer.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/gmailAuthorizationLanguagePacket.js",
+        "raw": "?? sovereignty/src/gmailAuthorizationLanguagePacket.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/gnnConstructionWatcher.js",
+        "raw": "?? sovereignty/src/gnnConstructionWatcher.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/gnnSiliconHeartbeat.js",
+        "raw": "?? sovereignty/src/gnnSiliconHeartbeat.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/graphRuntimeStore.js",
+        "raw": "?? sovereignty/src/graphRuntimeStore.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/groupWorkhorseOrchestrator.js",
+        "raw": "?? sovereignty/src/groupWorkhorseOrchestrator.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/languageConvergenceWavePlanner.js",
+        "raw": "?? sovereignty/src/languageConvergenceWavePlanner.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/languageFlywheelTrainer.js",
+        "raw": "?? sovereignty/src/languageFlywheelTrainer.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/languageLineBudgetAudit.js",
+        "raw": "?? sovereignty/src/languageLineBudgetAudit.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/languageLinkExcavator.js",
+        "raw": "?? sovereignty/src/languageLinkExcavator.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/languageRepairBlueprint.js",
+        "raw": "?? sovereignty/src/languageRepairBlueprint.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/languageRepairController.js",
+        "raw": "?? sovereignty/src/languageRepairController.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/languageRepairPacket.js",
+        "raw": "?? sovereignty/src/languageRepairPacket.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/languageSculptor.js",
+        "raw": "?? sovereignty/src/languageSculptor.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/languageVelocityAbstractionRunner.js",
+        "raw": "?? sovereignty/src/languageVelocityAbstractionRunner.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartup/build.js",
+        "raw": "?? sovereignty/src/leaderStartup/build.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartup/constants.js",
+        "raw": "?? sovereignty/src/leaderStartup/constants.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartup/context.js",
+        "raw": "?? sovereignty/src/leaderStartup/context.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartup/io.js",
+        "raw": "?? sovereignty/src/leaderStartup/io.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartup/memories.js",
+        "raw": "?? sovereignty/src/leaderStartup/memories.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartup/normalize.js",
+        "raw": "?? sovereignty/src/leaderStartup/normalize.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartup/render.js",
+        "raw": "?? sovereignty/src/leaderStartup/render.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartup/rulers.js",
+        "raw": "?? sovereignty/src/leaderStartup/rulers.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartup/shannon.js",
+        "raw": "?? sovereignty/src/leaderStartup/shannon.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/leaderStartupProfileCatalog.js",
+        "raw": "?? sovereignty/src/leaderStartupProfileCatalog.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/lirisEntryPointImplementationPacket.js",
+        "raw": "?? sovereignty/src/lirisEntryPointImplementationPacket.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/lirisEthernetControllerHydration.js",
+        "raw": "?? sovereignty/src/lirisEthernetControllerHydration.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/loadAsolaria.js",
+        "raw": "?? sovereignty/src/loadAsolaria.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/memoryActionKernel.js",
+        "raw": "?? sovereignty/src/memoryActionKernel.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/minimalControlRoom.js",
+        "raw": "?? sovereignty/src/minimalControlRoom.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/omniConsolidationCascade.js",
+        "raw": "?? sovereignty/src/omniConsolidationCascade.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/omniConsolidationRegistry.js",
+        "raw": "?? sovereignty/src/omniConsolidationRegistry.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/omniHookwallGnnAlignmentWave.js",
+        "raw": "?? sovereignty/src/omniHookwallGnnAlignmentWave.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/omnidirectionalCatalogTruth.js",
+        "raw": "?? sovereignty/src/omnidirectionalCatalogTruth.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/openclaudeCapabilityMap.js",
+        "raw": "?? sovereignty/src/openclaudeCapabilityMap.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/openclaudeSelectorBridge.js",
+        "raw": "?? sovereignty/src/openclaudeSelectorBridge.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/orchestratorApprovalLoop.js",
+        "raw": "?? sovereignty/src/orchestratorApprovalLoop.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/ownerBoundTransportTruth.js",
+        "raw": "?? sovereignty/src/ownerBoundTransportTruth.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/phoneAttachAutopilotTool.js",
+        "raw": "?? sovereignty/src/phoneAttachAutopilotTool.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/phoneBeastBootstrap.js",
+        "raw": "?? sovereignty/src/phoneBeastBootstrap.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/phoneConnectorLattice.js",
+        "raw": "?? sovereignty/src/phoneConnectorLattice.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/phoneFleetPulseScan.js",
+        "raw": "?? sovereignty/src/phoneFleetPulseScan.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/phoneSecondNodeController.js",
+        "raw": "?? sovereignty/src/phoneSecondNodeController.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/phoneServiceDoorScan.js",
+        "raw": "?? sovereignty/src/phoneServiceDoorScan.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/phoneWorkhorseAutoActivator.js",
+        "raw": "?? sovereignty/src/phoneWorkhorseAutoActivator.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/phoneWorkhorseSignalPacket.js",
+        "raw": "?? sovereignty/src/phoneWorkhorseSignalPacket.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/projectMatrixRunner.js",
+        "raw": "?? sovereignty/src/projectMatrixRunner.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/projectNeighborhoodMaterializer.js",
+        "raw": "?? sovereignty/src/projectNeighborhoodMaterializer.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/projectPruningReport.js",
+        "raw": "?? sovereignty/src/projectPruningReport.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/s24FeSharedNodePlanner.js",
+        "raw": "?? sovereignty/src/s24FeSharedNodePlanner.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/secureDesktopAbilityPacket.js",
+        "raw": "?? sovereignty/src/secureDesktopAbilityPacket.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/secureDesktopDoubleBlackHolePlan.js",
+        "raw": "?? sovereignty/src/secureDesktopDoubleBlackHolePlan.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/secureDesktopIdentityCapsule.js",
+        "raw": "?? sovereignty/src/secureDesktopIdentityCapsule.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/secureDesktopSessionIssuer.js",
+        "raw": "?? sovereignty/src/secureDesktopSessionIssuer.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/selfRelayConversation.js",
+        "raw": "?? sovereignty/src/selfRelayConversation.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/siliconExplorationWaves.js",
+        "raw": "?? sovereignty/src/siliconExplorationWaves.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/siliconFirstSystemBuilder.js",
+        "raw": "?? sovereignty/src/siliconFirstSystemBuilder.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/simpleCommsMonitor.js",
+        "raw": "?? sovereignty/src/simpleCommsMonitor.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/sixLayerFeedbackHarness.js",
+        "raw": "?? sovereignty/src/sixLayerFeedbackHarness.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/sixLayerLanguageFeedbackHarness.js",
+        "raw": "?? sovereignty/src/sixLayerLanguageFeedbackHarness.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/slackBackgroundSkill.js",
+        "raw": "?? sovereignty/src/slackBackgroundSkill.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/stageAwareSlackTriage.js",
+        "raw": "?? sovereignty/src/stageAwareSlackTriage.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/triplexConvergenceController.js",
+        "raw": "?? sovereignty/src/triplexConvergenceController.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/triplicateFabricWaveOrchestrator.js",
+        "raw": "?? sovereignty/src/triplicateFabricWaveOrchestrator.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/v21CanonAudit.js",
+        "raw": "?? sovereignty/src/v21CanonAudit.js"
+      },
+      {
+        "status": "??",
+        "path": "sovereignty/src/volumeOneCivilizationIndexer.js",
+        "raw": "?? sovereignty/src/volumeOneCivilizationIndexer.js"
+      },
+      {
+        "status": "??",
+        "path": "src/connectors/opencodeConnector.js",
+        "raw": "?? src/connectors/opencodeConnector.js"
+      },
+      {
+        "status": "??",
+        "path": "test-glyphs.js",
+        "raw": "?? test-glyphs.js"
+      },
+      {
+        "status": "??",
+        "path": "test-glyphs.mjs",
+        "raw": "?? test-glyphs.mjs"
+      },
+      {
+        "status": "??",
+        "path": "tools/batch-process-mistakes.js",
+        "raw": "?? tools/batch-process-mistakes.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/behcs/behcs-deep-cascade-v6.js",
+        "raw": "?? tools/behcs/behcs-deep-cascade-v6.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/behcs/behcs-window-capture.js",
+        "raw": "?? tools/behcs/behcs-window-capture.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/behcs/build-ix-fabric-atlas.js",
+        "raw": "?? tools/behcs/build-ix-fabric-atlas.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/behcs/d0-behcs-encoder.js",
+        "raw": "?? tools/behcs/d0-behcs-encoder.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/behcs/generate-falcon-glyph-language.js",
+        "raw": "?? tools/behcs/generate-falcon-glyph-language.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/behcs/gnn-live-watcher.js",
+        "raw": "?? tools/behcs/gnn-live-watcher.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/behcs/review-ix-fabric-atlas.js",
+        "raw": "?? tools/behcs/review-ix-fabric-atlas.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/behcs/run-omnispindle-child-soak.js",
+        "raw": "?? tools/behcs/run-omnispindle-child-soak.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/brown-hilbert-human-pid-mint.js",
+        "raw": "?? tools/brown-hilbert-human-pid-mint.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/claude-omniflywheel-100m-sweep.js",
+        "raw": "?? tools/claude-omniflywheel-100m-sweep.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/connector-supervisor-hermes-shannon.js",
+        "raw": "?? tools/connector-supervisor-hermes-shannon.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/crypto/Generate-Keypair.ps1",
+        "raw": "?? tools/crypto/Generate-Keypair.ps1"
+      },
+      {
+        "status": "??",
+        "path": "tools/crypto/Sign-Capsule.ps1",
+        "raw": "?? tools/crypto/Sign-Capsule.ps1"
+      },
+      {
+        "status": "??",
+        "path": "tools/crypto/Verify-Capsule.ps1",
+        "raw": "?? tools/crypto/Verify-Capsule.ps1"
+      },
+      {
+        "status": "??",
+        "path": "tools/crypto/crypto-capsule.js",
+        "raw": "?? tools/crypto/crypto-capsule.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/gemini-enterprise-behcs256-bind.js",
+        "raw": "?? tools/gemini-enterprise-behcs256-bind.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/gemini-enterprise-supervisor-hermes-shannon.js",
+        "raw": "?? tools/gemini-enterprise-supervisor-hermes-shannon.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/gemini-enterprise-users-cli.js",
+        "raw": "?? tools/gemini-enterprise-users-cli.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/global-pid-request-fabric-supervisor.js",
+        "raw": "?? tools/global-pid-request-fabric-supervisor.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/glyph-agent.js",
+        "raw": "?? tools/glyph-agent.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/google-password-candidates.py",
+        "raw": "?? tools/google-password-candidates.py"
+      },
+      {
+        "status": "??",
+        "path": "tools/google-reauth-candidates.js",
+        "raw": "?? tools/google-reauth-candidates.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/google-workspace-admin-cli.js",
+        "raw": "?? tools/google-workspace-admin-cli.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/hermes-hue-update-absorber.js",
+        "raw": "?? tools/hermes-hue-update-absorber.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/hilbert-omni-49D.json",
+        "raw": "?? tools/hilbert-omni-49D.json"
+      },
+      {
+        "status": "??",
+        "path": "tools/liris-boot-usb-readiness-supervisor.js",
+        "raw": "?? tools/liris-boot-usb-readiness-supervisor.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/mind-reading-ruview-supervisor.js",
+        "raw": "?? tools/mind-reading-ruview-supervisor.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-100b-sweep-integrator.js",
+        "raw": "?? tools/neurotech-100b-sweep-integrator.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-100b-virtual-sweep.js",
+        "raw": "?? tools/neurotech-100b-virtual-sweep.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-100t-virtual-task-sweep.js",
+        "raw": "?? tools/neurotech-100t-virtual-task-sweep.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-1b-virtual-frontier-loop.js",
+        "raw": "?? tools/neurotech-1b-virtual-frontier-loop.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-1e200-real-agent-integrator.js",
+        "raw": "?? tools/neurotech-1e200-real-agent-integrator.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-1e200-virtual-agent-sweep.js",
+        "raw": "?? tools/neurotech-1e200-virtual-agent-sweep.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-1e27-sweep-integrator.js",
+        "raw": "?? tools/neurotech-1e27-sweep-integrator.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-1e27-virtual-agent-sweep.js",
+        "raw": "?? tools/neurotech-1e27-virtual-agent-sweep.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-1t-sweep-integrator.js",
+        "raw": "?? tools/neurotech-1t-sweep-integrator.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-1t-virtual-sweep.js",
+        "raw": "?? tools/neurotech-1t-virtual-sweep.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-20m-virtual-agent-loop.js",
+        "raw": "?? tools/neurotech-20m-virtual-agent-loop.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-build-synthetic-pipeline.js",
+        "raw": "?? tools/neurotech-build-synthetic-pipeline.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-defense-plan-supervisor.js",
+        "raw": "?? tools/neurotech-defense-plan-supervisor.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-genius-candidate-supervisors.js",
+        "raw": "?? tools/neurotech-genius-candidate-supervisors.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-hermes-supervisor-of-supervisors.js",
+        "raw": "?? tools/neurotech-hermes-supervisor-of-supervisors.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-household-consent-gate.js",
+        "raw": "?? tools/neurotech-household-consent-gate.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-message-gem-gc-pipeline.js",
+        "raw": "?? tools/neurotech-message-gem-gc-pipeline.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-monthly-approval-record.js",
+        "raw": "?? tools/neurotech-monthly-approval-record.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-omnispindle-council.js",
+        "raw": "?? tools/neurotech-omnispindle-council.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-opencode-omnispindle-orchestrator.js",
+        "raw": "?? tools/neurotech-opencode-omnispindle-orchestrator.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-real-100b-agent-runner.js",
+        "raw": "?? tools/neurotech-real-100b-agent-runner.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-real-100b-self-improvement-loop.js",
+        "raw": "?? tools/neurotech-real-100b-self-improvement-loop.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-real-agent-final-gc-mint.js",
+        "raw": "?? tools/neurotech-real-agent-final-gc-mint.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-real-million-agent-runner.js",
+        "raw": "?? tools/neurotech-real-million-agent-runner.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/neurotech-real-million-results-integrator.js",
+        "raw": "?? tools/neurotech-real-million-results-integrator.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/omniflywheel-coupling-smoke.js",
+        "raw": "?? tools/omniflywheel-coupling-smoke.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/opencode-omniflywheel-100m-sweep.js",
+        "raw": "?? tools/opencode-omniflywheel-100m-sweep.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/planb-implementation-tranche-orchestrator.js",
+        "raw": "?? tools/planb-implementation-tranche-orchestrator.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/planb-research-30b-integration-runner.js",
+        "raw": "?? tools/planb-research-30b-integration-runner.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/planb-targeted-200b-integration-runner.js",
+        "raw": "?? tools/planb-targeted-200b-integration-runner.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/system-full-review-10b-agent-improver.js",
+        "raw": "?? tools/system-full-review-10b-agent-improver.js"
+      },
+      {
+        "status": "??",
+        "path": "tools/validate/Invoke-CryptoCapsule-Validate.ps1",
+        "raw": "?? tools/validate/Invoke-CryptoCapsule-Validate.ps1"
+      }
+    ]
+  },
+  "syntaxChecks": [
+    {
+      "command": "node --check src/behcs/originalHermesAgentContracts.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 135,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check src/behcs/originalHermesTransportRouter.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 109,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check src/behcs/originalHermesLearningLoop.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 104,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check src/behcs/originalHermesWalState.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 102,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check src/behcs/originalHermesSecurityBackport.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 108,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check src/behcs/originalHermesRuntimeIndex.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 112,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check routes/workerRouter.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 113,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check routes/hooks.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 118,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check src/connectors/hooksConnector.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 114,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check tools/original-hermes-runtime-index-smoke.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 113,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check tools/original-hermes-security-targeted-tests.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 122,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check tools/original-hermes-github-update-readiness.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 132,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check tools/original-hermes-partial-commit-manifest.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 129,
+      "output": "",
+      "error": ""
+    },
+    {
+      "command": "node --check tools/original-hermes-manual-hunk-review.js",
+      "shell": false,
+      "status": "pass",
+      "exitCode": 0,
+      "elapsedMs": 122,
+      "output": "",
+      "error": ""
+    }
+  ],
+  "requiredOutputs": [
+    {
+      "path": "reports/original-hermes-agent-upstream-20b-absorption-latest.md",
+      "exists": true,
+      "bytes": 4975,
+      "modifiedAt": "2026-04-25T02:53:20.254Z"
+    },
+    {
+      "path": "reports/original-hermes-agent-implementation-tranche-latest.md",
+      "exists": true,
+      "bytes": 2033,
+      "modifiedAt": "2026-04-25T02:54:02.607Z"
+    },
+    {
+      "path": "reports/original-hermes-agent-transport-router-smoke-latest.md",
+      "exists": true,
+      "bytes": 1413,
+      "modifiedAt": "2026-04-25T02:54:22.985Z"
+    },
+    {
+      "path": "reports/original-hermes-agent-learning-loop-smoke-latest.md",
+      "exists": true,
+      "bytes": 1609,
+      "modifiedAt": "2026-04-25T02:54:24.039Z"
+    },
+    {
+      "path": "reports/original-hermes-agent-wal-state-smoke-latest.md",
+      "exists": true,
+      "bytes": 1488,
+      "modifiedAt": "2026-04-25T02:54:24.275Z"
+    },
+    {
+      "path": "reports/original-hermes-agent-security-backport-smoke-latest.md",
+      "exists": true,
+      "bytes": 1677,
+      "modifiedAt": "2026-04-25T02:54:24.445Z"
+    },
+    {
+      "path": "reports/original-hermes-agent-runtime-index-latest.md",
+      "exists": true,
+      "bytes": 2393,
+      "modifiedAt": "2026-04-25T02:54:31.923Z"
+    },
+    {
+      "path": "reports/original-hermes-agent-security-targeted-tests-latest.md",
+      "exists": true,
+      "bytes": 1104,
+      "modifiedAt": "2026-04-25T02:54:32.714Z"
+    }
+  ],
+  "summary": {
+    "originalHermesChanged": 20,
+    "unrelatedDirty": 336,
+    "requiredOutputsPresent": 8,
+    "requiredOutputsTotal": 8,
+    "syntaxPassed": 14,
+    "syntaxTotal": 14,
+    "safeWholeWorktreePush": false
+  },
+  "recommendation": {
+    "mode": "partial_original_hermes_commit_only",
+    "includeOnly": [
+      "Original Hermes src/behcs modules",
+      "Original Hermes tools",
+      "Original Hermes reports/data artifacts",
+      "routes/workerRouter.js",
+      "routes/hooks.js",
+      "src/connectors/hooksConnector.js",
+      "TASKS.md"
+    ],
+    "exclude": [
+      "runtime/admin-terminals/*",
+      "tmp/* screenshots and captures",
+      "unrelated reports/*",
+      "unrelated docs/source changes",
+      "provider/session/secret-adjacent runtime files"
+    ]
+  },
+  "honesty": {
+    "commits": false,
+    "pushes": false,
+    "network": false,
+    "readsSecretValues": false,
+    "editsShadowFiles": false
+  },
+  "digest": "26ec0c12b4a8139b6e895fae292988bf1e5571be8db9082e92d655125834667c"
+}

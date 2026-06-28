@@ -1,0 +1,178 @@
+[
+  {
+    "id": "original_hermes_agent_supervisor_of_supervisors",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "upstream_absorption_root",
+    "scope": "Original NousResearch Hermes Agent v0.11.0 architecture absorption into BEHCS-256.",
+    "gates": [
+      "source_digest",
+      "license",
+      "gac",
+      "shannon",
+      "gnn",
+      "reverse_gain",
+      "no_native_windows_install",
+      "no_secret_import"
+    ]
+  },
+  {
+    "id": "original_hermes_memory_skills_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "memory_skills",
+    "ordinal": 1,
+    "queueItems": [
+      "hermes_learning_loop_to_reverse_gain"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  },
+  {
+    "id": "original_hermes_memory_ledger_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "memory_ledger",
+    "ordinal": 2,
+    "queueItems": [
+      "hermes_wal_state_contract"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  },
+  {
+    "id": "original_hermes_model_routing_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "model_routing",
+    "ordinal": 3,
+    "queueItems": [
+      "hermes_transport_router_adapter"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  },
+  {
+    "id": "original_hermes_plugins_hooks_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "plugins_hooks",
+    "ordinal": 4,
+    "queueItems": [
+      "hermes_plugin_hook_gac_gate"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  },
+  {
+    "id": "original_hermes_gateway_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "gateway",
+    "ordinal": 5,
+    "queueItems": [
+      "hermes_gateway_connector_crosswalk"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  },
+  {
+    "id": "original_hermes_scheduler_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "scheduler",
+    "ordinal": 6,
+    "queueItems": [
+      "hermes_cron_to_omnischeduler"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  },
+  {
+    "id": "original_hermes_filesystem_safety_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "filesystem_safety",
+    "ordinal": 7,
+    "queueItems": [
+      "hermes_checkpoint_to_brown_hilbert_snapshots"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  },
+  {
+    "id": "original_hermes_omnispindle_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "omnispindle",
+    "ordinal": 8,
+    "queueItems": [
+      "hermes_delegate_to_omnispindle_supervisors"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  },
+  {
+    "id": "original_hermes_operator_interface_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "operator_interface",
+    "ordinal": 9,
+    "queueItems": [
+      "hermes_tui_dashboard_operator_surface"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  },
+  {
+    "id": "original_hermes_security_supervisor",
+    "generatedAt": "2026-04-25T02:53:10.203Z",
+    "role": "lane_supervisor",
+    "lane": "security",
+    "ordinal": 10,
+    "queueItems": [
+      "hermes_security_hardening_backport"
+    ],
+    "gates": [
+      "capsule_digest",
+      "risk_register",
+      "bounded_gulp_proof",
+      "manual_enable_before_runtime"
+    ]
+  }
+]

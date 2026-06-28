@@ -1,0 +1,265 @@
+{
+  "ok": true,
+  "generatedAt": "2026-04-25T02:54:24.232Z",
+  "executed": true,
+  "snapshot": {
+    "id": "original-hermes-agent-wal-state-runtime.v1",
+    "generatedAt": "2026-04-25T02:54:24.232Z",
+    "status": "WAL_STATE_MANIFEST_READY_MIGRATION_BLOCKED",
+    "contract": {
+      "contractId": "original-hermes-agent-contracts.v1.wal-state",
+      "generatedAt": "2026-04-25T02:54:24.232Z",
+      "source": {
+        "upstream": "NousResearch/hermes-agent",
+        "capsule": "sqlite_wal_session_memory",
+        "sourceDigest": ""
+      },
+      "stores": [
+        "memoryStore",
+        "taskLedgerStore",
+        "mistakeLedgerStore",
+        "semanticKnowledgeStore",
+        "workspaceKnowledgeStore"
+      ],
+      "requiredProperties": [
+        "append_only_event_rows",
+        "session_lineage",
+        "child_session_refs",
+        "passive_checkpoint",
+        "startup_prune_or_vacuum",
+        "digest_per_state_transition"
+      ],
+      "blockedModes": [
+        "raw_json_rewrite_under_pressure",
+        "cross_process_write_without_lock_or_wal",
+        "secret_material_in_state_rows"
+      ],
+      "migrationDefault": "manifest_first_no_store_migration_until_smoke",
+      "digest": "5f7894f01944f5c756baf2457afe22de060ae60fe1862f348a969ee27512ba3d"
+    },
+    "stores": [
+      {
+        "id": "agent_sessions",
+        "path": "C:\\Users\\acer\\Asolaria\\data\\agent-sessions.json",
+        "owner": "agentSessionStore",
+        "mode": "json_atomic_rewrite",
+        "requiredNextGate": "wal_or_lock_before_multi_process_write",
+        "stat": {
+          "exists": true,
+          "bytes": 24857,
+          "modifiedAt": "2026-04-03T01:50:00.596Z"
+        },
+        "sourcePath": "C:\\Users\\acer\\Asolaria\\src\\agentSessionStore.js",
+        "sourceSignals": {
+          "hasAtomicRename": true,
+          "hasAppend": false,
+          "hasExplicitWal": false
+        },
+        "tempFiles": [
+          {
+            "name": "agent-sessions.json.tmp-22784-1774419118144",
+            "bytes": 18944,
+            "modifiedAt": "2026-03-25T06:11:58.145Z"
+          },
+          {
+            "name": "agent-sessions.json.tmp-22784-1774420394220",
+            "bytes": 18944,
+            "modifiedAt": "2026-03-25T06:33:14.222Z"
+          },
+          {
+            "name": "agent-sessions.json.tmp-22784-1774420394237",
+            "bytes": 18944,
+            "modifiedAt": "2026-03-25T06:33:14.238Z"
+          },
+          {
+            "name": "agent-sessions.json.tmp-22784-1774420427109",
+            "bytes": 18944,
+            "modifiedAt": "2026-03-25T06:33:47.111Z"
+          },
+          {
+            "name": "agent-sessions.json.tmp-22784-1774426123809",
+            "bytes": 18944,
+            "modifiedAt": "2026-03-25T08:08:43.811Z"
+          },
+          {
+            "name": "agent-sessions.json.tmp-22784-1774426123820",
+            "bytes": 18944,
+            "modifiedAt": "2026-03-25T08:08:43.822Z"
+          },
+          {
+            "name": "agent-sessions.json.tmp-22784-1774426123831",
+            "bytes": 18944,
+            "modifiedAt": "2026-03-25T08:08:43.833Z"
+          }
+        ],
+        "risk": [
+          "json_store_without_explicit_wal",
+          "stale_temp_siblings_present"
+        ],
+        "recommendedMode": "sqlite_wal_or_single_writer_lock_manifest_before_runtime_migration",
+        "digest": "8f4c965a2afda0d4f81c9fb3328a4ba15932d7c985cdf29c0d0317ea18b9979a"
+      },
+      {
+        "id": "task_ledger",
+        "path": "C:\\Users\\acer\\Asolaria\\data\\task-ledger.json",
+        "owner": "taskLedgerStore",
+        "mode": "json_atomic_rewrite",
+        "requiredNextGate": "wal_or_lock_before_multi_process_write",
+        "stat": {
+          "exists": true,
+          "bytes": 1630204,
+          "modifiedAt": "2026-04-16T00:56:52.580Z"
+        },
+        "sourcePath": "C:\\Users\\acer\\Asolaria\\src\\taskLedgerStore.js",
+        "sourceSignals": {
+          "hasAtomicRename": true,
+          "hasAppend": false,
+          "hasExplicitWal": false
+        },
+        "tempFiles": [],
+        "risk": [
+          "json_store_without_explicit_wal"
+        ],
+        "recommendedMode": "sqlite_wal_or_single_writer_lock_manifest_before_runtime_migration",
+        "digest": "a7ab1b0822fa51196098bfc9334692379a2e3fcc6b5a4728e4f3adc700a27071"
+      },
+      {
+        "id": "mistake_ledger",
+        "path": "C:\\Users\\acer\\Asolaria\\data\\mistake-ledger.ndjson",
+        "owner": "mistakeLedgerStore",
+        "mode": "ndjson_append",
+        "requiredNextGate": "append_batch_file_cap_and_pattern_sync",
+        "stat": {
+          "exists": true,
+          "bytes": 1782522,
+          "modifiedAt": "2026-04-25T00:52:05.085Z"
+        },
+        "sourcePath": "C:\\Users\\acer\\Asolaria\\src\\mistakeLedgerStore.js",
+        "sourceSignals": {
+          "hasAtomicRename": false,
+          "hasAppend": true,
+          "hasExplicitWal": false
+        },
+        "tempFiles": [],
+        "risk": [
+          "source_mentions_secret_terms_verify_no_state_rows"
+        ],
+        "recommendedMode": "append_only_with_batch_digest_and_file_cap",
+        "digest": "712e530646cc496dbeb76c77f61a4082cf4d0238a5e75e20cfcdb6599f837dd6"
+      },
+      {
+        "id": "memory",
+        "path": "C:\\Users\\acer\\Asolaria\\data\\memory.json",
+        "owner": "memoryStore",
+        "mode": "json_store",
+        "requiredNextGate": "wal_manifest_before_session_lineage",
+        "stat": {
+          "exists": true,
+          "bytes": 189833,
+          "modifiedAt": "2026-04-15T16:51:27.139Z"
+        },
+        "sourcePath": "C:\\Users\\acer\\Asolaria\\src\\memoryStore.js",
+        "sourceSignals": {
+          "hasAtomicRename": true,
+          "hasAppend": false,
+          "hasExplicitWal": false
+        },
+        "tempFiles": [],
+        "risk": [
+          "json_store_without_explicit_wal",
+          "source_mentions_secret_terms_verify_no_state_rows"
+        ],
+        "recommendedMode": "sqlite_wal_or_single_writer_lock_manifest_before_runtime_migration",
+        "digest": "82cb2510e200c4f4f8872ceb63f03ec9e58c99f071f9f19c7050279a5718d0a9"
+      },
+      {
+        "id": "notebook",
+        "path": "C:\\Users\\acer\\Asolaria\\data\\notebook.json",
+        "owner": "notebookStore",
+        "mode": "json_store",
+        "requiredNextGate": "wal_manifest_before_session_lineage",
+        "stat": {
+          "exists": true,
+          "bytes": 276792,
+          "modifiedAt": "2026-03-29T18:40:12.941Z"
+        },
+        "sourcePath": "C:\\Users\\acer\\Asolaria\\src\\notebookStore.js",
+        "sourceSignals": {
+          "hasAtomicRename": true,
+          "hasAppend": false,
+          "hasExplicitWal": false
+        },
+        "tempFiles": [],
+        "risk": [
+          "json_store_without_explicit_wal",
+          "source_mentions_secret_terms_verify_no_state_rows"
+        ],
+        "recommendedMode": "sqlite_wal_or_single_writer_lock_manifest_before_runtime_migration",
+        "digest": "d6d172fb14e71b6e0e3f6a9b0258923aa2f728091fd5445ba1c9265984ae842b"
+      }
+    ],
+    "summary": {
+      "storeCount": 5,
+      "jsonRewriteStoreCount": 4,
+      "appendOnlyStoreCount": 1,
+      "tempFileCount": 7,
+      "migrationWrites": 0,
+      "dataDeletes": 0,
+      "secretsImported": 0
+    },
+    "gates": [
+      "manifest_first",
+      "no_store_migration_until_smoke",
+      "single_writer_or_sqlite_wal_required",
+      "stale_temp_cleanup_requires_operator_review",
+      "secret_material_forbidden_in_state_rows"
+    ],
+    "executionPolicy": {
+      "manifestOnly": true,
+      "migratesStores": false,
+      "deletesTempFiles": false,
+      "importsSecrets": false,
+      "launchesDaemons": false
+    },
+    "language": {
+      "human": "Original Hermes WAL/session state is staged as a store manifest and migration gate before any runtime state migration.",
+      "agent": "(original_hermes, wal.state, behcs, 1, session_memory, manifest, staged, [json+ndjson+temp_siblings], map_mapped, IX, log, persistent, whiteroom, light)",
+      "device": "original_hermes_wal_state status=manifest_only migration=0 deletes=0 secrets=0"
+    },
+    "validation": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "stale_temp_siblings_present_cleanup_blocked"
+      ],
+      "digest": "14175081b73b0a78a75cea94fe6f571b334b916144694cc56aa104f5f3c76a0e"
+    },
+    "digest": "1f91dba1077bf0cf8f906c0a422a5d9d3957fc5bb8e55717982f4b228e4be378"
+  },
+  "manifest": {
+    "id": "original-hermes-agent-wal-state-runtime.v1",
+    "description": "Manifest-only Original Hermes WAL/session-state runtime staging for BEHCS stores.",
+    "capabilities": [
+      "store_surface_inventory",
+      "temp_sibling_detection",
+      "wal_migration_gate",
+      "session_lineage_readiness"
+    ],
+    "sideEffects": [],
+    "defaultExecution": "manifest_only_no_store_migration"
+  },
+  "outputs": {
+    "snapshot": "data/behcs/original-hermes-agent/contracts/wal-state-runtime-snapshot-latest.json",
+    "storeManifest": "data/behcs/original-hermes-agent/wal-state-store-manifest-latest.ndjson",
+    "tempReview": "data/behcs/original-hermes-agent/wal-state-temp-sibling-review-latest.ndjson",
+    "reportJson": "reports/original-hermes-agent-wal-state-smoke-latest.json",
+    "reportMd": "reports/original-hermes-agent-wal-state-smoke-latest.md"
+  },
+  "honesty": {
+    "migratesStores": false,
+    "deletesTempFiles": false,
+    "importsSecrets": false,
+    "launchesDaemons": false,
+    "editsShadowFiles": false
+  }
+}

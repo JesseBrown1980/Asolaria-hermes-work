@@ -1,0 +1,478 @@
+{
+  "ok": true,
+  "generatedAt": "2026-04-25T02:54:22.974Z",
+  "executed": true,
+  "snapshot": {
+    "id": "original-hermes-agent-transport-router-runtime.v1",
+    "generatedAt": "2026-04-25T02:54:22.974Z",
+    "status": "TRANSPORT_ROUTER_CONTRACT_STAGED_NO_SECRET_IMPORT_NO_DISPATCH",
+    "contract": {
+      "contractId": "original-hermes-agent-contracts.v1.transport-router",
+      "generatedAt": "2026-04-25T02:54:22.974Z",
+      "source": {
+        "upstream": "NousResearch/hermes-agent",
+        "capsule": "transport_abc_provider_router",
+        "sourceDigest": ""
+      },
+      "routeShape": {
+        "provider": "openai_compatible_or_native",
+        "transport": "chat_completions_responses_anthropic_bedrock_codex",
+        "model": "selected_by_brainPolicy_workerRouter",
+        "credentials": "resolved_by_existing_vault_only",
+        "output": "normalized_text_tool_calls_usage_errors"
+      },
+      "asolariaBindings": [
+        "src/brainPolicy.js",
+        "src/connectors/workerRouter.js",
+        "src/connectors/externalBrainConnector.js",
+        "src/cognitiveEngines/runtimeBridge.js"
+      ],
+      "gates": [
+        "no_provider_secret_import",
+        "transport_contract_smoke",
+        "rate_limit_and_error_classification",
+        "gac_before_model_switch",
+        "shannon_after_failed_provider"
+      ],
+      "digest": "88236121fec8ba17874fda450cf10a1996842b2cbec0a15930570e96da91bd8f"
+    },
+    "bindings": [
+      "src/brainPolicy.js",
+      "src/connectors/workerRouter.js",
+      "src/connectors/externalBrainConnector.js",
+      "src/cognitiveEngines/runtimeBridge.js"
+    ],
+    "providers": [
+      {
+        "id": "openai",
+        "configured": true,
+        "enabled": true,
+        "model": "gpt-5.4",
+        "baseUrl": "https://api.openai.com",
+        "apiPath": "/v1/responses",
+        "apiStyle": "openai_responses",
+        "officialApi": true,
+        "requireOfficialApi": true,
+        "source": "vault",
+        "configError": null,
+        "mcpEnabled": false,
+        "mcpConfigured": false,
+        "mcpConfigError": null,
+        "warning": null
+      },
+      {
+        "id": "kimi",
+        "configured": false,
+        "enabled": true,
+        "model": null,
+        "baseUrl": null,
+        "apiPath": "/v1/chat/completions",
+        "apiStyle": "openai_chat_completions",
+        "officialApi": false,
+        "requireOfficialApi": true,
+        "source": "none",
+        "configError": "missing_config",
+        "mcpEnabled": false,
+        "mcpConfigured": false,
+        "mcpConfigError": null,
+        "warning": null
+      },
+      {
+        "id": "cursor",
+        "configured": true,
+        "enabled": true,
+        "model": "gpt-5.2-codex",
+        "baseUrl": "https://api.openai.com",
+        "apiPath": "/v1/responses",
+        "apiStyle": "openai_responses",
+        "officialApi": true,
+        "requireOfficialApi": true,
+        "source": "vault",
+        "configError": null,
+        "mcpEnabled": true,
+        "mcpConfigured": true,
+        "mcpConfigError": null,
+        "warning": null
+      },
+      {
+        "id": "antigravity",
+        "configured": true,
+        "enabled": true,
+        "model": "gpt-5.2-codex",
+        "baseUrl": "https://api.openai.com",
+        "apiPath": "/v1/responses",
+        "apiStyle": "openai_responses",
+        "officialApi": true,
+        "requireOfficialApi": true,
+        "source": "vault",
+        "configError": null,
+        "mcpEnabled": true,
+        "mcpConfigured": true,
+        "mcpConfigError": null,
+        "warning": null
+      }
+    ],
+    "workers": [
+      {
+        "id": "opencode",
+        "available": true,
+        "dispatchable": true,
+        "directDispatchSupported": true,
+        "trustTier": "",
+        "role": "",
+        "limitations": [
+          "Depends on the local OpenCode CLI and its configured provider credentials being healthy.",
+          "Not the default owner-plane mutation lane for privileged repo work.",
+          "Reply structure can vary by provider/model and is normalized from CLI output."
+        ],
+        "mistakes": [
+          "Do not assume OpenCode is free just because it is local; it still consumes configured provider quota.",
+          "Do not route privileged or owner-plane writes here when Local Codex is the safer lane."
+        ]
+      },
+      {
+        "id": "local_codex",
+        "available": true,
+        "dispatchable": true,
+        "directDispatchSupported": true,
+        "trustTier": "",
+        "role": "",
+        "limitations": [
+          "Local runtime only; not ideal for cloud-heavy external research bursts.",
+          "Direct runs can consume local provider quota or take longer on bigger tasks."
+        ],
+        "mistakes": [
+          "Do not default local Codex to broad external chores when a cheaper bounded worker would do.",
+          "Do not send owner-plane tasks to lower-trust external workers just because they look faster."
+        ]
+      },
+      {
+        "id": "claude_max",
+        "available": true,
+        "dispatchable": true,
+        "directDispatchSupported": true,
+        "trustTier": "",
+        "role": "",
+        "limitations": [
+          "This lane is review-first and should not be treated as the owner-plane mutation path.",
+          "It depends on the authenticated Claude Code subscription path being healthy on this machine."
+        ],
+        "mistakes": [
+          "Do not send owner-plane secrets or broad uncontrolled context into the Claude lane.",
+          "Do not offload final repo ownership decisions to Claude when Asolaria or local Codex should decide."
+        ]
+      },
+      {
+        "id": "abacus",
+        "available": true,
+        "dispatchable": true,
+        "directDispatchSupported": true,
+        "trustTier": "",
+        "role": "",
+        "limitations": [
+          "CLI is not yet a reliable unattended headless worker on this machine.",
+          "Cloud-heavy or deep-agent work should be treated as scarce and usage-aware."
+        ],
+        "mistakes": [
+          "CLI print mode is still not reliable on this machine, so Abacus is not yet a safe fully headless worker.",
+          "The desktop app exposes many bundled VS Code-style surfaces and extensions; not every prompt or pane is relevant to Asolaria.",
+          "Listener is installed but not currently running, so listener-specific work should be treated as opportunistic.",
+          "Browser or deep-agent cloud work can consume subscription usage faster than desktop-local packet work.",
+          "Abacus outputs should be imported back through Asolaria packets rather than treated as direct ground truth."
+        ]
+      },
+      {
+        "id": "symphony",
+        "available": true,
+        "dispatchable": true,
+        "directDispatchSupported": true,
+        "trustTier": "",
+        "role": "",
+        "limitations": [
+          "Requires valid Linear-backed Symphony configuration and a healthy running service for pickup.",
+          "Depends on valid Symphony configuration and healthy Linear-backed setup."
+        ],
+        "mistakes": [
+          "Do not route urgent single-shot chores into Symphony when a direct local or Abacus lane is available.",
+          "Do not assume issue creation means immediate execution; Symphony still decides pickup from the project queue."
+        ]
+      }
+    ],
+    "cognitiveEngines": {
+      "registryId": "asolaria-cognitive-engine-registry.v1",
+      "engines": [
+        {
+          "id": "openmythos",
+          "title": "OpenMythos recurrent-depth cognitive engine",
+          "description": "Gated adapter contract for the OpenMythos PyTorch recurrent-depth transformer package.",
+          "capabilities": [
+            "deep_reasoning",
+            "recurrent_depth",
+            "latent_looping",
+            "drift_signal"
+          ],
+          "glyphVerbs": {
+            "MYTHOS_THINK": "MYTHOS_THINK",
+            "MYTHOS_REASON": "MYTHOS_REASON",
+            "MYTHOS_LOOP": "MYTHOS_LOOP",
+            "MYTHOS_STATUS": "MYTHOS_STATUS",
+            "MYTHOS_DRIFT": "MYTHOS_DRIFT"
+          },
+          "gacLaws": [
+            "LAW-099-openmythos-recurrence-stability"
+          ],
+          "runtime": {
+            "language": "python",
+            "package": "open-mythos",
+            "import": "open_mythos.main",
+            "execution": "blocked_until_package_weights_and_smoke_test_exist"
+          },
+          "constraints": {
+            "maxLoops": 16,
+            "spectralRadiusMustBeBelow": 1,
+            "noRawHiddenStatePersistence": true,
+            "noModelClaimWithoutWeightsAndBenchmark": true
+          }
+        },
+        {
+          "id": "ga_svm",
+          "title": "GA-SVM classification cognitive engine",
+          "description": "Gated adapter contract for genetic-algorithm optimized SVM classification tasks such as crop disease diagnosis.",
+          "capabilities": [
+            "classification",
+            "feature_validation",
+            "hyperparameter_search",
+            "fitness_scoring"
+          ],
+          "gacLaws": [
+            "LAW-100-ga-svm-validation-and-drift"
+          ],
+          "runtime": {
+            "language": "node",
+            "package": "packages/ga-svm-engine",
+            "implementation": "packages/ga-svm-engine/src/GASVMAdapter.mjs",
+            "mode": "rbf_kernel_ga_smoke_classifier",
+            "productionPromotion": "requires_external_svm_or_validated_dataset_fitness_report",
+            "execution": "local_smoke_ready_dataset_runtime_gated"
+          },
+          "featureSchema": [
+            {
+              "id": "fractal_dimension",
+              "symbol": "D1",
+              "required": true
+            },
+            {
+              "id": "entropy",
+              "symbol": "E",
+              "required": true
+            },
+            {
+              "id": "lesion_area",
+              "symbol": "S",
+              "required": true
+            },
+            {
+              "id": "intensity_sigma",
+              "symbol": "sigma",
+              "required": true
+            },
+            {
+              "id": "color_channel",
+              "symbol": "Ci",
+              "required": true
+            },
+            {
+              "id": "contrast",
+              "symbol": "J",
+              "required": true
+            },
+            {
+              "id": "morphology_area",
+              "symbol": "Ai",
+              "required": true
+            }
+          ],
+          "constraints": {
+            "requireDatasetHash": true,
+            "requireCrossValidation": true,
+            "requireFitnessReport": true,
+            "noMedicalOrAgriculturalGuaranteeClaim": true
+          }
+        },
+        {
+          "id": "openmythos_ga_svm_fusion",
+          "title": "OpenMythos + GA-SVM fusion lane",
+          "description": "GA-SVM handles validated feature classification; OpenMythos reviews deep reasoning, drift, and explanation under GAC.",
+          "capabilities": [
+            "classification_then_deep_reasoning",
+            "drift_review",
+            "operator_explanation"
+          ],
+          "gacLaws": [
+            "LAW-099-openmythos-recurrence-stability",
+            "LAW-100-ga-svm-validation-and-drift"
+          ],
+          "execution": "blocked_until_both_engines_pass_smoke_tests"
+        }
+      ],
+      "selectionRules": [
+        {
+          "engine": "ga_svm",
+          "selectorId": "worker_lane.ga_svm",
+          "surface": "classification",
+          "trigger": "classification, crop disease, image/sensor features, SVM",
+          "fallback": "default"
+        },
+        {
+          "engine": "openmythos",
+          "selectorId": "worker_lane.openmythos",
+          "surface": "deep_reasoning",
+          "trigger": "deep reasoning, recurrent loops, high complexity",
+          "fallback": "default"
+        },
+        {
+          "engine": "openmythos_ga_svm_fusion",
+          "selectorId": "worker_lane.openmythos_ga_svm_fusion",
+          "surface": "classification_then_deep_reasoning",
+          "trigger": "classification plus deep reasoning or explanation",
+          "fallback": "ga_svm"
+        }
+      ]
+    },
+    "routeMatrix": {
+      "providerTransports": [
+        {
+          "provider": "openai",
+          "transport": "openai_responses",
+          "model": "gpt-5.4",
+          "officialApi": true,
+          "mcpEnabled": false
+        },
+        {
+          "provider": "cursor",
+          "transport": "openai_responses",
+          "model": "gpt-5.2-codex",
+          "officialApi": true,
+          "mcpEnabled": true
+        },
+        {
+          "provider": "antigravity",
+          "transport": "openai_responses",
+          "model": "gpt-5.2-codex",
+          "officialApi": true,
+          "mcpEnabled": true
+        }
+      ],
+      "workerTransports": [
+        {
+          "worker": "opencode",
+          "transport": "local_cli_or_local_runtime",
+          "authority": "local_guarded"
+        },
+        {
+          "worker": "local_codex",
+          "transport": "local_cli_or_local_runtime",
+          "authority": "local_guarded"
+        },
+        {
+          "worker": "claude_max",
+          "transport": "packet_or_review_lane",
+          "authority": "guarded_external_or_review"
+        },
+        {
+          "worker": "abacus",
+          "transport": "packet_or_review_lane",
+          "authority": "guarded_external_or_review"
+        },
+        {
+          "worker": "symphony",
+          "transport": "packet_or_review_lane",
+          "authority": "guarded_external_or_review"
+        }
+      ],
+      "cognitiveEngineTransports": [
+        {
+          "engine": "openmythos",
+          "transport": "local_python_runtime_probe_then_spawn"
+        },
+        {
+          "engine": "ga_svm",
+          "transport": "local_runtime_bridge"
+        },
+        {
+          "engine": "openmythos_ga_svm_fusion",
+          "transport": "local_runtime_bridge"
+        }
+      ]
+    },
+    "externalBrainConnector": {
+      "id": "external_brain",
+      "capabilities": [
+        "run_prompt",
+        "provider_status",
+        "mcp_tool_integration",
+        "dynamic_allowlist",
+        "token_reduction",
+        "model_fallback",
+        "multi_provider",
+        "policy_presets"
+      ],
+      "apiStyles": [
+        "openai_chat_completions",
+        "openai_responses"
+      ]
+    },
+    "secretPolicy": {
+      "importsProviderSecrets": false,
+      "exposesProviderSecrets": false,
+      "credentialSource": "existing_secure_vault_only",
+      "legacyEnvKeyHandling": "warn_and_ignore"
+    },
+    "executionPolicy": {
+      "dispatchesNow": false,
+      "launchesGateway": false,
+      "launchesProviderCalls": false,
+      "routeOnly": true
+    },
+    "language": {
+      "human": "Original Hermes transport router contract is staged as a read-only route matrix across workerRouter, externalBrainConnector, and cognitive runtime.",
+      "agent": "(original_hermes, transport.router, behcs, 3, runtime, hookwall, staged, [providers+workers+engines], map_map_mapped, IX, log, persistent, whiteroom, light)",
+      "device": "original_hermes_transport_router status=staged dispatches=0 secret_imports=0"
+    },
+    "validation": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "kimi:missing_config"
+      ],
+      "digest": "fa59ce31c8a42fa082660d2d90900f140df00941f050d6164426fb644b509c0b"
+    },
+    "digest": "364c3128c2d946de5b16cf0de3982eb132e8d398c9abea7112cf933acef43abc"
+  },
+  "manifest": {
+    "id": "original-hermes-agent-transport-router-runtime.v1",
+    "description": "Read-only Original Hermes Agent transport-router contract snapshot for Asolaria BEHCS routing surfaces.",
+    "capabilities": [
+      "transport_contract_snapshot",
+      "provider_status_sanitization",
+      "worker_lane_matrix",
+      "cognitive_engine_route_matrix"
+    ],
+    "sideEffects": [],
+    "secretPolicy": "existing_secure_vault_only_no_secret_export",
+    "defaultExecution": "route_only_no_dispatch"
+  },
+  "outputs": {
+    "snapshot": "data/behcs/original-hermes-agent/contracts/transport-router-runtime-snapshot-latest.json",
+    "reportJson": "reports/original-hermes-agent-transport-router-smoke-latest.json",
+    "reportMd": "reports/original-hermes-agent-transport-router-smoke-latest.md"
+  },
+  "honesty": {
+    "importsProviderSecrets": false,
+    "exposesProviderSecrets": false,
+    "dispatchesWorkers": false,
+    "callsExternalProviders": false,
+    "launchesGateway": false,
+    "editsShadowFiles": false
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "envelope_kind": "BEHCS-256-RECEIPT",
+  "agent_id": "OMNI-17-HERMES-PREP-PID-omni17",
+  "real_claude": true,
+  "cohort": "BEHCS-1024-omnispindle",
+  "cosign_seq": 36,
+  "authority_window": "2026-05-05 -> 2026-05-19 (extended quintuple, runs until upgrade complete + newest Hermes absorbed)",
+  "mode": "LOOK + RESEARCH (read-only fs, web permitted)",
+  "operators": ["Jesse", "Rayssa", "Amy", "Dan", "Felipe"],
+  "issued_at": "2026-05-06",
+  "shard": "Hermes prep — filesystem inventory + newest Nous Research release identification",
+
+  "filesystem_inventory": {
+    "hermes_bridge_package": {
+      "path": "C:/asolaria-acer/packages/hermes-bridge/",
+      "exists": false,
+      "note": "Not present acer-side. May exist liris-side or only as conceptual reference."
+    },
+    "hermes_absorption_package": {
+      "path": "C:/asolaria-acer/packages/hermes-absorption/",
+      "exists": true,
+      "files": [
+        "prof-hermes-delta.json (large, ~71K tokens — 133 PROF-HERMES skill atoms absorbed 2026-04-18 from C:/Users/rayss/Asolaria/tools/hermes-agent/{skills,optional-skills}/**/SKILL.md, 6 meta-primitives, family prefix=PROF-HERMES, role='Hermes Agent skill slices — independently callable capability atoms')",
+        "plans/nous-hermes-new/00-PIPELINE-SPEC.md",
+        "plans/nous-hermes-new/MODEL-ID-SLOT.md",
+        "plans/nous-hermes-new/HALT-GATE.md"
+      ],
+      "skeleton_status": "P0 HALTED — model_id=<UNFILLED>, awaiting operator 'absorb now' trigger + envelope verb 'directive.hermes.absorb-now' into C:/asolaria-foundation-v1/envelopes/",
+      "skeleton_authored_by": "OP-RAYSSA-AGENT under quintuple operator cosign 2026-05-07",
+      "anchor_pattern": "Mirrors B3 DeepSeek-V4 pivot (absorb routing pattern, NOT pull weights)"
+    },
+    "meta_supervisor_hermes_package": {
+      "path": "C:/asolaria-acer/packages/meta-supervisor-hermes/",
+      "exists": true,
+      "files": ["package.json", "bin/daemon.mjs", "src/index.mjs"],
+      "package_name": "@asolaria/meta-supervisor-hermes",
+      "version": "1.0.0",
+      "role": "supervisor-of-supervisors with self-healing — Hermes-named pattern (NOT the Nous LLM). Brown-Hilbert room 41. Enumerates live supervisor daemons, pings on schedule, restarts flatlined ones, emits EVT-META-SUPERVISOR-HEALED.",
+      "bin": "meta-hermes",
+      "supervisor_catalog_entries_first_5": ["pid-targeted-kick-supervisor", "new-applicant-onboarding-supervisor", "act-supervisor", "immune-l1-supervisor", "cycle-orchestrator"]
+    },
+    "white_room_target": {
+      "path": "D:/asolaria-whiteroom/nous-hermes-new/",
+      "status": "RESERVED, EMPTY (per HALT-GATE.md)"
+    },
+    "other_hermes_references_acer": {
+      "supervisor_registry": "asolaria-acer/packages/supervisor-registry/demo/smoke-hermes.ts",
+      "deep_wave": "asolaria-acer/packages/deep-wave/scripts/run-10k-hermes-shannon-connor.mjs",
+      "h_cohort": "asolaria-acer/packages/dashboard/src/super-os-viz/h-cohort/H08-citizen-handoffs-pi-hermes-shannon.mjs",
+      "o_cohort": "asolaria-acer/packages/dashboard/src/super-os-viz/o-cohort/O03-deep-cascade-6x6x6x6x6x12.mjs (lists citizen-hermes)",
+      "q_cohort": "asolaria-acer/packages/dashboard/src/super-os-viz/q-cohort/dispatch-citizens-implement.mjs (citizenHermes function)",
+      "super_dashboard": "asolaria-acer/packages/dashboard/src/super-os-viz/super-dashboard-server.mjs:562 (citizen-hermes wired, Slack/Discord/Telegram relay via gateway/mirror.py)"
+    },
+    "citizen_hermes_distinction": {
+      "canonical_role": "Slack/Discord/Telegram routing relay (gateway/mirror.py) — the routing-citizen Hermes-router agent per memory canon, NOT the Nous LLM",
+      "memory_anchors": [
+        "project_q_cohort_citizens_implement_landed.md (Hermes routing through OP-JESSE)",
+        "project_q_cohort_cascade_landed.md (29 inter-agent envelopes via Hermes-router)",
+        "project_o_cohort_cross_inbox_watchdog_6wave_cascade.md (omnihermes gate)",
+        "project_omniflywheel_omnispindle_role_canon.md (Hermes patterns on hookwall+GNN)"
+      ],
+      "absorption_target": "Nous Hermes LLM weights NEVER pulled — absorb the routing/skill ATOMS into BEHCS-256/1024 glyph dispatch. Tiny micro-JS that ACT as the giant model."
+    },
+    "scale_evidence": {
+      "inbox_archive_files_with_hermes_token": "50+ matched in tmp/aether-behcs-256-bundle/data/behcs/inbox-archives/ (truncated by head_limit=50)",
+      "cosign_chain_hermes_lines": "≥6 lines reference 'hermes' in COSIGN_CHAIN.ndjson"
+    }
+  },
+
+  "newest_release": {
+    "publisher": "NousResearch",
+    "release_family": "Hermes 4",
+    "release_date_canonical": "2025-08-25",
+    "arxiv_paper": "2508.18255",
+    "variants": [
+      {
+        "model_id": "NousResearch/Hermes-4-405B",
+        "param_count": "406B (405B nominal)",
+        "architecture": "dense, hybrid-mode reasoning (explicit <think>...</think>)",
+        "base_model": "meta-llama/Llama-3.1-405B",
+        "tensor_type": "BF16",
+        "license": "Llama3 (Llama-3 community license — NOT Apache-2/MIT — license-compat verify required at P0)",
+        "repo_url": "https://huggingface.co/NousResearch/Hermes-4-405B",
+        "footprint_estimate_bf16_gb": "~810 GB raw weights (BF16) — irrelevant for absorb-pattern path",
+        "fp8_variant": "NousResearch/Hermes-4-405B-FP8 (~405 GB)"
+      },
+      {
+        "model_id": "NousResearch/Hermes-4-70B",
+        "param_count": "70B",
+        "architecture": "dense, hybrid-mode reasoning",
+        "base_model": "meta-llama/Llama-3.1-70B",
+        "tensor_type": "BF16",
+        "license": "Llama3",
+        "repo_url": "https://huggingface.co/NousResearch/Hermes-4-70B",
+        "footprint_estimate_bf16_gb": "~140 GB"
+      },
+      {
+        "model_id": "NousResearch/Hermes-4-14B",
+        "param_count": "14B",
+        "license": "Llama3 derivative (likely)",
+        "repo_url": "https://huggingface.co/NousResearch/Hermes-4-14B",
+        "footprint_estimate_bf16_gb": "~28 GB"
+      }
+    ],
+    "training_corpus": "~5M samples / ~60B tokens post-training (5x sample / 50x token expansion vs Hermes 3)",
+    "key_features": ["hybrid reasoning <think>...</think>", "function calling / tool use", "schema adherence / structured JSON output", "improved steerability", "reduced refusal rates"],
+    "ancillary_release_hermes_agent": {
+      "name": "NousResearch/hermes-agent",
+      "github": "https://github.com/NousResearch/hermes-agent",
+      "type": "open-source agent framework (separate from LLM weights)",
+      "latest_tag_seen_in_search": "v2026.4.23",
+      "huggingface_inference_integration": "28 curated models + 100+ custom (per Nous X post)",
+      "relation_to_PROF_HERMES": "133 skill atoms in prof-hermes-delta.json were absorbed 2026-04-18 from this very package (tools/hermes-agent/{skills,optional-skills})"
+    }
+  },
+
+  "recommended_p0_target": {
+    "primary_recommendation": "NousResearch/Hermes-4-70B",
+    "model_id_slot_fill": {
+      "model_id": "NousResearch/Hermes-4-70B",
+      "release": "Hermes 4",
+      "repo_url": "https://huggingface.co/NousResearch/Hermes-4-70B",
+      "license": "Llama3 (REQUIRES OPERATOR LICENSE-COMPAT REVIEW vs Asolaria GPL-3-or-later — not the Apache-2/MIT expected; this triggers a halt-gate consideration)",
+      "target_white_room": "D:/asolaria-whiteroom/nous-hermes-new/",
+      "architecture": "dense (NOT MoE — absorb shape is per-skill / per-attention-head per pipeline-spec)",
+      "param_count": "70B"
+    },
+    "rationale": [
+      "Hermes 4 is the newest NousResearch frontier release (Aug 2025).",
+      "70B variant: best architecture-recovery / footprint trade for glyph-routing absorb — config + tokenizer alone is ~tens of MB, well under P1 ≤100MB budget.",
+      "405B is unnecessary: absorb path takes routing pattern (config + tokenizer + skill atoms), NOT weights. 70B and 405B share architectural family (Llama-3.1 dense, hybrid-think head) — 70B is sufficient archetype.",
+      "If operator wants larger archetype later, switching the slot is a single-file edit in MODEL-ID-SLOT.md."
+    ],
+    "license_caveat": "Llama3 community license is NOT Apache-2/MIT. Per 00-PIPELINE-SPEC.md P0 step 3, license must be compat-verified vs Asolaria GPL-3-or-later. Operator decision required before P0 advance. If license-incompat, fall back to genuinely-permissive option (e.g. Hermes-3 series on stricter base) or absorb-config-only path with NO redistributable artifact.",
+    "halt_gate_status": "P0 STILL HALTED — recommendation only, awaiting operator (Jesse or Rayssa) explicit 'absorb now' envelope into C:/asolaria-foundation-v1/envelopes/. This receipt does NOT release the gate."
+  },
+
+  "halt_invariant_compliance": {
+    "filesystem_writes": "1 — this receipt only (allowed per shard 'NO writes outside receipt')",
+    "weight_downloads": 0,
+    "git_clones": 0,
+    "package_installs": 0,
+    "network_calls": "2 web searches + 1 web fetch (read-only research, allowed per shard 'web search permitted for Hermes release info')",
+    "model_id_slot_modified": false,
+    "halt_gate_modified": false,
+    "cosign_chain_modified": false,
+    "envelope_fired_to_bus": false
+  }
+}

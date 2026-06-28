@@ -1,0 +1,29 @@
+{
+  "contractId": "original-hermes-agent-contracts.v1.learning-loop",
+  "generatedAt": "2026-04-25T02:53:40.062Z",
+  "source": {
+    "upstream": "NousResearch/hermes-agent",
+    "capsule": "self_improving_learning_loop",
+    "sourceDigest": "700e2392191eefa61dd36e2e6d90f61c8c1864115893a10abaa82acc1856cd5b"
+  },
+  "loop": {
+    "observe": "capture_task_result_tool_events_memory_delta",
+    "classify": "shannon_and_gnn_score_success_mistake_genius",
+    "promote": "reverse_gain_promotes_safe_skill_or_memory",
+    "prevent": "mistake_pattern_blocks_repeated_failure",
+    "replay": "bounded_replay_seed_required_before_atlas_store"
+  },
+  "gates": [
+    "no_secret_import",
+    "reverse_gain_before_promotion",
+    "source_digest_required",
+    "bounded_replay_required",
+    "gac_approval_for_skill_activation"
+  ],
+  "outputSurfaces": [
+    "data/behcs/original-hermes-agent/learning-loop-contract-latest.json",
+    "data/behcs/original-hermes-agent/skill-promotion-queue-latest.ndjson",
+    "data/behcs/original-hermes-agent/mistake-prevention-rules-latest.ndjson"
+  ],
+  "digest": "36cf5d776e48c79bcd4a3e9232a998cf825795119ff09913b7c0829cb5199a60"
+}

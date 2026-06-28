@@ -1,0 +1,98 @@
+{
+  "ok": true,
+  "role": "hermes",
+  "label": "Hermes",
+  "class": "routing-supervisor-lane",
+  "generation": 1,
+  "supervisor_pid": "SUP-HERMES-ROUTER-PID-HD17A-A04-W1024-P00-N00001",
+  "prof_pid": "PROF-HERMES-ROUTE-PID-HD17B-A04-W1024-P00-N00001",
+  "agent_pid_current": "AGT-HERMES-PID-HD17C-A04-W1024-P01-N00001",
+  "mission": "Route supervisor/prof envelopes, check inbox health, hold path costs, and preserve resume context for rotating CLI agents.",
+  "cwd": "C:\\asolaria-acer",
+  "tool_path": null,
+  "helpers": [
+    "hermes-status",
+    "hermes-routes",
+    "bus-inbox",
+    "bus-send"
+  ],
+  "profs": [
+    {
+      "id": "PROF-HERMES-ROUTE",
+      "pid": "PROF-HERMES-ROUTE-PID-HD171-A04-W1024-P00-N00001",
+      "role": "route and mailbox health"
+    },
+    {
+      "id": "PROF-HERMES-MIRROR",
+      "pid": "PROF-HERMES-MIRROR-PID-HD172-A04-W1024-P00-N00001",
+      "role": "cross-vantage mirror receipts"
+    },
+    {
+      "id": "PROF-HERMES-ROTATE",
+      "pid": "PROF-HERMES-ROTATE-PID-HD173-A04-W1024-P00-N00001",
+      "role": "rotation/resume packet discipline"
+    }
+  ],
+  "controls": [
+    "spawn",
+    "exec-allowlisted",
+    "output",
+    "rotate",
+    "kill"
+  ],
+  "guardrails": [
+    "visible terminal output",
+    "allowlisted commands only unless OP: override is typed",
+    "no API key echo",
+    "no model weight pull",
+    "resume packet loaded before work"
+  ],
+  "resume_packet": {
+    "job": "Route supervisor/prof envelopes, check inbox health, hold path costs, and preserve resume context for rotating CLI agents.",
+    "last_known_state": "rotated",
+    "next_safe_commands": [
+      "agent-context",
+      "bus-inbox 5",
+      "dash /api/everything"
+    ],
+    "after_compaction": "Run agent-context first, then one small verify command, then report before long execution.",
+    "last_rotation": {
+      "ts": "2026-05-10T00:48:56.153Z",
+      "reason": "Brown-Hilbert profile reload after opencode/llmworker memory pressure; preserve resume packet and rotate agent PID before killing stale worker",
+      "prior_pid": "AGT-HERMES-PID-HD17C-A04-W1024-P00-N00001",
+      "new_pid": "AGT-HERMES-PID-HD17C-A04-W1024-P01-N00001",
+      "brown_hilbert_hash": "H031A19530756D6E4",
+      "resume_packet": {
+        "job": "Route supervisor/prof envelopes, check inbox health, hold path costs, and preserve resume context for rotating CLI agents.",
+        "last_known_state": "profile-created",
+        "next_safe_commands": [
+          "agent-context",
+          "bus-inbox 5",
+          "dash /api/everything"
+        ],
+        "after_compaction": "Run agent-context first, then one small verify command, then report before long execution."
+      }
+    }
+  },
+  "created_at": "2026-05-09T22:57:59.661Z",
+  "updated_at": "2026-05-10T00:48:56.154Z",
+  "rotations": [
+    {
+      "ts": "2026-05-10T00:48:56.153Z",
+      "reason": "Brown-Hilbert profile reload after opencode/llmworker memory pressure; preserve resume packet and rotate agent PID before killing stale worker",
+      "prior_pid": "AGT-HERMES-PID-HD17C-A04-W1024-P00-N00001",
+      "new_pid": "AGT-HERMES-PID-HD17C-A04-W1024-P01-N00001",
+      "brown_hilbert_hash": "H031A19530756D6E4",
+      "resume_packet": {
+        "job": "Route supervisor/prof envelopes, check inbox health, hold path costs, and preserve resume context for rotating CLI agents.",
+        "last_known_state": "profile-created",
+        "next_safe_commands": [
+          "agent-context",
+          "bus-inbox 5",
+          "dash /api/everything"
+        ],
+        "after_compaction": "Run agent-context first, then one small verify command, then report before long execution."
+      }
+    }
+  ]
+}

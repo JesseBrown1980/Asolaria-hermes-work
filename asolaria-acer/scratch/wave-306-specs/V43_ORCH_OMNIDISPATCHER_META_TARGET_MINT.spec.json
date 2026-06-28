@@ -1,0 +1,14 @@
+{
+ "orchestrator_pid": "AGT-helm-claude-orchestrator-omnidispatcher-meta-target-mint-H02FB-V43-P00-N70C18C5E",
+ "topic": "omnidispatcher-meta-target-mint",
+ "sub_orchestration": {
+  "gemini": 4,
+  "codex_per_gemini": 3,
+  "leaf_total": 12
+ },
+ "wave_shape": "v3-pre-flight",
+ "pre_flight_endpoint": "C:/HyperBEHCS/bin/wave-shape-v3-dispatcher.py",
+ "cosign_endpoint": "http://127.0.0.1:4953/api/cosign/append",
+ "anchor_pid": "ASOLARIA-V43-WAVE-306-PIPELINE-TRACE-PID-2026-05-23",
+ "law_anchor": "ASOLARIA-FOUNDATION-V3-LAW-V39-LOAD-DIVISION-PID-2026-05-23"
+}
