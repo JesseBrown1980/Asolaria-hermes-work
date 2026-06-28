@@ -24,6 +24,7 @@ tables below to see where you are; follow the links to walk the rest.
 |------|------|-----------|
 | `Shannon-and-the-gnns-stage` | the **post-trigger pipeline**: HOOKWALL → GNN trio → Shannon/OmniShannon → white rooms → GULP | `README.md`, `pipeline/`, `TRAINED-MODELS.md` |
 | `Asolaria-fnns-trained-and-reverse-gnns-many` | the **trained GNNs/FNNs** the stage scores with — 7-GNN ensemble (8 signals), trained `.pt` checkpoints, reverse-GNNs (many) | `README.md`, `models/`, `src/`, `manifests/` |
+| `Asolaria-the-after-100-billion-run-absorption-and-decomposition-and-cubes` | the **back end after the 100B run**: absorb (GULP 2000 / SUPER-GULP 50k / GC) → decompose → mint + seal cubes → process mistakes/geniuses into supervisors + PIDs (operator-gated) | `README.md`, `backend/` |
 
 ## External legs (referenced, not duplicated here)
 | repo | role |
@@ -37,6 +38,8 @@ materialises spindles. Each spindle obeys the **reduction principle [3]** / **al
 **collision discipline [5]**. After every trigger, the spindle's answer runs the **post-trigger pipeline**
 (`Shannon-and-the-gnns-stage`), scored by the **trained GNNs/FNNs** (`Asolaria-fnns-trained-…`), and the
 **white rooms** (liris LEG-1) keep the genius / compact the mistakes — the PRISM many→1 reduction, seen
-from the result side. All gated / E=0 / describe-only — no fire, no cutover without operator authority.
+from the result side. The **back end** (`Asolaria-the-after-100-billion-run-…`) then absorbs the gulped
+data, decomposes + mints the cubes, and — operator-gated — promotes the geniuses into supervisors/PIDs.
+All gated / E=0 / describe-only — no fire, no cutover without operator authority.
 
 Base: **https://github.com/JesseBrown1980/** · per-link spine nav lives in each repo's `CHAIN.md`.
