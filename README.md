@@ -55,3 +55,6 @@ algorithms/findings: **https://github.com/JesseBrown1980/Algorithms-of-Asolaria*
 
 Status tag: this is a snapshot of built work — gated / E=0 in its original homes (no fire, no cutover
 without operator authority). Provided as the source/docs record.
+
+## Kernel fleets + stubbed rooms
+See `KERNEL-FLEET-AND-STUBBED-ROOMS.md` — the 10k/20k/100k kernel fleets + the stubbed-rooms (rooms-as-RAM) inventory: `kernel-fleet/` + `room-rotor/`.
