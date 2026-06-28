@@ -32,6 +32,38 @@ tables below to see where you are; follow the links to walk the rest.
 | `asolaria-whiteroom-engine` | **liris** white-room engine — LEG-1 scorer (never-delete: genius keeps / mistake compacts) |
 | `35-TB-google-AI-Ultra-migration` | LEG-4 — the 35 TB Google Drive cloud sink |
 
+## Other core repos (the satellites — referenced by the web)
+| repo | role |
+|------|------|
+| `asolaria-federation-1024` | **THE KERNEL** — the live Rust **8-byte host** + `no_std` kernel + **10 server crates** (council-serve, host8-serve, agent-runtime, gnn-oracle, vote-quorum, cosign-ledger, dashboard-serve, fischer-eval, tier-policy, highway). The Node→Rust **upgrade target** (read the TREE; branch `acer/fleet-capacity-20k` stacks the Host-8 wiring). |
+| `asolaria-behcs-256` | the **256-glyph language** — a bridge stratum below BEHCS-1024 (old decodes new) |
+| `ASOLARIA-AS-NEURAL-NETWORK` | the fabric-as-neural-network law + spine (60D frame) |
+| `Asolaria-ASI-On-Metal-Fabric-and-matrix` | the metal-OS fabric / matrix + tools |
+| `bigpickle-rebuild` | the **Node build/emitter suite** — source of the emitter / GC / loop (the OLD-Node side of the upgrade) |
+| `Hilbra` | comms / atlas-recall bridge (liris ↔ 8-byte host) |
+| `Harness-edit` | the SkillOpt validation-gated skill/law edit loop (claims-gate) |
+| `N-Nest-Prime-INFINITE-SELF-REFLECT-AGENTS-NESTED` | prime-nesting self-reflect + per-node correction gate |
+| `HYPER-BECHS--the-third-set` | published ledgers / interpretations / findings |
+| `Asolaria-gac-working` | GAC governance / authority seats |
+| `falcon-orbital` | frozen v57 canon (superseded by the 60D / Host-8 frame) |
+| `NOT-WEDGED-SYSTEM-RULE-and-explanation-Asolaria` | the slice-engine / freeze≠broken rule |
+| `-6-cyl-generator` | satellite generator |
+| `asolaria-whiteroom-engine` · `35-TB-google-AI-Ultra-migration` | (= LEG-1 + LEG-4, listed under External legs) |
+
+## Current state & evolution (2026-06-28) — read this, don't flatten it
+Asolaria is a **2.5-month archaeology**, not a flat stack. **Capability lineage:** auto-approval switch →
+dashboard → multi-agent → local+web MCP + code-wiki → index language (pixels-first) → cubes-as-catalogs
+in expanding Brown-Hilbert space → map-map-mapped → cube-cube-cubed → 256-symbol language → 1024-symbol
+language → (asked 2048 — chose instead) **HBI/HBP + binary/hex/hash/sha/crypto-as-tokens** → **8-byte host
+process** (replaces the ancient Node processes, for speed). The fabric's own 27-strata record is the
+`archaeology_timeline` (birth 2026-02-22 → FABRIC EPOCH → genome).
+
+The system **now** is **multiple of everything**: **16 levels (L0-L15) · multiple MCP engines (17) ·
+multiple emitters · multiple languages** (index / pixels-first / BEHCS-256 / BEHCS-1024 / HBI-HBP).
+**Current frame = 60D HyperBEHCS / BEHCS-1024**; 35D / 47D / 49D + BEHCS-256 are **bridge strata** below
+it (old decodes new). The **kernel** is `asolaria-federation-1024` (the Rust 8-byte host). The current
+effort is **"map while upgrading"** — and **this repo web is that map**.
+
 ## How it all fits
 The **emitter [2]** produces 200ns PID signals; the **router [1]** delivers them; the **fleet [0]**
 materialises spindles. Each spindle obeys the **reduction principle [3]** / **algorithm [4]** and the
