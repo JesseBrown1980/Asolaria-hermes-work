@@ -1,0 +1,39 @@
+# llms.txt - Asolaria-hermes-work
+
+Purpose: agent-readable front door for the consolidated Hermes / HyperHermes fleet work.
+
+Status: docs-first / E=0. This repo is source/docs/manifest material, not a fire command.
+
+Read order:
+1. README.md - consolidated Hermes / HyperHermes overview and carve-out.
+2. THE-CHAIN.md - backwards chain from mechanism to running Hermes fleet.
+3. REGISTERED-FLEET.md - public roster names/handles only; not PID-office bytes.
+4. KERNEL-FLEET-AND-STUBBED-ROOMS.md - 10k/20k/100k kernels and stubbed-room layer.
+5. MAP.md - whole repo-web placement.
+
+Core meaning:
+- Hermes here is not an external thing to absorb from scratch; it is a fleet Asolaria already built.
+- The dispatcher, spindle, agent, prism, absorption, kernel fleets, and stubbed rooms are slices of the
+  root primitive in motion.
+- The repo should be read as publishable code/docs/manifest, not as private corpus or runtime state.
+
+Evidence boundaries:
+- MEASURED repo bytes: files in this public consolidation.
+- CANON/operator frame: watcher-gated 8-byte agent, multiple emitters, multiple languages, multiple MCP
+  engines, per-vantage federation.
+- BOUNDARY: PID-office registered bytes, HBP/HBI corpus, runtime lanes, screen captures, and private
+  memory stay carved out.
+- BOUNDARY: live process counts require owning-seat probes.
+
+Hard holds:
+- No runtime fire.
+- No agent spawn into stubbed rooms.
+- No dispatcher redeploy.
+- No private PID-office publication.
+- No corpus publication.
+- No private-root scan.
+
+Useful attack-verify:
+- Check carve-out remains intact.
+- Recompute this file's sidecar.
+- Cross-check THE-CHAIN.md against HYPER-BECHS P4 receipts.
