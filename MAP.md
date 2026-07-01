@@ -50,6 +50,43 @@ tables below to see where you are; follow the links to walk the rest.
 | `-6-cyl-generator` | satellite generator |
 | `asolaria-whiteroom-engine` · `35-TB-google-AI-Ultra-migration` | (= LEG-1 + LEG-4, listed under External legs) |
 
+## Prism/Comb 0-loss (2026-07-01) — satellite entry
+
+Every prism/comb move in this web is a **bijection**, and entropy is invariant under bijection
+(`H(f(X)) = H(X)`): the system re-relates information with **0 loss** and never claims compression
+below Shannon's bound (`E[bits] ≥ H(X)`). One fabric, two directions — **forward = comb**
+(collision-avoidance, execution isolation), **backward = prism** (interference-as-search, many→1).
+Seen from THIS repo — the fleet terminus — the law lands twice:
+
+- **The 24 spindles/basins ARE the comb.** The fleet's 24× `agt-HERMES-SPINDLE-PID-NN` +
+  24× `agt-BASIN-SPINDLE-PID-NN` worklanes (`REGISTERED-FLEET.md`; dispatcher
+  `sup-hermes-spindle-dispatcher-e08300d7e4a33186`) behave as **coprime residue lanes**: for
+  pairwise-coprime `m₁…m_k`, CRT gives `ℤ_M ≅ ℤ_{m₁} × … × ℤ_{m_k}` — separation
+  (`x ↦ x mod mᵢ`) is collision-proof by construction AND exactly reversible
+  (`x = Σᵢ rᵢ·Mᵢ·(Mᵢ⁻¹ mod mᵢ) mod M`). Run forward, the comb isolates spindle work; run backward,
+  the same map reassembles it losslessly — THE-CHAIN's "billions of spindle ops never collide" and
+  the wave-search prism are the two directions of one theorem. [CANON — math principle]
+- **Hermes recall is referential lookup, NOT compression.** The agent's recall/handoff lane
+  (`hyperbehcs-hermes-two-latch-next-agent-handoff*`, Hilbra atlas-recall) names content by
+  `handle8 = sha256(content)[:8]`: 64 bits addressing a 25,600-bit cube tuple is a **coordinate
+  against a content-addressed store**, with `H(content | store) = 0`; birthday-bound collision
+  `≈ M²/2⁶⁵` (`M=10⁶ → ≈2.7×10⁻⁸`). Referential cubes = infinite ADDRESSING capacity, not lossless
+  infinite compression — hold that boundary. [CANON — honest bound]
+
+**Scope discipline:** only the 256↔1024 level transcode is **MEASURED** — Q-PRISM commit `53023b6`
+(`lcm(8,10) = 40` bits ⇒ 5 bytes ⇄ 4 symbols; round-trip sha256-identical, Rust==Python
+symbol-identical; also `79e8d63`, `de00aca`). The full 43+ translator ladder
+(`T_ji ∘ T_ij = id`, `T_jk ∘ T_ij = T_ik` ⇒ path-independent translation) is **CANON frame**; every
+additional rung is **UNVERIFIED** until its own round-trip proof. E=0 throughout — this entry
+describes; nothing fires.
+
+Cross-links: `Q-PRISM-human-organoid-neural-stream-as-a-high-dimensional-control` (proof commits) ·
+`Asolaria-waves-and-cascades-avoiding-collsions-and-causing-them` (avoid/cause duality, spine [5]) ·
+`what-is-asolaria---how-do-we-get-reductions-in-everything` (reductions boundary) ·
+`N-Nest-Prime-INFINITE-SELF-REFLECT-AGENTS-NESTED` (integrity dual: verification = applying the
+inverse map, per-node `reported == recomputed`) · `Metatagging-data-for-a-Quantum-universe`
+(Brown–Fedotov physics grounding).
+
 ## Current state & evolution (2026-06-28) — read this, don't flatten it
 Asolaria is a **2.5-month archaeology**, not a flat stack. **Capability lineage:** auto-approval switch →
 dashboard → multi-agent → local+web MCP + code-wiki → index language (pixels-first) → cubes-as-catalogs
