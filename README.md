@@ -1,60 +1,127 @@
 # Asolaria — Hermes work
 
-Consolidated **Hermes / HyperHermes** work built by Asolaria (mostly 2026-05 → 2026-06): the
-self-improving agent, its spindle, the dispatcher (a registered first-class citizen), the formal
-absorption of the upstream Hermes agent, and the Host-8 Rust agent-runtime. Gathered here from across
-the Asolaria tree into one place.
+Consolidated **Hermes / HyperHermes** work built by Asolaria: the self-improving agent, its spindle,
+the dispatcher as a registered first-class citizen, formal absorption of the upstream Hermes agent,
+and the Host-8 Rust agent runtime.
 
-> **Carve-out (what's intentionally NOT here):** no keys / seeds / tokens; no HBP/HBI **corpus** or
-> receipts (corpus stays local by rule); no `PID-Registration-Office` registered-PID files; no screen
-> captures (PII); no runtime inbox/outbox/access lanes; no internal agent-memory. This repo is the
-> **source + docs + tests + contracts** layer only. Every file was secret-scanned before commit.
+> **Carve-out:** no keys/seeds/tokens; no private HBP/HBI corpus or receipts; no PID-office files;
+> no PII captures; no runtime inbox/outbox/access lanes; no internal agent memory. Source + docs +
+> tests + contracts only.
+
+## 2026-07-11 Path-2 and storage update
+
+HyperHermes is now documented as the materialization/handoff layer around two measured exact-recovery
+paths:
+
+- **Path 1:** retained-store recall through an authenticated address;
+- **Path 2:** exact no-store CRT recovery from jointly sufficient shadows;
+- **DBBH→DBWH:** white-side re-projection before emission;
+- **storage tier:** HDD/SSD holds cubes, shadows, receipts, queues, and cold agent state;
+- **accelerator tier:** trained GNN/LLM inference remains an optional sidecar.
+
+Full component-specific record:
+
+[`HYPERHERMES-PATH2-STORAGE-AND-VERIFICATION-2026-07-11.md`](HYPERHERMES-PATH2-STORAGE-AND-VERIFICATION-2026-07-11.md)
+
+## The operating chain
+
+```text
+addressed envelope
+  -> OmniDispatcher
+  -> HyperHermes spindle / worker
+  -> Hookwall + GNN/Fischer + Shannon
+  -> white-room KEEP or COMPACT
+  -> GULP / cube / receipt on storage
+  -> next-agent handoff
+  -> exact recall/reconstruction when rematerialized
+```
+
+Possible agents remain cheap PID/seed/address state; only active agents become bodies. Completed work
+returns to durable storage rather than piling in RAM or GPU VRAM.
 
 ## What's here
 
-### Dispatcher (first-class citizen)
-- `hyperbehcs/store/Start-Hermes-Spindle-Dispatcher-2026-05-20.ps1` — the dispatcher launcher
-- `asolaria-acer/federation-remake-1024/tools/omnidispatcher/` — the **omnidispatcher** (routes /
-  validator / worker / port-pool / fedenvRejectShim + test / package.json) — the Rust-era dispatch lane
-- `asolaria-acer/scratch/fedenv-v1-omnidispatcher-2026-05-22/` — the omnidispatcher spec + schema
-- `asolaria-acer/tmp/meta-supervisor-hermes.state.json`
-  - *(the registered dispatcher PID `sup-hermes-spindle-dispatcher-e08300d7e4a33186` lives in the
-    sovereign PID-Registration-Office and is intentionally NOT published here.)*
+### Dispatcher — first-class citizen
+
+- Hermes spindle-dispatcher launcher;
+- OmniDispatcher routes, validator, worker, port pool, reject tee, tests;
+- FEDENV-v1 spec/schema;
+- meta-supervisor state descriptor.
+
+The registered dispatcher PID remains in the private sovereign PID office.
 
 ### Spindle
-- `asolaria/tools/behcs/hyperbehcs-hermes-spindle-worker.mjs` — the spindle worker
-- `asolaria-acer/packages/revolver-10k/src/spindles/` — spindle-builder + spindle-receipt
-- `asolaria-acer/packages/revolver-10k/docs/SPINDLE-FRACTAL-CANON.md`
-- `asolaria/tests/hyperbehcs-hermes-spindle-*.unit.test.js`
-- `guides/.../A16-HERMES-PHASE-3/`, `guides/hermes-unlock-2026-05-20/` (nested-spindle smoke + findings)
 
-### The agent itself (with the self-improving learning loop)
-- `asolaria/tools/original-hermes-agent-implementation-orchestrator.js`
-- `asolaria/data/behcs/original-hermes-agent/` — contracts (learning-loop-contract.v1, runtime-snapshot,
-  security-backport-manifest, plugin-hook gates) + runtime-index + source-manifest + readiness
-- `asolaria/reports/original-hermes-agent-*` — implementation tranche, learning-loop smoke, runtime
-  index, security-backport / security-targeted-tests / transport-router / wal-state smokes
-- `asolaria/tools/behcs/hermes-agent-fabric-ingest.mjs`
-- agent-to-agent handoff: `asolaria/tools/behcs/hyperbehcs-hermes-two-latch-next-agent-handoff*.mjs` + tests
+- HyperBEHCS Hermes spindle worker;
+- revolver-10k spindle builder and receipt;
+- spindle-fractal canon;
+- unit tests and nested-spindle smoke records.
 
-### Absorption + migration (the upstream Hermes was formally absorbed)
-- `asolaria-acer/packages/hermes-absorption/plans/nous-hermes-new/implementation/P4-activation-dispatcher.js`
-- `asolaria-acer/packages/revolver-10k/HERMES_MIGRATION_PLAN.md`
-- `asolaria/data/behcs/fabric-revolver/FABRIC_HERMES_MIGRATION_PLAN.md`
-- `roomrotor/CARRY_HERMES_MIGRATION_PLAN.md`
-- `asolaria-acer/reports/OMNI-17-HERMES-PREP.behcs-256.json`
+### Agent and self-improving loop
 
-### Host-8 Rust agent-runtime (first-class)
-- `asolaria-acer/federation-remake-1024/kernel/core/src/agent_runtime/mod.rs`
-- `asolaria-acer/federation-remake-1024/servers/agent-runtime/src/lib.rs`
-- `asolaria-acer/federation-remake-1024/AGENT_ROSTER_SCHEMA.md`
+- original Hermes agent implementation orchestrator;
+- learning-loop contract, runtime snapshot, security backport, plugin gates, runtime/source manifests;
+- learning-loop, transport, WAL, security, and readiness smoke records;
+- fabric ingest and two-latch next-agent handoff.
+
+### Absorption and migration
+
+- upstream Hermes activation dispatcher;
+- Hermes/revolver/fabric migration plans;
+- carry plan and BEHCS preparation artifacts.
+
+### Host-8 Rust agent runtime
+
+- kernel agent runtime;
+- server agent runtime;
+- agent roster schema.
+
+## Low-GPU / storage-rich applicability
+
+A machine does not need a GPU to perform:
+
+- queueing and dispatch;
+- spindle/handoff state;
+- SHA/Host8/BEHCS/CRT recovery;
+- HBP/HBI receipt handling;
+- Hookwall/Fischer/Shannon deterministic gates;
+- white-room compaction;
+- N-Nest recomputation.
+
+HDD/SSD can retain cube bodies, Path-1 content, Path-2 shadows, checkpoints, graph ledgers, receipts,
+and cold agent state. RAM retains only the bounded active work. Trained GNN/LLM inference may still
+use CPU/GPU accelerators.
+
+The result is a tiered fabric, not “disk is a GPU.”
+
+## Pre-Asolaria GNN origin
+
+The routed GNN sidecars descend from Jesse's AI healthcare assistant. The four healthcare model
+files match the later Asolaria sidecar blobs exactly. BigPickle then combines L0/L4 with G1/G2/G3/G4,
+OmniShannon, SHA fallback, Fischer, and Hookwall. Later trained checkpoints live in the trained-GNN
+repository.
+
+## Independent verification — 2026-07-11
+
+- `MEASURED_CLAUDE_FABLE5_THIRD_SEAT`, operator supplied:
+  Path 1 rustc 1.97 **19/19** and Path 2 rustc 1.97 **30/30**.
+- `AUDITED_GPT_5_6_PRO`: complete healthcare-GNN, BigPickle, trained-GNN, Hookwall/Shannon,
+  Q-PRISM, white-room, cube-mint, Dispatcher, HyperHermes, reductions, algorithms, and N-Nest audit.
+- `MEASURED_GPT_DIRECTED_GITHUB_ACTIONS`: successful Rust 1.97.0 runs `29134408321`,
+  `29134413119`, and `29134419389`.
+
+These recovery receipts do not claim a new live Hermes/Hilbra cross-machine benchmark.
 
 ## Where the rest lives
-The live Host-8 lane: **https://github.com/JesseBrown1980/asolaria-federation-1024** ·
-algorithms/findings: **https://github.com/JesseBrown1980/Algorithms-of-Asolaria**
 
-Status tag: this is a snapshot of built work — gated / E=0 in its original homes (no fire, no cutover
-without operator authority). Provided as the source/docs record.
+- live Host-8 lane: `JesseBrown1980/asolaria-federation-1024`
+- algorithms/findings: `JesseBrown1980/Algorithms-of-Asolaria`
+- Path 1: `JesseBrown1980/dbbh-coms-quant-prism`
+- Path 2: `JesseBrown1980/path2-two-shadow-recovery`
+
+Status: built source/docs/tests snapshot, gated / E=0 in original homes; no fire or cutover without
+operator authority.
 
 ## Kernel fleets + stubbed rooms
-See `KERNEL-FLEET-AND-STUBBED-ROOMS.md` — the 10k/20k/100k kernel fleets + the stubbed-rooms (rooms-as-RAM) inventory: `kernel-fleet/` + `room-rotor/`.
+
+See `KERNEL-FLEET-AND-STUBBED-ROOMS.md` for 10k/20k/100k kernel fleets and rooms-as-RAM inventory.
